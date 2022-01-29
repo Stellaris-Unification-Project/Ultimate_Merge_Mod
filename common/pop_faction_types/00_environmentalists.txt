@@ -568,8 +568,6 @@ environmentalists = {
 					NOR = {
 						has_modifier = suppressed_green
 						has_modifier = promoted_green
-					}
-					NOR = {
 						has_ethic = ethic_green
 						has_ethic = ethic_fanatic_green
 					}

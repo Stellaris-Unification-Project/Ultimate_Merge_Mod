@@ -177,8 +177,7 @@ empire_name_format = {
 			has_government = "gov_chaos_empire"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_imperial.1"
@@ -194,8 +193,7 @@ empire_name_format = {
 			has_government = "gov_chaos_empire"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_imperial.2"
@@ -211,8 +209,7 @@ empire_name_format = {
 			has_government = "gov_chaos_empire"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_imperial.3"
@@ -228,8 +225,7 @@ empire_name_format = {
 			has_government = "gov_chaos_empire"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_imperial.4"
@@ -246,8 +242,7 @@ empire_name_format = {
 			has_government = "gov_demonic_dictatorship"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_dictatorial.1"
@@ -263,8 +258,7 @@ empire_name_format = {
 			has_government = "gov_demonic_dictatorship"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_dictatorial.2"
@@ -280,8 +274,7 @@ empire_name_format = {
 			has_government = "gov_demonic_dictatorship"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_dictatorial.3"
@@ -297,8 +290,7 @@ empire_name_format = {
 			has_government = "gov_demonic_dictatorship"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_dictatorial.4"
@@ -315,8 +307,7 @@ empire_name_format = {
 			has_government = "gov_cultic_dominion"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_oligarchy.1"
@@ -332,8 +323,7 @@ empire_name_format = {
 			has_government = "gov_cultic_dominion"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_oligarchy.2"
@@ -349,8 +339,7 @@ empire_name_format = {
 			has_government = "gov_cultic_dominion"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_oligarchy.3"
@@ -366,8 +355,7 @@ empire_name_format = {
 			has_government = "gov_cultic_dominion"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_oligarchy.4"
@@ -384,8 +372,7 @@ empire_name_format = {
 			has_government = "gov_shadowy_democracy"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_democracy.1"
@@ -401,8 +388,7 @@ empire_name_format = {
 			has_government = "gov_shadowy_democracy"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_democracy.2"
@@ -418,8 +404,7 @@ empire_name_format = {
 			has_government = "gov_shadowy_democracy"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_democracy.3"
@@ -435,8 +420,7 @@ empire_name_format = {
 			has_government = "gov_shadowy_democracy"
 			is_pirate = no
 			is_primitive = no
-			NOT = { is_country_type = fallen_empire }
-			NOT = { is_country_type = awakened_fallen_empire }
+			is_fallen_empire = no
 		}
 	}
 	format = "format.cult_democracy.4"

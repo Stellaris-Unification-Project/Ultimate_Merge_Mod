@@ -165,7 +165,7 @@ labourites = {
 
 		potential = {
 			exists = owner
-			owner = { NOR = { has_ethic = ethic_xenophobe has_ethic = ethic_fanatic_xenophobe } }
+			owner = { is_xenophobe = no }
 		}
 
 		trigger = {
@@ -401,8 +401,6 @@ labourites = {
 					NOR = {
 						has_modifier = suppressed_pluralist
 						has_modifier = promoted_pluralist
-					}
-					NOR = {
 						has_ethic = ethic_pluralist
 						has_ethic = ethic_fanatic_pluralist
 					}

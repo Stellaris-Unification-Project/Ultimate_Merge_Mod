@@ -626,7 +626,7 @@ civic_efficient_bureaucracy = {
 	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
 	random_weight = { base = 1 }
 	modifier = {
-		ship_upkeep_mult = -0.15
+		ships_upkeep_mult = -0.15
 		planet_building_upkeep_mult = -0.15
 	}
 	description = civic_tooltip_efficient_bureaucracy_effects
@@ -776,8 +776,10 @@ civic_primitives_caretaker = {
 			}
 		}
 		civics = {
-			NOT = { value = civic_young_space_brothers }
-			NOT = { value = civic_one_small_step } 
+			NOR = {
+				value = civic_young_space_brothers
+				value = civic_one_small_step
+			} 
 			}
 		}
 	
@@ -1039,7 +1041,7 @@ civic_machine_consciousness = {
 	random_weight = { base = 1 }
 	modifier = {
 		army_upkeep_mult = -0.5
-		ship_upkeep_mult = -0.5
+		ships_upkeep_mult = -0.5
 		spaceport_ship_build_cost_mult = -0.3
 		country_ship_upgrade_cost_mult = -0.5
 		planet_building_cost_mult = -0.2

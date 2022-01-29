@@ -104,11 +104,9 @@ tech_eutab_bastion_dem = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_authority = auth_democratic
-					has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				has_authority = auth_democratic
+				has_ascension_perk = ap_one_vision
 			}
 		}
 		modifier = {

@@ -27,15 +27,9 @@ supremacist = {
 		is_enslaved = no
 		is_being_purged = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_xenophobe
-			has_ethic = ethic_fanatic_xenophobe
-		}
+		is_xenophobe = yes
 		owner = {
-			NOR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-			}
+			is_pacifist = no
 		}
 		is_same_species = owner_species
 	}
@@ -215,7 +209,7 @@ supremacist = {
 			any_country = {
 				any_war = {
     				any_attacker = {
-        				is_same_value = root.owner
+        				is_same_empire = root.owner
     				}
 				}
 			}
@@ -372,10 +366,7 @@ supremacist = {
 			potential = {
 				exists = owner
 				parameter:empire = {
-					NOR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = no
 					NOR = {
 						has_modifier = suppressed_xenophobe
 						has_modifier = promoted_xenophobe

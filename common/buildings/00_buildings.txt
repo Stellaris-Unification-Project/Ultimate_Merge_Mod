@@ -2329,10 +2329,7 @@ building_temple = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_spiritualist		
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 	}
 	
@@ -2380,10 +2377,7 @@ building_holotemple = {
 			NOT = { is_planet_class = pc_habitat }	
 		}
 		owner = {
-			OR = {
-				has_ethic = ethic_spiritualist		
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 	}
 	
@@ -2444,10 +2438,7 @@ building_citadel_of_faith = {
 	
 	potential = {
 		owner = {
-			OR = {
-				has_ethic = ethic_spiritualist		
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 	}		
 	
@@ -2582,7 +2573,7 @@ building_capital_1 = {
 		custom_tooltip = {
 			text = "requires_pops_5"
 			planet = {
-				count_pops = {
+				count_owned_pop = {
 					count > 4
 					limit = {
 						is_colony_pop = yes
@@ -2655,7 +2646,7 @@ building_capital_2 = {
 		custom_tooltip = {
 			text = "requires_pops_10"
 			planet = {
-				count_pops = {
+				count_owned_pop = {
 					count > 9
 					limit = {
 						is_colony_pop = yes
@@ -2741,7 +2732,7 @@ building_capital_3 = {
 		custom_tooltip = {
 			text = "requires_pops_15"
 			planet = {
-				count_pops = {
+				count_owned_pop = {
 					count > 14
 					limit = {
 						is_colony_pop = yes
@@ -2816,13 +2807,10 @@ building_clone_vats = {
 					}
 				}
 				has_technology = tech_cloning
-				OR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = yes
 			}
 			from = {
-				any_pop = {
+				any_owned_pop = {
 					is_enslaved = yes
 				}
 			}
@@ -2837,10 +2825,7 @@ building_clone_vats = {
 				owner = {
 					NOT = {
 						has_technology = tech_cloning
-						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-						}
+						is_militarist = yes
 					}
 				}
 				NOT = { has_building = building_clone_vats }
@@ -2936,7 +2921,7 @@ building_slave_processing = {
 		custom_tooltip = {
 			text = "requirement_slave_facility"
 			planet = {
-				any_pop = {
+				any_owned_pop = {
 					is_enslaved = yes
 				}
 			}
@@ -2951,7 +2936,7 @@ building_slave_processing = {
 	
 	ai_allow = {
 		planet = {
-			count_pops = {
+			count_owned_pop = {
 				limit = { is_enslaved = yes }
 				count > 4
 			}
@@ -2963,7 +2948,7 @@ building_slave_processing = {
 		modifier = {
 			weight = 0
 			from = {
-				count_pops = {
+				count_owned_pop = {
 					limit = { is_enslaved = yes }
 					count < 1
 				}
@@ -2988,8 +2973,7 @@ building_clinic = {
 		planet = {
 			NOR = {
 				is_planet_class = pc_gaia
-				is_planet_class = pc_habitat
-				is_planet_class = pc_ringworld_habitable
+				is_artificial = yes
 			}		
 		}	
 	}
@@ -3053,8 +3037,7 @@ building_hospital = {
 		planet = {
 			NOR = {
 				is_planet_class = pc_gaia
-				is_planet_class = pc_habitat
-				is_planet_class = pc_ringworld_habitable
+				is_artificial = yes
 			}		
 		}	
 	}	

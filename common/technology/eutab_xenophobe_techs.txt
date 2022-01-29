@@ -71,14 +71,9 @@ tech_eutab_terra_viruses = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-					has_ascension_perk = ap_world_shaper
-				}
+			NAND = {
+				is_xenophobe = yes
+				has_ascension_perk = ap_world_shaper
 			}
 		}
 		modifier = {
@@ -174,14 +169,9 @@ tech_eutab_xeno_sub_ins = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-				has_ascension_perk = ap_interstellar_dominion
-				}
+			NAND = {
+				is_xenophobe = yes
+			has_ascension_perk = ap_interstellar_dominion
 			}
 		}
 		modifier = {
@@ -241,14 +231,9 @@ tech_eutab_diplomatic_spies = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-				has_ascension_perk = ap_technological_ascendancy
-				}
+			NAND = {
+				is_xenophobe = yes
+			has_ascension_perk = ap_technological_ascendancy
 			}
 		}
 		modifier = {
@@ -304,14 +289,9 @@ tech_eutab_greatness = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-				has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				is_xenophobe = yes
+			has_ascension_perk = ap_one_vision
 			}
 		}
 		modifier = {
@@ -391,14 +371,9 @@ tech_eutab_intel_vigilance = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-				has_ascension_perk = ap_imperial_prerogative
-				}
+			NAND = {
+				is_xenophobe = yes
+			has_ascension_perk = ap_imperial_prerogative
 			}
 		}
 		modifier = {
@@ -495,14 +470,9 @@ tech_eutab_doct_supremacy = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
-				has_ascension_perk = ap_galactic_force_projection
-				}
+			NAND = {
+				is_xenophobe = yes
+			has_ascension_perk = ap_galactic_force_projection
 			}
 		}
 		modifier = {

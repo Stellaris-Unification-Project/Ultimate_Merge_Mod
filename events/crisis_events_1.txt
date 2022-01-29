@@ -148,10 +148,7 @@ country_event = {
 					AND = {
 						exists = space_owner
 						space_owner = {
-							NOR = {
-								is_country_type = fallen_empire
-								is_country_type = awakened_fallen_empire
-							}
+							is_fallen_empire = no
 						}
 					}
 				}
@@ -160,10 +157,8 @@ country_event = {
 					any_neighbor_system = {
 						exists = space_owner
 						space_owner = {	
-							OR = {
-								is_country_type = fallen_empire
-								is_country_type = awakened_fallen_empire
-							}
+							
+								is_fallen_empire = yes
 						}
 					}
 				}
@@ -436,7 +431,7 @@ country_event = {
 				create_country = {
 					name = "NAME_Prethoryn_Scourge"
 					type = "swarm"
-					species = last_created
+					species = last_created_species
 					name_list = "Prethoryn"
 					flag = {
 						icon= {
@@ -455,7 +450,7 @@ country_event = {
 						}
 					}
 				}
-				every_country = {
+				every_playable_country = {
 					limit = { is_country_type = default }
 					establish_communications_no_message = last_created_country
 					add_opinion_modifier = {
@@ -621,7 +616,7 @@ country_event = {
 				}
 			}
 		}
-		random_country = {
+		random_playable_country = {
 			limit = { is_country_type = default }
 			country_event = { id = crisis.19 days = 60 random = 20 }
 		}
@@ -1121,10 +1116,7 @@ country_event = {
 	option = {
 		name = crisis.30.b
 		trigger = {
-			OR = {
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
-			}
+			is_pacifist = yes
 			NOT = { owner_species = { has_trait = trait_psionic } }
 		}
 		response_text = crisis.30.b.response
@@ -1132,10 +1124,7 @@ country_event = {
 	option = {
 		name = crisis.30.c
 		trigger = {
-			OR = {
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
-			}
+			is_militarist = yes
 			NOT = { owner_species = { has_trait = trait_psionic } }
 		}
 		response_text = crisis.30.c.response
@@ -1143,10 +1132,7 @@ country_event = {
 	option = {
 		name = crisis.30.d
 		trigger = {
-			OR = {
-				has_ethic = "ethic_xenophobe"
-				has_ethic = "ethic_fanatic_xenophobe"
-			}
+			is_xenophobe = yes
 			NOT = { owner_species = { has_trait = trait_psionic } }
 		}
 		response_text = crisis.30.d.response
@@ -1154,10 +1140,7 @@ country_event = {
 	option = {
 		name = crisis.30.e
 		trigger = {
-			OR = {
-				has_ethic = "ethic_xenophile"
-				has_ethic = "ethic_fanatic_xenophile"
-			}
+			is_xenophile = yes
 			NOT = { owner_species = { has_trait = trait_psionic } }
 		}
 		response_text = crisis.30.e.response
@@ -1165,10 +1148,7 @@ country_event = {
 	option = {
 		name = crisis.30.f
 		trigger = {
-			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
-			}
+			is_spiritualist = yes
 			NOT = { owner_species = { has_trait = trait_psionic } }
 		}
 		response_text = crisis.30.f.response
@@ -1383,7 +1363,7 @@ country_event = {
 		trigger = { 
 			energy > 199 
 			FROM = {
-				count_owned_ships = {
+				count_owned_ship = {
 					count < 100
 				}
 			}
@@ -1395,7 +1375,7 @@ country_event = {
 		trigger = { 
 			energy < 200 
 			FROM = {
-				count_owned_ships = {
+				count_owned_ship = {
 					count < 100
 				}
 			}
@@ -1407,7 +1387,7 @@ country_event = {
 		name = crisis.55.b
 		trigger = { 
 			FROM = {
-				count_owned_ships = {
+				count_owned_ship = {
 					count > 99
 				}
 			}
@@ -1433,12 +1413,12 @@ country_event = {
 			limit = { is_country_type = swarm }
 			save_event_target_as = prethoryn 
 		}
-		random_country = {
+		random_playable_country = {
 			limit = { is_country_type = default }
 			owner_species = { save_event_target_as = random_species }
 		}
 		create_leader = {
-			type = admiral
+			class = admiral
 			species = event_target:random_species
 			name = random
 			skill = 500
@@ -1507,9 +1487,9 @@ country_event = {
 							find_closest_system = {
 								trigger = {
 									id = "crisis.60.trigger.1"
-									any_planet = {
+									any_system_planet = {
 										exists = owner
-										owner = { is_same_value = event_target:prethoryn }
+										is_owned_by = event_target:prethoryn
 									}
 									NOT = {
 										any_ship_in_system = {
@@ -1525,7 +1505,7 @@ country_event = {
 								trigger = {
 									id = "crisis.60.trigger.2"
 									exists = owner
-									owner = { is_same_value = event_target:prethoryn }
+									is_owned_by = event_target:prethoryn
 								}
 								found_planet = {
 									orbit_planet = THIS
@@ -1546,7 +1526,7 @@ country_event = {
 	
 	trigger = {
 		is_country_type = sentinels
-		count_owned_ships = {
+		count_owned_ship = {
 			count < 50
 		}
 		capital_scope = { has_planet_flag = sentinel_alpha }
@@ -1561,12 +1541,12 @@ country_event = {
 			limit = { is_country_type = swarm }
 			save_event_target_as = prethoryn 
 		}
-		random_country = {
+		random_playable_country = {
 			limit = { is_country_type = default }
 			owner_species = { save_event_target_as = random_species }
 		}
 		create_leader = {
-			type = admiral
+			class = admiral
 			species = event_target:random_species
 			name = random
 			skill = 500
@@ -1629,9 +1609,9 @@ country_event = {
 							find_closest_system = {
 								trigger = {
 									id = "crisis.61.trigger.1"
-									any_planet = {
+									any_system_planet = {
 										exists = owner
-										owner = { is_same_value = event_target:prethoryn }
+										is_owned_by = event_target:prethoryn
 									}
 									NOT = {
 										any_ship_in_system = {
@@ -1647,7 +1627,7 @@ country_event = {
 								trigger = {
 									id = "crisis.61.trigger.2"
 									exists = owner
-									owner = { is_same_value = event_target:prethoryn }
+									is_owned_by = event_target:prethoryn
 								}
 								found_planet = {
 									orbit_planet = THIS
@@ -1711,7 +1691,7 @@ country_event = {
 		}
 		any_country = {
 			is_country_type = sentinels
-			count_owned_ships = {
+			count_owned_ship = {
 				count > 30
 			}
 			ROOT = {
@@ -1810,7 +1790,7 @@ country_event = {
 		set_country_flag = injured_swarm_queen
 		random_system = {
 			limit = {
-				any_planet = {
+				any_system_planet = {
 					exists = owner
 					owner = { is_country_type = swarm }
 				}
@@ -1973,7 +1953,7 @@ ship_event = {
 		hidden_effect = {
 			owner = {
 				create_leader = {
-					type = admiral
+					class = admiral
 					species = event_target:swarm_species
 					name = "NAME_Fleet_Consciousness"
 					skill = 50
@@ -2017,7 +1997,7 @@ fleet_event = {
 	trigger = {
 		has_fleet_flag = pet_queen
 		num_ships < 20
-		any_ship = { is_ship_size = queen_swarm }
+		any_fleet_in_system = { is_ship_size = queen_swarm }
 	}
 	
 	mean_time_to_happen = {
@@ -2129,8 +2109,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 				}
 			}
 			change_pc = pc_infested
@@ -2165,8 +2144,7 @@ planet_event = {
 		if = {
 			limit = {
 				NOR = {
-					is_planet_class = pc_ringworld_habitable
-					is_planet_class = pc_habitat # habitats are currently uninfestable
+					is_artificial = yes # habitats are currently uninfestable
 				}
 			}
 			change_pc = pc_infested
@@ -2198,7 +2176,7 @@ event = {
 		any_country = {
 			is_country_type = "swarm"
 			#num_ships > 10
-			count_owned_ships = {
+			count_owned_ship = {
 				limit = { is_ship_size = colony_ship_swarm }
 				count < 4
 			}
@@ -2253,7 +2231,7 @@ event = {
 		any_country = {
 			is_country_type = "swarm"
 			num_ships > 10
-			count_owned_ships = {
+			count_owned_ship = {
 				limit = { is_ship_size = construction_ship_swarm }
 				count < 4
 			}
@@ -2439,7 +2417,7 @@ event = {
 					num_ships < 2
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								exists = controller
 								controller = { is_country_type = swarm }
 							}
@@ -2447,7 +2425,7 @@ event = {
 					}
 					NOT = {
 						any_system = {
-							any_planet = {
+							any_system_planet = {
 								exists = owner
 								owner = { is_country_type = swarm }
 							}
@@ -2659,7 +2637,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "prethoryn_scourge_chain" }
 			add_event_chain_counter = {
 				event_chain = "prethoryn_scourge_chain"
@@ -2678,7 +2656,7 @@ planet_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "prethoryn_scourge_chain" }
 			add_event_chain_counter = {
 				event_chain = "prethoryn_scourge_chain"
@@ -2718,7 +2696,7 @@ country_event = {
 				}
 			}
 		}
-		every_country = {
+		every_playable_country = {
 			limit = { 
 				has_event_chain = "prethoryn_scourge_chain" 
 				NOT = { is_same_value = FROM }
@@ -2744,7 +2722,7 @@ country_event = {
 	}
 	
 	immediate = {
-		every_country = {
+		every_playable_country = {
 			limit = { has_event_chain = "prethoryn_scourge_chain" }
 			add_event_chain_counter = { 
 				event_chain = "prethoryn_scourge_chain" 

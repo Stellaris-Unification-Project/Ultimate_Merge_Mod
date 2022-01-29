@@ -98,14 +98,12 @@ country_event = {
 		trigger = {
 			from = {
 				has_country_flag = ms_advance_denied
-				NOT = {
-					OR = {
+				NOR = {
 						has_country_flag = ms_obelisk
 						has_country_flag = ms_ethics_indoctrination
 						has_country_flag = ms_genetic_randomisation
 						has_country_flag = ms_advance_accelerated
-					}
-				}
+}
 			}
 		}
 	}
@@ -117,14 +115,12 @@ country_event = {
 				NOT = {
 					has_country_flag = ms_advance_denied
 				}
-				NOT = {
-					OR = {
+				NOR = {
 						has_country_flag = ms_obelisk
 						has_country_flag = ms_ethics_indoctrination
 						has_country_flag = ms_genetic_randomisation
 						has_country_flag = ms_advance_accelerated
-					}
-				}
+}
 			}
 		}
 	}
@@ -143,11 +139,7 @@ country_event = {
 		FROM = {
 			is_country_type = ms_primitive_1
 			capital_scope = {
-				solar_system = {
-					space_owner = {
-						is_same_value = root
-					}
-				}
+				solar_system = { is_owned_by = root }
 			}
 		}
 	}
@@ -294,12 +286,10 @@ country_event = {
 				has_technology = "tech_epigenetic_triggers"
 			}
 			from = {
-				NOT = {
-					OR = {
+				NOR = {
 						has_country_flag = no_more_gene_mods
 						has_country_flag = ms_genetic_randomisation
-					}
-				}
+}
 				any_owned_pop = {
 					NOT = {
 						num_traits > 3
@@ -372,9 +362,9 @@ country_event = {
 					civics = random
 				}
 				set_name = random
-				add_minerals = 3000 
-				add_energy = 2000
-				add_influence = 400
+				add_resource = { minerals = 3000 } 
+				add_resource = { energy = 2000 }
+				add_resource = { influence = 400 }
 				capital_scope = {
 					every_tile = {
 						limit = {
@@ -636,7 +626,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_authoritarian } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_authoritarian }
 					count > 1
 				}				
@@ -676,7 +666,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_egalitarian } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_egalitarian }
 					count > 1
 				}				
@@ -716,7 +706,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_xenophobe } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_xenophobe }
 					count > 1
 				}				
@@ -756,7 +746,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_xenophile } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_xenophile }
 					count > 1
 				}				
@@ -796,7 +786,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_militarist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_militarist }
 					count > 1
 				}				
@@ -836,7 +826,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_pacifist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_pacifist }
 					count > 1
 				}				
@@ -876,7 +866,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_spiritualist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_spiritualist }
 					count > 1
 				}				
@@ -916,7 +906,7 @@ country_event = {
 			}		
 			OR = {
 				root = { NOT = { has_ethic = ethic_materialist } }
-				count_pops = {
+				count_owned_pop = {
 					limit = { has_ethic = ethic_materialist }
 					count > 1
 				}				

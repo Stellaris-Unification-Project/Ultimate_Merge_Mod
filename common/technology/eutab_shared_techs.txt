@@ -66,24 +66,15 @@ tech_eutab_off_naval_intel = {
 			NOT = {
 				OR = {
 					AND = {
-						OR = {
-							has_ethic = ethic_authoritarian
-							has_ethic = ethic_fanatic_authoritarian
-						}
+						is_authoritarian = yes
 					has_ascension_perk = ap_galactic_contender
 					}
 					AND = {
-						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-						}
+						is_militarist = yes
 					has_ascension_perk = ap_galactic_contender
 					}
 					AND = {
-						OR = {
-							has_ethic = ethic_materialist
-							has_ethic = ethic_fanatic_materialist
-						}
+						is_materialist = yes
 					has_ascension_perk = ap_galactic_contender
 					}
 				}
@@ -129,26 +120,18 @@ tech_eutab_folk_community = {
 			NOT = {
 				OR = {
 					AND = {
-						OR = {
-							has_ethic = ethic_egalitarian
-							has_ethic = ethic_fanatic_egalitarian
-						}
+						is_egalitarian = yes
 					has_ascension_perk = ap_mastery_of_nature
 					}
 					AND = {
 						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-							has_ethic = ethic_xenophobe
-							has_ethic = ethic_fanatic_xenophobe
+							is_militarist = yes
+							is_xenophobe = yes
 						}
 					has_ascension_perk = ap_galactic_wonders
 					}
 					AND = {
-						OR = {
-							has_ethic = ethic_militarist
-							has_ethic = ethic_fanatic_militarist
-						}
+						is_militarist = yes
 					has_ascension_perk = ap_consecrated_worlds
 					}
 				}
@@ -197,20 +180,14 @@ tech_eutab_armed_neutrality = {
 			NOT = {
 				OR = {
 					AND = {
-						OR = {
-							has_ethic = ethic_egalitarian
-							has_ethic = ethic_fanatic_egalitarian
-						}
+						is_egalitarian = yes
 						OR = {
 						has_ascension_perk = ap_defender_of_the_galaxy
 						has_ascension_perk = ap_galactic_force_projection
 						}
 					}
 					AND = {
-						OR = {
-							has_ethic = ethic_pacifist
-							has_ethic = ethic_fanatic_pacifist
-						}
+						is_pacifist = yes
 						has_ascension_perk = ap_galactic_force_projection
 					}
 				}
@@ -257,10 +234,7 @@ tech_eutab_mutual_survival = {
 			factor = 0
 			NOT = {
 				AND = {
-					OR = {
-						has_ethic = ethic_xenophile
-						has_ethic = ethic_fanatic_xenophile
-					}
+					is_xenophile = yes
 					OR = {
 					has_ascension_perk = ap_defender_of_the_galaxy
 					has_ascension_perk = ap_galactic_force_projection
@@ -303,10 +277,7 @@ tech_eutab_intel_office = {
 			factor = 0
 			NOT = {
 				AND = {
-					OR = {
-						has_ethic = ethic_xenophobe
-						has_ethic = ethic_fanatic_xenophobe
-					}
+					is_xenophobe = yes
 					OR = {
 					has_ascension_perk = ap_defender_of_the_galaxy
 					has_ascension_perk = ap_galactic_contender

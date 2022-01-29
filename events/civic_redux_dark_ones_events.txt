@@ -33,7 +33,7 @@ country_event = {
 	}
 		
 	immediate = {
-		every_planet = {
+		every_system_planet = {
 			limit = {
 				is_capital = yes
 				NOR = {
@@ -312,7 +312,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -326,7 +326,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -334,7 +334,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -342,7 +342,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -350,7 +350,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -358,7 +358,7 @@ planet_event = {
 				limit = {
 					num_pops > 1
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}
@@ -374,7 +374,7 @@ planet_event = {
 				}
 				random_list = {
 					2 = {
-						random_pop = {
+						random_owned_pop = {
 							kill_pop = yes
 						}
 					}

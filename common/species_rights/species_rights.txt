@@ -27,10 +27,7 @@ citizenship_full = {
 		OR = {
 			is_same_species = from
 			from = {
-				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = no
 			}
 		}
 		OR = {
@@ -99,10 +96,7 @@ citizenship_limited = {
 			factor = 0
 			from = {
 				has_valid_ai_personality = no
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}		
 	}
@@ -141,17 +135,13 @@ citizenship_caste_system = {
 		OR = {
 			is_same_species = from
 			from = {
-				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = no
 			}
 		}		
 		from = {
 			allows_slavery = yes
 			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
+				is_authoritarian = yes
 				has_valid_civic = civic_timocracy
 			}
 		}		
@@ -204,8 +194,7 @@ citizenship_caste_system_limited = {
 		from = {
 			allows_slavery = yes
 			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
+				is_authoritarian = yes
 				has_valid_civic = civic_timocracy
 			}
 		}
@@ -227,10 +216,7 @@ citizenship_caste_system_limited = {
 			factor = 0
 			from = {
 				has_valid_ai_personality = no
-				OR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = yes
 			}
 		}		
 	}
@@ -269,10 +255,7 @@ citizenship_slavery = {
 		}
 		from = {
 			allows_slavery = yes
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 		OR = {
 			NOT = { from = { has_valid_civic = civic_citizen_service } }
@@ -364,10 +347,7 @@ military_service_full = {
 		OR = {
 			is_same_species = from
 			from = {
-				NOR = {
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
-				}
+				is_xenophobe = no
 			}
 		}
 	}
@@ -560,10 +540,7 @@ purge_neutering = {
 		modifier = {
 			factor = 0
 			from = { 
-				NOR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = no
 			}
 		}
 	}
@@ -754,10 +731,7 @@ living_standard_utopian = {
 	allow = {
 		hidden_trigger = { exists = from }
 		from = {
-			OR = {
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-			}
+			is_egalitarian = yes
 		}
 		NOR = {
 			custom_tooltip = {
@@ -851,10 +825,8 @@ living_standard_good = {
 			factor = 0
 			from = {
 				NOR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
+					is_pacifist = yes
+					is_egalitarian = yes
 				}
 			}
 		}
@@ -1054,10 +1026,7 @@ migration_control_yes = {
 		OR = {
 			NOT = { has_citizenship_type = { country = from type = citizenship_full } }
 			from = { 
-				NOR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = no
 			}
 		}		
 	}
@@ -1068,10 +1037,7 @@ migration_control_yes = {
 			is_same_species = from
 			from = {
 				is_country_type = default
-				NOR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = no
 			}
 		}
 		modifier = {
@@ -1190,10 +1156,7 @@ gun_rights_yes = {
 			factor = 0
 			from = {
 				is_country_type = default
-				NOR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = no
 			}
 		}
 
@@ -1218,10 +1181,7 @@ gun_rights_no = {
 			factor = 0
 			from = {
 				is_country_type = default
-				NOR = {
-					has_ethic = ethic_egalitarian
-					has_ethic = ethic_fanatic_egalitarian
-				}
+				is_egalitarian = no
 			}
 		}
 

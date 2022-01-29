@@ -11,7 +11,7 @@ event = {
 
 	immediate = {
 	
-	every_planet = {
+	every_system_planet = {
 		limit = {
 				OR = {
 					has_planet_flag = baited
@@ -350,7 +350,7 @@ event = {
 								space_owner = {  
 									has_valid_civic = civic_big_game_hunters
 									}
-								any_planet = {
+								any_system_planet = {
 									is_planet = event_target:pianeta
 								}
 							}
@@ -385,7 +385,7 @@ event = {
 		}
 	}
 	
-	every_planet = {
+	every_system_planet = {
 		limit = {
 				OR = {
 					has_planet_flag = advanced_baited
@@ -891,7 +891,7 @@ event = {
 								space_owner = {  
 									has_valid_civic = civic_big_game_hunters
 									}
-								any_planet = {
+								any_system_planet = {
 									is_planet = event_target:pianeta
 								}
 							}

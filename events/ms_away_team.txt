@@ -142,15 +142,13 @@ country_event = {
 			from = {
 				from = {
 					owner = {
-						NOT = {
-							OR = {
+						NOR = {
 								has_country_flag = stone_age
 								has_country_flag = iron_age
 								has_country_flag = bronze_age
 								has_country_flag = late_medieval_age
 								has_country_flag = renaissance_age
-							}
-						}	
+}	
 					}
 				}
 			}
@@ -309,7 +307,7 @@ country_event = {
 				}
 			}
 		}
-		add_influence = 50
+		add_resource = { influence = 50 }
 	}
 }
 

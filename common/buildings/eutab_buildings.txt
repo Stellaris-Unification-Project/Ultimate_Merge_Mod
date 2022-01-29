@@ -82,10 +82,7 @@ building_eutab_dev_district = {
 	
 	potential = {
 		planet = {
-			NOR = { 
-			is_planet_class = pc_habitat
-			is_planet_class = pc_ringworld_habitable
-			}
+			is_artificial = no
 		}
 	}
 	
@@ -130,8 +127,7 @@ building_eutab_symbol_unity = {
 	potential = {
 		planet = {
 			OR = {
-			is_planet_class = pc_habitat
-			is_planet_class = pc_ringworld_habitable
+			is_artificial = yes
 			}
 		}
 	}
@@ -319,10 +315,7 @@ building_eutab_battle_praxeum = {
 			factor = 0
 			from = {
 				owner = {
-					NOR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
+					is_militarist = no
 				}
 				NOT = { has_building = building_eutab_battle_praxeum }
 			}
@@ -512,10 +505,7 @@ building_eutab_governors_district = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-			}
+			is_authoritarian = yes
 		}
 	}
 	
@@ -622,10 +612,7 @@ building_eutab_planetary_parliament = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-			}
+			is_egalitarian = yes
 		}
 	}
 	
@@ -671,16 +658,12 @@ building_eutab_frontier_adaptation = {
 			has_tradition = tr_diplomacy_alien_tourism
 		}
 		owner = {
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 		planet = {
 			NOR = {
 				is_planet_class = pc_gaia
-				is_planet_class = pc_habitat
-				is_planet_class = pc_ringworld_habitable
+				is_artificial = yes
 			}		
 		}
 	}
@@ -745,10 +728,7 @@ building_eutab_xeno_adaptation = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
-			}
+			is_xenophobe = yes
 		}
 	}
 	
@@ -862,10 +842,7 @@ building_eutab_xeno_district = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
-			}
+			is_xenophile = yes
 		}
 	}
 	
@@ -973,10 +950,7 @@ building_eutab_wargame = {
 	
 	potential = {
 		owner = {
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	
@@ -1033,10 +1007,7 @@ building_eutab_eco_preserve = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-			}
+			is_pacifist = yes
 		}
 	}
 	
@@ -1142,10 +1113,7 @@ building_eutab_arcology = {
 	
 	potential = { 	
 		owner = {
-			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-			}
+			is_materialist = yes
 		}
 	}
 	
@@ -1261,10 +1229,7 @@ building_eutab_monument_unity = {
 	
 	potential = {
 		owner = {
-			OR = {
-				has_ethic = ethic_spiritualist		
-				has_ethic = ethic_fanatic_spiritualist
-			}
+			is_spiritualist = yes
 		}
 	}
 	

@@ -94,10 +94,7 @@ ms_post_primitive = {
 					factor = 50
 					modifier = {
 						add = 10
-						OR = {
-							has_ethic = ethic_pacifist
-							has_ethic = ethic_fanatic_pacifist
-						}
+						is_pacifist = yes
 					}
 				}
 			}

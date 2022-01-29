@@ -99,11 +99,9 @@ tech_eutab_hive_grand_hatchery = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_tradition = tr_diplomacy_alien_tourism
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_tradition = tr_diplomacy_alien_tourism
 			}
 		}
 		modifier = {
@@ -331,11 +329,9 @@ tech_eutab_h_hazard_drones = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_world_shaper
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_world_shaper
 			}
 		}
 		modifier = {
@@ -373,11 +369,9 @@ tech_eutab_h_reproduction_focus = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_interstellar_dominion
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_interstellar_dominion
 			}
 		}
 		modifier = {
@@ -418,11 +412,9 @@ tech_eutab_h_networked_implants = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_technological_ascendancy
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_technological_ascendancy
 			}
 		}
 		modifier = {
@@ -463,11 +455,9 @@ tech_eutab_h_introspec_studies = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_one_vision
 			}
 		}
 	}
@@ -501,11 +491,9 @@ tech_eutab_h_reprocessing_drones = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_mastery_of_nature
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_mastery_of_nature
 			}
 		}
 		modifier = {
@@ -545,11 +533,9 @@ tech_eutab_h_drone_redist = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_imperial_prerogative
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_imperial_prerogative
 			}
 		}
 		modifier = {
@@ -589,11 +575,9 @@ tech_eutab_h_optimise_growth = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_galactic_force_projection
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_galactic_force_projection
 			}
 		}
 		modifier = {
@@ -633,11 +617,9 @@ tech_eutab_h_understanding_other = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_defender_of_the_galaxy
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_defender_of_the_galaxy
 			}
 		}
 		modifier = {
@@ -678,11 +660,9 @@ tech_eutab_h_understanding_many = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_galactic_contender
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_galactic_contender
 			}
 		}
 		modifier = {
@@ -723,11 +703,9 @@ tech_eutab_h_nav_drones = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_galactic_wonders
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_galactic_wonders
 			}
 		}
 		modifier = {
@@ -767,11 +745,9 @@ tech_eutab_h_builder_broods = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_master_builders
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_master_builders
 			}
 		}
 		modifier = {
@@ -812,11 +788,9 @@ tech_eutab_h_strength_bond = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					has_ethic = ethic_hive_mind
-					has_ascension_perk = ap_engineered_evolution
-				}
+			NAND = {
+				has_ethic = ethic_hive_mind
+				has_ascension_perk = ap_engineered_evolution
 			}
 		}
 		modifier = {

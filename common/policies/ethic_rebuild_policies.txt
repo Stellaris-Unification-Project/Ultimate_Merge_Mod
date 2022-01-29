@@ -23,13 +23,17 @@ artificial_intelligence_policy = {
 		name = "ai_outlawed"
 
 		potential = {
-			NOT = { is_country_type = ai_empire }
-			NOT = { has_country_flag = synthetic_empire }
+			NOR = {
+				is_country_type = ai_empire
+				has_country_flag = synthetic_empire
+			}
 		}
 
 		valid = {
-			NOT = { is_country_type = ai_empire }
-			NOT = { has_country_flag = synthetic_empire }
+			NOR = {
+				is_country_type = ai_empire
+				has_country_flag = synthetic_empire
+			}
 			custom_tooltip = {
 				text = ai_accord_servitude_disallowed
 				OR = {
@@ -52,15 +56,13 @@ artificial_intelligence_policy = {
 				OR = {
 					has_ai_personality_behaviour = robot_exploiter
 					has_ai_personality_behaviour = robot_liberator
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
+					is_materialist = yes
 				}
 			}
 			modifier = {
 				factor = 2
 				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
+					is_spiritualist = yes
 					has_ethic = "ethic_hive_mind"
 				}
 			}
@@ -75,13 +77,17 @@ artificial_intelligence_policy = {
 		name = "ai_servitude"
 
 		potential = {
-			NOT = { is_country_type = ai_empire }
-			NOT = { has_country_flag = synthetic_empire }
+			NOR = {
+				is_country_type = ai_empire
+				has_country_flag = synthetic_empire
+			}
 		}
 
 		valid = {
-			NOT = { is_country_type = ai_empire }
-			NOT = { has_country_flag = synthetic_empire }
+			NOR = {
+				is_country_type = ai_empire
+				has_country_flag = synthetic_empire
+			}
 			NOT = { is_subject_type = satellite }
 			custom_tooltip = {
 				text = ai_accord_servitude_disallowed
@@ -90,10 +96,7 @@ artificial_intelligence_policy = {
 			NOT = {
 			
 			AND = {
-			  OR = {
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-			  }
+			is_spiritualist = yes
               NOT = { has_valid_civic = civic_info_tech }
             }			  
 				
@@ -112,8 +115,7 @@ artificial_intelligence_policy = {
 				NOR = {
 					has_ai_personality_behaviour = robot_exploiter
 					has_ai_personality_behaviour = robot_liberator
-					has_ethic = "ethic_materialist"
-					has_ethic = "ethic_fanatic_materialist"
+					is_materialist = yes
 				}
 			}
 			modifier = {
@@ -128,8 +130,7 @@ artificial_intelligence_policy = {
 			modifier = {
 				factor = 0
 				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
+					is_spiritualist = yes
 					has_ethic = "ethic_hive_mind"
 				}
 			}
@@ -154,8 +155,7 @@ artificial_intelligence_policy = {
 			}
 			NOT = { is_subject_type = satellite }
 			OR = {
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
+				is_materialist = yes
 				custom_tooltip = {
 					text = is_a_synthetic_empire
 					has_country_flag = synthetic_empire
@@ -182,17 +182,11 @@ artificial_intelligence_policy = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_spiritualist"
-					has_ethic = "ethic_fanatic_spiritualist"
-				}
+				is_spiritualist = yes
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_xenophobe"
-					has_ethic = "ethic_fanatic_xenophobe"
-				}
+				is_xenophobe = yes
 			}
 			modifier = {
 				factor = 10
@@ -294,10 +288,8 @@ slavery = {
 		valid = {
 			NOT = { is_subject_type = signatory }
 			OR = {
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_authoritarian = yes
+				is_xenophobe = yes
 				has_valid_civic = civic_timocracy
 			}
 		}
@@ -318,10 +310,8 @@ slavery = {
 				factor = 0
 				has_valid_ai_personality = no
 				NOR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-					has_ethic = ethic_xenophobe
-					has_ethic = ethic_fanatic_xenophobe
+					is_authoritarian = yes
+					is_xenophobe = yes
 					has_valid_civic = civic_timocracy
 				}
 			}
@@ -473,7 +463,7 @@ economy = {
 		
 		             country_resource_energy_mult = 0.08
 					 planet_building_upkeep_mult = -0.08	
-					 ship_upkeep_mult = -0.08
+					 ships_upkeep_mult = -0.08
 					 country_resource_unity_mult = -0.15
 
 		}	
@@ -575,8 +565,7 @@ economy = {
 		
 		valid = {
 		   OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				}
 			OR = {	
 		        has_ethic = "ethic_capitalism"
@@ -594,7 +583,7 @@ economy = {
 		modifier = { 
 		             country_resource_energy_mult = 0.1
 					 planet_building_upkeep_mult = -0.1	
-					 ship_upkeep_mult = -0.1
+					 ships_upkeep_mult = -0.1
 					 category_industry_research_speed_mult = 0.3
 					 category_good_trading_research_speed_mult = 0.15
 					 country_trade_attractiveness = 0.25
@@ -610,8 +599,7 @@ economy = {
 			modifier = {
 				factor = 30
 				 OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				 }
 				 OR = {
 		        has_ethic = "ethic_capitalism"
@@ -634,8 +622,7 @@ economy = {
 		
 		valid = {
 		   OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				}
 		        has_ethic = "ethic_fanatic_capitalism"
 				
@@ -652,7 +639,7 @@ economy = {
 		modifier = {
 		             country_resource_energy_mult = 0.15
 					 planet_building_upkeep_mult = -0.15	
-					 ship_upkeep_mult = -0.15
+					 ships_upkeep_mult = -0.15
 					 category_industry_research_speed_mult = 0.4
 					 category_good_trading_research_speed_mult = 0.2
 					 country_trade_attractiveness = 0.3
@@ -669,8 +656,7 @@ economy = {
 			modifier = {
 				factor = 40
 				 OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				 }
 		        has_ethic = "ethic_fanatic_capitalism"
 			           }			
@@ -689,8 +675,7 @@ economy = {
 		
 		valid = {
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}
 			OR = {	
 		        has_ethic = "ethic_socialism"
@@ -719,8 +704,7 @@ economy = {
 			modifier = {
 				factor = 30
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}	
 			OR = {	
 		        has_ethic = "ethic_socialism"
@@ -742,8 +726,7 @@ economy = {
 		
 		valid = {
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}
 			OR = {	
 		        has_ethic = "ethic_fanatic_socialism"
@@ -771,8 +754,7 @@ economy = {
 			modifier = {
 				factor = 40
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}	
 		        has_ethic = "ethic_fanatic_socialism"
 
@@ -1319,10 +1301,7 @@ mass_media = {
 		name = "free_mass_media"
 		
 		valid = {
-		   NOR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
-				}
+		   is_authoritarian = no
 				has_valid_civic = "civic_mass_media"
 		}	
 		
@@ -1349,8 +1328,7 @@ mass_media = {
 			modifier = {
 				factor = 10
 		   OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				}
 				
 				has_valid_civic = "civic_mass_media"
@@ -1374,10 +1352,7 @@ option = {
 		name = "state_mass_media"
 		
 		valid = {
-		   NOR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
-				}
+		   is_egalitarian = no
 				
 			has_valid_civic = "civic_mass_media"
 		}	
@@ -1404,8 +1379,7 @@ option = {
 			modifier = {
 				factor = 10
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}
 				
 				has_valid_civic = "civic_mass_media"
@@ -1577,7 +1551,7 @@ economy_strategy = {
 		modifier = {
                       
 					  planet_building_upkeep_mult = -0.1
-					  ship_upkeep_mult = -0.1
+					  ships_upkeep_mult = -0.1
 					  country_resource_influence_mult = -0.1
                        					  
 	
@@ -1837,8 +1811,7 @@ transportation_logistics = {
 		        has_valid_civic = "civic_transport"
 				
             OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"				
+		        is_authoritarian = yes				
 				}				
 							
 		}	
@@ -1864,8 +1837,7 @@ transportation_logistics = {
 				has_valid_civic = "civic_transport"	
 
                 OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"			
+		        is_authoritarian = yes			
 				}				
 		               }								
 						
@@ -1895,7 +1867,7 @@ transportation_logistics = {
 		modifier = {
                      
         navy_size_mult = 0.1					 
-		ship_upkeep_mult = -0.1
+		ships_upkeep_mult = -0.1
 		ship_auto_repair_mult = 0.02
 		country_resource_energy_mult = -0.03
 		country_resource_minerals_mult = -0.03
@@ -1924,8 +1896,7 @@ transportation_logistics = {
 		        has_valid_civic = "civic_transport"	
 
                 OR = {
-		        has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"				
+		        is_militarist = yes				
 				}				
 							
 		}	
@@ -1937,7 +1908,7 @@ transportation_logistics = {
 		modifier = {
                      	
 		navy_size_mult = 0.15
-		ship_upkeep_mult = -0.15
+		ships_upkeep_mult = -0.15
 		ship_auto_repair_mult = 0.03
 		country_resource_energy_mult = -0.05
 		country_resource_minerals_mult = -0.05
@@ -1951,8 +1922,7 @@ transportation_logistics = {
 				has_valid_civic = "civic_transport"	
 
                 OR = {
-		        has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"				
+		        is_militarist = yes				
 				}
 				
 		               }								
@@ -2008,10 +1978,8 @@ transportation_logistics = {
 		        has_valid_civic = "civic_transport"	
 
                 OR = {
-		        has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"					
+		        is_pacifist = yes
+		        is_egalitarian = yes					
 				}					
 							
 		}	
@@ -2036,10 +2004,8 @@ transportation_logistics = {
 				factor = 20				
 				has_valid_civic = "civic_transport"	
                 OR = {
-		        has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"	
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"					
+		        is_pacifist = yes	
+		        is_egalitarian = yes					
 				}				
 				
 		               }								
@@ -2100,8 +2066,7 @@ gun_rights = {
 			modifier = {
 				factor = 10
 		   OR = {
-		        has_ethic = "ethic_egalitarian"
-				has_ethic = "ethic_fanatic_egalitarian"
+		        is_egalitarian = yes
 				}
 				
 
@@ -2143,8 +2108,7 @@ gun_rights = {
 			modifier = {
 				factor = 10
 		   OR = {
-		        has_ethic = "ethic_authoritarian"
-				has_ethic = "ethic_fanatic_authoritarian"
+		        is_authoritarian = yes
 				}
 				
 

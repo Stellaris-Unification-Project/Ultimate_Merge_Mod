@@ -50,7 +50,7 @@ demilitarize = {
 	
 	effect = {
 		fromfromfrom = {
-			add_influence = 100
+			add_resource = { influence = 100 }
 		}
 		parameter:country = {		
 			add_modifier = {

@@ -30,10 +30,7 @@ progressive = {
 		is_enslaved = no
 		is_being_purged = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_egalitarian
-			has_ethic = ethic_fanatic_egalitarian
-		}
+		is_egalitarian = yes
 	}
 	
 	attraction = {
@@ -112,9 +109,9 @@ progressive = {
 					has_policy_flag = resettlement_allowed
 					NOT = { has_policy_flag = core_worlds_all }
 					any_owned_pop = {
-						has_migration_control = yes
+						has_migration_control = { value = yes country = prev.owner }
 						is_sentient = yes
-						NOT = { is_non_sentient_robot = yes }
+						is_non_sentient_robot = no
 					}
 				}
 			}
@@ -136,7 +133,7 @@ progressive = {
 		trigger = {
 			NOT = {
 				any_owned_pop = {
-					has_population_control = yes
+					has_population_control = { value = yes country = prev.owner }
 				}
 			}
 		}
@@ -329,10 +326,7 @@ progressive = {
 						has_modifier = promoted_egalitarian 
 						has_modifier = mmbc_suppressed_egalitarian
 					}
-					NOR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}					
+					is_egalitarian = no					
 				}
 			}
 

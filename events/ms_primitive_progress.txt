@@ -7,8 +7,10 @@ country_event = {
 	trigger = {
 		is_country_type = ms_primitive_1
 		has_country_flag = stone_age
-		NOT = { has_country_flag = ms_advance_denied }
-		NOT = { has_country_flag = recently_advanced }
+		NOR = {
+			has_country_flag = ms_advance_denied
+			has_country_flag = recently_advanced
+		}
 	}
 
 	mean_time_to_happen = {
@@ -148,8 +150,10 @@ country_event = {
 	trigger = {
 		is_country_type = ms_primitive_1
 		has_country_flag = iron_age
-		NOT = { has_country_flag = ms_advance_denied }
-		NOT = { has_country_flag = recently_advanced }
+		NOR = {
+			has_country_flag = ms_advance_denied
+			has_country_flag = recently_advanced
+		}
 	}
 
 	mean_time_to_happen = {
@@ -346,8 +350,10 @@ country_event = {
 	trigger = {
 		is_country_type = ms_primitive_1
 		has_country_flag = steam_age
-		NOT = { has_country_flag = ms_advance_denied }
-		NOT = { has_country_flag = recently_advanced }
+		NOR = {
+			has_country_flag = ms_advance_denied
+			has_country_flag = recently_advanced
+		}
 	}
 
 	mean_time_to_happen = {

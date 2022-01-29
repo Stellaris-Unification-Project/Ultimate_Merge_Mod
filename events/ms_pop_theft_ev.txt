@@ -13,13 +13,13 @@ country_event = {
 				limit = {
 					num_pops > 5
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
-				random_pop = {
+				random_owned_pop = {
 					kill_pop = yes
 				}
 			}

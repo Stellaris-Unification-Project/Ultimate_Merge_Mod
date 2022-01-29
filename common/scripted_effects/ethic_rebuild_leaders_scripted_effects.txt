@@ -135,7 +135,7 @@ ethic_rebuild_leaders_calc_governor_capacity = {
 			}
 		}
 	}
-	every_sector = {
+	every_owned_sector = {
 		root = {
 			change_variable = {
 				which = ethic_rebuild_leaders_governor_capacity

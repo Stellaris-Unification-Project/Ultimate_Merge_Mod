@@ -70,14 +70,9 @@ tech_eutab_better_worlds = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-					has_ascension_perk = ap_world_shaper
-				}
+			NAND = {
+				is_egalitarian = yes
+				has_ascension_perk = ap_world_shaper
 			}
 		}
 		modifier = {
@@ -177,14 +172,9 @@ tech_eutab_econ_ideas = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_interstellar_dominion
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_interstellar_dominion
 			}
 		}
 		modifier = {
@@ -249,14 +239,9 @@ tech_eutab_psychohistory = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_technological_ascendancy
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_technological_ascendancy
 			}
 		}
 		modifier = {
@@ -317,14 +302,9 @@ tech_eutab_universal_b_income = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_one_vision
 			}
 		}
 		modifier = {
@@ -406,14 +386,9 @@ tech_eutab_mercantilism = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_imperial_prerogative
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_imperial_prerogative
 			}
 		}
 		modifier = {
@@ -509,14 +484,9 @@ tech_eutab_establish_soi = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_galactic_contender
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_galactic_contender
 			}
 		}
 		modifier = {
@@ -567,14 +537,9 @@ tech_eutab_culture_merit = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_egalitarian
-						has_ethic = ethic_fanatic_egalitarian
-					}
-				has_ascension_perk = ap_master_builders
-				}
+			NAND = {
+				is_egalitarian = yes
+			has_ascension_perk = ap_master_builders
 			}
 		}
 		modifier = {

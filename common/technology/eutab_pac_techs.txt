@@ -70,14 +70,9 @@ tech_eutab_highest_path = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-					has_ascension_perk = ap_world_shaper
-				}
+			NAND = {
+				is_pacifist = yes
+				has_ascension_perk = ap_world_shaper
 			}
 		}
 		modifier = {
@@ -177,14 +172,9 @@ tech_eutab_problem_policing = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_one_vision
 			}
 		}
 		modifier = {
@@ -260,14 +250,9 @@ tech_eutab_disease_control = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_mastery_of_nature
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_mastery_of_nature
 			}
 		}
 		modifier = {
@@ -320,14 +305,9 @@ tech_eutab_det_theory = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_imperial_prerogative
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_imperial_prerogative
 			}
 		}
 		modifier = {
@@ -423,14 +403,9 @@ tech_eutab_peace_tax_fund = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_defender_of_the_galaxy
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_defender_of_the_galaxy
 			}
 		}
 		modifier = {
@@ -487,14 +462,9 @@ tech_eutab_border_sen = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_galactic_contender
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_galactic_contender
 			}
 		}
 		modifier = {
@@ -546,14 +516,9 @@ tech_eutab_peace_temples = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_pacifist
-						has_ethic = ethic_fanatic_pacifist
-					}
-				has_ascension_perk = ap_consecrated_worlds
-				}
+			NAND = {
+				is_pacifist = yes
+			has_ascension_perk = ap_consecrated_worlds
 			}
 		}
 		modifier = {

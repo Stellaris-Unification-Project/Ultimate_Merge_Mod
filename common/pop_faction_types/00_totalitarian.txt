@@ -30,10 +30,7 @@ totalitarian = {
 		is_enslaved = no
 		is_being_purged = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
-		}
+		is_authoritarian = yes
 	}
 	
 	attraction = {
@@ -185,7 +182,7 @@ totalitarian = {
 		potential = {
 			exists = owner
 			owner = {
-				any_sector = {
+				any_owned_sector = {
 					is_core_sector = no
 				}
 			}
@@ -194,7 +191,7 @@ totalitarian = {
 		trigger = {
 			owner = {
 				NOT = {
-					any_sector = {
+					any_owned_sector = {
 						is_core_sector = no
 						NOT = { exists = leader }
 					}
@@ -306,10 +303,7 @@ totalitarian = {
 			potential = {
 				exists = owner
 				parameter:empire = {
-					NOR = {
-						has_ethic = ethic_authoritarian
-						has_ethic = ethic_fanatic_authoritarian
-					}
+					is_authoritarian = no
 					NOR = {
 						has_modifier = suppressed_authoritarian
 						has_modifier = promoted_authoritarian

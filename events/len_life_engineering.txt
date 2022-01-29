@@ -28,7 +28,7 @@ fleet_event = {
 			is_colony = no
 			is_terraforming = no
 			has_anomaly = no
-			count_pops = { count = 0 }
+			count_owned_pop = { count = 0 }
 		}
 	}
 	
@@ -160,7 +160,7 @@ country_event = {
 			# create pops
 			while = {
 				limit = {
-					count_pops = {
+					count_owned_pop = {
 						limit = { 
 							has_pop_flag = fresh_engineered_pop
 						}
@@ -169,7 +169,7 @@ country_event = {
 					free_pop_tiles > 0
 				}
 				best_tile_for_pop = {
-					create_pop = { species = last_created }
+					create_pop = { species = last_created_species }
 					pop = { 
 						set_pop_flag = fresh_engineered_pop
 					}
@@ -179,14 +179,14 @@ country_event = {
 			# remove engineering marker from pops
 			while = {
 				limit = {
-					count_pops = {
+					count_owned_pop = {
 						limit = { 
 							has_pop_flag = fresh_engineered_pop
 						}
 						count > 0
 					}
 				}
-				random_pop = {
+				random_owned_pop = {
 					limit = { has_pop_flag = fresh_engineered_pop }
 					remove_pop_flag = fresh_engineered_pop
 				}
@@ -235,7 +235,7 @@ country_event = {
 					civic = civic_landed_nobility
 					civic = civic_flat_world_theory
 				}
-				species = last_created
+				species = last_created_species
 				ethos = random
 				flag = {
 					icon = {
@@ -277,14 +277,14 @@ country_event = {
 				count = 2
 				best_tile_for_pop = {
 					create_pop = {
-						species = last_created
+						species = last_created_species
 					}
 				}
 			}
 			create_army = {
 				name = "Primitive Army"
-				owner = last_created
-				species = last_created
+				owner = last_created_country
+				species = last_created_species
 				type = "primitive_army"
 			}
 			last_created_country = {

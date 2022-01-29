@@ -345,8 +345,6 @@ conservatives = {
 					NOR = {
 						has_modifier = suppressed_elitist
 						has_modifier = promoted_elitist
-					}
-					NOR = {
 						has_ethic = ethic_elitist
 						has_ethic = ethic_fanatic_elitist
 					}

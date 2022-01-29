@@ -24,7 +24,7 @@ namespace = len_mod_support
 #		
 #		event_target:len_species = { save_event_target_as = genemod_species }
 #		event_target:len_species_planet = {
-#			random_pop = {
+#			random_owned_pop = {
 #				limit = { is_exact_same_species = event_target:len_species }
 #				save_event_target_as = genemod_pop
 #			}
@@ -56,7 +56,7 @@ country_event = {
 		
 		event_target:len_species = { save_event_target_as = genemod_species }
 		event_target:len_species_planet = {
-			random_pop = {
+			random_owned_pop = {
 				limit = { is_exact_same_species = event_target:len_species }
 				save_event_target_as = genemod_pop
 			}

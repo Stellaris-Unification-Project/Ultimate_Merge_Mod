@@ -132,7 +132,7 @@ country_event = {
 						max_distance = 60
 						min_distance = 5
 					}
-					any_planet = { is_asteroid = yes }
+					any_system_planet = { is_asteroid = yes }
 					NOT = { has_star_flag = hostile_system }
 					OR = {
 						has_owner = no
@@ -225,7 +225,7 @@ country_event = {
 							}
 						}
 						create_leader = {
-							type = admiral
+							class = admiral
 							species = owner_main_species
 							name = random
 							skill = 100
@@ -284,7 +284,7 @@ country_event = {
 													has_star_flag = hostile_system 
 													is_same_value = event_target:capital_system
 												}
-												any_planet = {
+												any_system_planet = {
 													OR = {
 														has_mining_station = yes
 														has_research_station = yes
@@ -320,7 +320,7 @@ country_event = {
 										find_random_system = {
 											trigger = {
 												id = "pirate.1.trigger.3"
-												any_planet = {
+												any_system_planet = {
 													is_planet = event_target:pirate_home
 												}
 											}
@@ -373,7 +373,7 @@ country_event = {
 								max_distance = 60
 								min_distance = 5
 							}
-							any_planet = { is_asteroid = yes }
+							any_system_planet = { is_asteroid = yes }
 							NOT = { has_star_flag = hostile_system }
 							OR = {
 								has_owner = no
@@ -434,7 +434,7 @@ country_event = {
 									}
 								}
 								create_leader = {
-									type = admiral
+									class = admiral
 									species = owner_main_species
 									name = random
 									skill = 100
@@ -493,7 +493,7 @@ country_event = {
 															has_star_flag = hostile_system 
 															is_same_value = event_target:capital_system
 														}
-														any_planet = {
+														any_system_planet = {
 															OR = {
 																has_mining_station = yes
 																has_research_station = yes
@@ -529,7 +529,7 @@ country_event = {
 												find_random_system = {
 													trigger = {
 														id = "pirate.1.trigger.7"
-														any_planet = {
+														any_system_planet = {
 															is_planet = event_target:pirate_home
 														}
 													}

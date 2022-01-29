@@ -984,10 +984,7 @@ tech_space_defense_station_2 = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	
@@ -1035,10 +1032,7 @@ tech_space_defense_station_3 = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	
@@ -1097,10 +1091,7 @@ tech_space_defense_station_improvement = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	
@@ -1515,8 +1506,7 @@ tech_robotic_workers = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_spiritualist = yes
 				has_ethic = "ethic_hive_mind"
 			}	
 			
@@ -1541,8 +1531,10 @@ tech_robotic_workers = {
 		weight = 2
 		modifier = {
 			factor = 0
-			NOT = { has_ai_personality_behaviour = robot_exploiter }
-			NOT = { has_ai_personality_behaviour = robot_liberator }
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
 		}
 		modifier = {
 			factor = 1.25
@@ -1571,8 +1563,7 @@ tech_droid_workers = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_spiritualist = yes
 				has_ethic = "ethic_hive_mind"
 			}	
 		}
@@ -1594,8 +1585,10 @@ tech_droid_workers = {
 		weight = 2
 		modifier = {
 			factor = 0
-			NOT = { has_ai_personality_behaviour = robot_exploiter }
-			NOT = { has_ai_personality_behaviour = robot_liberator }
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
 		}
 		modifier = {
 			factor = 2
@@ -1629,8 +1622,7 @@ tech_synthetic_workers = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_spiritualist = yes
 				has_ethic = "ethic_hive_mind"
 			}	
 		}
@@ -1669,8 +1661,10 @@ tech_synthetic_workers = {
 		weight = 2
 		modifier = {
 			factor = 0
-			NOT = { has_ai_personality_behaviour = robot_exploiter }
-			NOT = { has_ai_personality_behaviour = robot_liberator }
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
 		}
 		modifier = {
 			factor = 2
@@ -1707,8 +1701,7 @@ tech_synthetic_leaders = {
 		modifier = {
 			factor = 0
 			OR = {
-				has_ethic = "ethic_spiritualist"
-				has_ethic = "ethic_fanatic_spiritualist"
+				is_spiritualist = yes
 				has_ethic = "ethic_hive_mind"
 			}	
 		}	
@@ -1726,8 +1719,10 @@ tech_synthetic_leaders = {
 		weight = 2
 		modifier = {
 			factor = 0
-			NOT = { has_ai_personality_behaviour = robot_exploiter }
-			NOT = { has_ai_personality_behaviour = robot_liberator }
+			NOR = {
+				has_ai_personality_behaviour = robot_exploiter
+				has_ai_personality_behaviour = robot_liberator
+			}
 		}
 	}
 }
@@ -1896,10 +1891,7 @@ tech_assembly_pattern  = {
 	weight_modifier = {
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	
@@ -1944,10 +1936,7 @@ tech_construction_templates  = {
 		}
 		modifier = {
 			factor = 1.25
-			OR = {
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-			}
+			is_militarist = yes
 		}
 	}
 	

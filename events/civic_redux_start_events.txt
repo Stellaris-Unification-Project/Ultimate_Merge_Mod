@@ -581,7 +581,7 @@ country_event = {
 							civic = civic_increasing_urbanization
 							civic = civic_atmospheric_pollution
 						}
-						species = last_created
+						species = last_created_species
 						ethos = random
 						flag = {
 							icon = {
@@ -688,7 +688,7 @@ country_event = {
 					}
 					create_colony = {
 						owner = last_created_country
-						species = last_created
+						species = last_created_species
 						ethos = owner
 					}
 					random_tile = {
@@ -729,7 +729,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}	
 					}
@@ -750,7 +750,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}	
@@ -791,7 +791,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}	
@@ -855,8 +855,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}
@@ -870,8 +870,8 @@ country_event = {
 									count = 5
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}
@@ -885,8 +885,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Post-Atomic_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "postatomic_army"
 									}
 								}
@@ -900,8 +900,8 @@ country_event = {
 									count = 5
 									create_army = {
 										name = "NAME_Post-Atomic_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "postatomic_army"
 									}
 								}
@@ -939,7 +939,7 @@ country_event = {
 							civic = civic_landed_nobility
 							civic = civic_flat_world_theory
 						}
-						species = last_created
+						species = last_created_species
 						ethos = random
 						flag = {
 							icon = {
@@ -984,7 +984,7 @@ country_event = {
 					}
 					create_colony = {
 						owner = last_created_country
-						species = last_created
+						species = last_created_species
 						ethos = owner
 					}
 					random_tile = {
@@ -994,7 +994,7 @@ country_event = {
 							has_growing_pop = no
 						}
 						create_pop = {
-							species = last_created
+							species = last_created_species
 						}
 					}
 					if = {
@@ -1013,7 +1013,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}
@@ -1068,7 +1068,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 						random_tile = {
@@ -1134,8 +1134,8 @@ country_event = {
 							PREV = {
 								create_army = {
 									name = "NAME_Primitive_Army"
-									owner = last_created
-									species = last_created
+									owner = last_created_country
+									species = last_created_species
 									type = "primitive_army"
 								}
 							}
@@ -1146,8 +1146,8 @@ country_event = {
 							PREV = {
 								create_army = {
 									name = "NAME_Primitive_Army"
-									owner = last_created
-									species = last_created
+									owner = last_created_country
+									species = last_created_species
 									type = "primitive_army"
 								}
 							}
@@ -1160,8 +1160,8 @@ country_event = {
 									count = 2
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1175,8 +1175,8 @@ country_event = {
 									count = 3
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1190,8 +1190,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1205,8 +1205,8 @@ country_event = {
 									count = 3
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}
@@ -1273,7 +1273,7 @@ country_event = {
 							civic = civic_increasing_urbanization
 							civic = civic_atmospheric_pollution
 						}
-						species = last_created
+						species = last_created_species
 						ethos = random
 						flag = {
 							icon = {
@@ -1380,7 +1380,7 @@ country_event = {
 					}
 					create_colony = {
 						owner = last_created_country
-						species = last_created
+						species = last_created_species
 						ethos = owner
 					}
 					random_tile = {
@@ -1421,7 +1421,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}	
 					}
@@ -1442,7 +1442,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}	
@@ -1483,7 +1483,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}	
@@ -1547,8 +1547,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}
@@ -1562,8 +1562,8 @@ country_event = {
 									count = 5
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}
@@ -1577,8 +1577,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Post-Atomic_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "postatomic_army"
 									}
 								}
@@ -1592,8 +1592,8 @@ country_event = {
 									count = 5
 									create_army = {
 										name = "NAME_Post-Atomic_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "postatomic_army"
 									}
 								}
@@ -1631,7 +1631,7 @@ country_event = {
 							civic = civic_landed_nobility
 							civic = civic_flat_world_theory
 						}
-						species = last_created
+						species = last_created_species
 						ethos = random
 						flag = {
 							icon = {
@@ -1676,7 +1676,7 @@ country_event = {
 					}
 					create_colony = {
 						owner = last_created_country
-						species = last_created
+						species = last_created_species
 						ethos = owner
 					}
 					random_tile = {
@@ -1686,7 +1686,7 @@ country_event = {
 							has_growing_pop = no
 						}
 						create_pop = {
-							species = last_created
+							species = last_created_species
 						}
 					}
 					if = {
@@ -1705,7 +1705,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 					}
@@ -1760,7 +1760,7 @@ country_event = {
 								has_growing_pop = no
 							}
 							create_pop = {
-								species = last_created
+								species = last_created_species
 							}
 						}						
 						random_tile = {
@@ -1826,8 +1826,8 @@ country_event = {
 							PREV = {
 								create_army = {
 									name = "NAME_Primitive_Army"
-									owner = last_created
-									species = last_created
+									owner = last_created_country
+									species = last_created_species
 									type = "primitive_army"
 								}
 							}
@@ -1838,8 +1838,8 @@ country_event = {
 							PREV = {
 								create_army = {
 									name = "NAME_Primitive_Army"
-									owner = last_created
-									species = last_created
+									owner = last_created_country
+									species = last_created_species
 									type = "primitive_army"
 								}
 							}
@@ -1852,8 +1852,8 @@ country_event = {
 									count = 2
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1867,8 +1867,8 @@ country_event = {
 									count = 3
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1882,8 +1882,8 @@ country_event = {
 									count = 4
 									create_army = {
 										name = "NAME_Primitive_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "primitive_army"
 									}
 								}
@@ -1897,8 +1897,8 @@ country_event = {
 									count = 3
 									create_army = {
 										name = "NAME_Industrial_Army"
-										owner = last_created
-										species = last_created
+										owner = last_created_country
+										species = last_created_species
 										type = "industrial_army"
 									}
 								}

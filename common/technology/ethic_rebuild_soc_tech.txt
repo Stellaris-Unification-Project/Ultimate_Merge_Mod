@@ -55,15 +55,11 @@ tech_new_economy = {
 
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
+			NOR = {
 					has_ethic = ethic_capitalism
 					has_ethic = ethic_fanatic_capitalism
 					has_ethic = ethic_socialism
-					has_ethic = ethic_fanatic_socialism					
-				}
-
-			}
+					has_ethic = ethic_fanatic_socialism	}
 		}
 		modifier = {
 			factor = 1.5
@@ -177,13 +173,10 @@ tech_bio_processing = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
+			NOR = {
 					has_ethic = ethic_green
 					has_ethic = ethic_fanatic_green
-
-				}
-			}
+}
 		}
 
 		modifier = {
@@ -234,13 +227,10 @@ tech_ministry_of_defence = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
+			NOR = {
 					has_valid_civic = "civic_nationalism"
 					has_valid_civic = "civic_military_iso"
-				}
-			
-			}
+}
 		}
 		
 		modifier = {
@@ -346,13 +336,10 @@ tech_atm_purifying = {
 	
 		modifier = {
 			factor = 0.15
-			NOT = {
-				OR = {
+			NOR = {
 				      has_ethic = "ethic_green"	
                       has_ethic = "ethic_fanatic_green"					  
-					  has_valid_civic = "civic_terraforming" 
-				}
-			}
+					  has_valid_civic = "civic_terraforming" }
 		}	
 		
 		modifier = {
@@ -703,10 +690,7 @@ tech_ancestor_call = {
 							has_ethic = ethic_green
 			                has_ethic = ethic_fanatic_green
 			      }
-				OR = {
-							has_ethic = ethic_spiritualist
-			                has_ethic = ethic_fanatic_spiritualist
-			      }
+						is_spiritualist = yes
 				 } 
 
 			}
@@ -719,10 +703,7 @@ tech_ancestor_call = {
 							has_ethic = ethic_green
 			                has_ethic = ethic_fanatic_green
 			      }
-				OR = {
-							has_ethic = ethic_spiritualist
-			                has_ethic = ethic_fanatic_spiritualist
-			      }
+						is_spiritualist = yes
 				 } 
 		}		
 
@@ -952,10 +933,7 @@ tech_free_market = {
 			factor = 0
 			NOT = {
 			 AND = {
-			    OR = {
-							has_ethic = ethic_egalitarian
-			                has_ethic = ethic_fanatic_egalitarian
-			      }
+						is_egalitarian = yes
 				OR = {
 							has_ethic = ethic_capitalism
 			                has_ethic = ethic_fanatic_capitalism
@@ -966,10 +944,7 @@ tech_free_market = {
 		modifier = {
 			factor = 2
 			AND = {
-			    OR = {
-							has_ethic = ethic_egalitarian
-			                has_ethic = ethic_fanatic_egalitarian
-			      }
+						is_egalitarian = yes
 				OR = {
 							has_ethic = ethic_capitalism
 			                has_ethic = ethic_fanatic_capitalism
@@ -1027,10 +1002,7 @@ tech_planned_economy = {
 			factor = 0
 			NOT = {
 			 AND = {
-			    OR = {
-							has_ethic = ethic_authoritarian
-			                has_ethic = ethic_fanatic_authoritarian
-			      }
+						is_authoritarian = yes
 				OR = {
 							has_ethic = ethic_socialism
 			                has_ethic = ethic_fanatic_socialism
@@ -1041,10 +1013,7 @@ tech_planned_economy = {
 		modifier = {
 			factor = 2
 			AND = {
-			    OR = {
-							has_ethic = ethic_authoritarian
-			                has_ethic = ethic_fanatic_authoritarian
-			      }
+						is_authoritarian = yes
 				OR = {
 							has_ethic = ethic_socialism
 			                has_ethic = ethic_fanatic_socialism
@@ -1156,10 +1125,7 @@ tech_big_brother = {
 				has_ethic = ethic_fanatic_authoritarian
 				}
 				
-			NOR = {
-		            has_ethic = "ethic_spiritualist"
-			        has_ethic = "ethic_fanatic_spiritualist"		
-		        }	
+			is_spiritualist = no	
 				
 				
 			}

@@ -519,8 +519,6 @@ manufacturers = {
 					NOR = {
 						has_modifier = suppressed_industrial
 						has_modifier = promoted_industrial
-					}
-					NOR = {
 						has_ethic = ethic_industrial
 						has_ethic = ethic_fanatic_industrial
 					}

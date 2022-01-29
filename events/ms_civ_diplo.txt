@@ -41,11 +41,7 @@ country_event = {
 		FROM = {
 			is_country_type = ms_post_primitive
 			capital_scope = {
-				solar_system = {
-					space_owner = {
-						is_same_value = root
-					}
-				}
+				solar_system = { is_owned_by = root }
 			}
 		}
 	}
@@ -74,7 +70,7 @@ country_event = {
 		allow = { 
 			energy > 1500
 		}
-		add_minerals = 1000
+		add_resource = { minerals = 1000 }
 		add_energy = -1500
 		hidden_effect = {
 			from = {
@@ -105,7 +101,7 @@ country_event = {
 		allow = { 
 			energy > 1500
 		}
-		add_minerals = 2000
+		add_resource = { minerals = 2000 }
 		add_energy = -1500
 		hidden_effect = {
 			from = {
@@ -130,7 +126,7 @@ country_event = {
 		allow = { 
 			minerals > 1500
 		}
-		add_energy = 1000
+		add_resource = { energy = 1000 }
 		add_minerals = -1500
 		hidden_effect = {
 			from = {
@@ -165,11 +161,7 @@ country_event = {
 			is_country_type = ms_post_primitive
 			NOT = {
 				capital_scope = {
-					solar_system = {
-						space_owner = {
-							is_same_value = root
-						}
-					}
+					solar_system = { is_owned_by = root }
 				}
 			}
 		}

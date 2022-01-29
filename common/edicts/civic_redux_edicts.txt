@@ -12,7 +12,7 @@ planet_edict = { #Kill Pops for the Dark Ones
 	
 	potential = {
 		num_pops > 1
-		any_pop = {
+		any_owned_pop = {
 			NOT = {
 				is_same_species = owner
 			}
@@ -53,7 +53,7 @@ planet_edict = { #Kill Pops for the Dark Ones
 	potential = {
 		num_pops > 1
 		NOT = {
-			any_pop = {
+			any_owned_pop = {
 				NOT = {
 					is_same_species = owner
 				}

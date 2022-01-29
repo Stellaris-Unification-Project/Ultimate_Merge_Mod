@@ -70,14 +70,9 @@ tech_eutab_natural_fort = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-					has_ascension_perk = ap_world_shaper
-				}
+			NAND = {
+				is_militarist = yes
+				has_ascension_perk = ap_world_shaper
 			}
 		}
 		modifier = {
@@ -178,14 +173,9 @@ tech_eutab_innate_command = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_one_vision
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_one_vision
 			}
 		}
 		modifier = {
@@ -265,14 +255,9 @@ tech_eutab_xeno_nutrient = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_mastery_of_nature
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_mastery_of_nature
 			}
 		}
 		modifier = {
@@ -319,21 +304,16 @@ tech_eutab_intergrated_logi = {
 	gateway = eu_imperial
 	
 	modifier = {
-		ship_upkeep_mult = -0.05
+		ships_upkeep_mult = -0.05
 		country_core_sector_system_cap = 1
 	}
 	
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_imperial_prerogative
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_imperial_prerogative
 			}
 		}
 		modifier = {
@@ -429,14 +409,9 @@ tech_eutab_politics_other = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_galactic_force_projection
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_galactic_force_projection
 			}
 		}
 		modifier = {
@@ -515,14 +490,9 @@ tech_eutab_marsh_unknown = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_defender_of_the_galaxy
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_defender_of_the_galaxy
 			}
 		}
 		modifier = {
@@ -580,14 +550,9 @@ tech_eutab_stellar_citadel = {
 	weight_modifier = {
 		modifier = {
 			factor = 0
-			NOT = {
-				AND = {
-					OR = {
-						has_ethic = ethic_militarist
-						has_ethic = ethic_fanatic_militarist
-					}
-				has_ascension_perk = ap_master_builders
-				}
+			NAND = {
+				is_militarist = yes
+			has_ascension_perk = ap_master_builders
 			}
 		}
 		modifier = {

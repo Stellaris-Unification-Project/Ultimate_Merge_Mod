@@ -25,8 +25,8 @@ planet_edict = {
 	
 	potential = {	
 		owner = {
-			NOT = { has_authority = auth_hive_mind }
-			NOT = {
+			NOR = {
+				has_authority = auth_hive_mind
 				has_ethic = ethic_fanatic_authoritarian
 			}
 		}

@@ -204,7 +204,7 @@ len_building_lef_project_promethean = {
 		custom_tooltip = {
 			text = "len_promethian_project_requirement_planet"
 			planet = {
-				count_pops = {
+				count_owned_pop = {
 					count > 9
 					limit = {
 						is_colony_pop = yes

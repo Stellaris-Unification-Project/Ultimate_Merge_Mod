@@ -411,9 +411,9 @@ country_event = {
 				}
 			}
 		}
-		add_minerals = 1000 # enough for a spaceport and then some
-		add_energy = 500
-		add_influence = 300
+		add_resource = { minerals = 1000 } # enough for a spaceport and then some
+		add_resource = { energy = 500 }
+		add_resource = { influence = 300 }
 		capital_scope = {
 			every_tile = {
 				limit = {
@@ -1083,8 +1083,7 @@ planet_event = {
 	hide_window = yes
 
 	trigger = {
-		NOT = { is_planet_class = pc_habitat }
-		NOT = { is_planet_class = pc_ringworld_habitable }
+		is_artificial = no
 		has_owner = yes
 		owner = {
 			is_country_type = primitive

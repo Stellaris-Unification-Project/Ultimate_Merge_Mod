@@ -57,7 +57,7 @@ planet_event = {
 				#	has_pop = no
 				#}
 				create_pop = {
-					species = last_created
+					species = last_created_species
 					ethos = random
 				}					
 			}
@@ -80,7 +80,7 @@ planet_event = {
 				}
 				remove_building = yes
 				create_pop = {
-						species = last_created
+						species = last_created_species
 					}
 			}
 			random_tile = {
@@ -89,7 +89,7 @@ planet_event = {
 				}
 				remove_building = yes
 				create_pop = {
-						species = last_created
+						species = last_created_species
 					}
 			}
 	}
@@ -107,7 +107,7 @@ planet_event = {
 				}
 				remove_building = yes
 				create_pop = {
-						species = last_created
+						species = last_created_species
 					}
 			}
 			random_tile = {
@@ -116,7 +116,7 @@ planet_event = {
 				}
 				remove_building = yes
 				create_pop = {
-						species = last_created
+						species = last_created_species
 					}
 			}
 	

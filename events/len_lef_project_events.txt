@@ -203,7 +203,7 @@ pop_event = {
 			}
 		}
 		
-		change_species = last_created
+		change_species = last_created_species
 		set_pop_flag = len_promethean_pop
 	}
 	

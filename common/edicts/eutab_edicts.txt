@@ -428,10 +428,7 @@ country_edict = {
 	}
 	
 	allow = {
-		OR = {
-			has_ethic = ethic_authoritarian
-			has_ethic = ethic_fanatic_authoritarian
-		}
+		is_authoritarian = yes
 	}
 	
 	prerequisites = {
@@ -473,10 +470,7 @@ country_edict = {
 	}
 	
 	allow = {
-		OR = {
-			has_ethic = ethic_xenophobe
-			has_ethic = ethic_fanatic_xenophobe
-		}
+		is_xenophobe = yes
 	}
 	
 	prerequisites = {

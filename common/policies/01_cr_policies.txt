@@ -29,10 +29,7 @@ war_philosophy = {
 		}
 		
 		valid = {
-			NOR = {
-				has_ethic = "ethic_pacifist"
-				has_ethic = "ethic_fanatic_pacifist"
-			}
+			is_pacifist = no
 		}
 		
 		AI_weight = {
@@ -42,10 +39,7 @@ war_philosophy = {
 					has_valid_ai_personality = no
 					is_ai = no
 				}
-				NOT = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 			}
 			modifier = {
 				factor = 10
@@ -59,10 +53,7 @@ war_philosophy = {
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = yes
 			}
 		}
 	}
@@ -160,10 +151,7 @@ orbital_bombardment = {
 		AI_weight = {
 			modifier = {
 				factor = 4
-				OR = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = yes
 			}
 		}
 	}
@@ -183,10 +171,7 @@ orbital_bombardment = {
 		AI_weight = {
 			modifier = {
 				factor = 2
-				NOT = {
-					has_ethic = "ethic_pacifist"
-					has_ethic = "ethic_fanatic_pacifist"
-				}
+				is_pacifist = no
 			}
 		}
 	}
@@ -198,8 +183,7 @@ orbital_bombardment = {
 		
 		valid = {
 			OR = {
-				has_ethic = "ethic_militarist"
-				has_ethic = "ethic_fanatic_militarist"
+				is_militarist = yes
 				has_ethic = "ethic_hive_mind"
 				has_valid_civic = civic_destructive_tendencies
 				custom_tooltip_success = {

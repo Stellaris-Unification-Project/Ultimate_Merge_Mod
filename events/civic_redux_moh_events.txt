@@ -123,7 +123,7 @@ country_event = {
 				civics = random
 			}
 			create_leader = {
-				type = ruler
+				class = ruler
 				species = ROOT
 				name = random
 				skill = 400

@@ -34,7 +34,7 @@ ms_preservation_station_0 = {
 		custom_tooltip = {
 			fail_text = "requires_surveyed_system"
 			NOT = {
-				any_planet = {
+				any_system_planet = {
 					is_surveyed = {
 						who = prev.from
 						status = no
@@ -48,7 +48,7 @@ ms_preservation_station_0 = {
 		planet_possible = {
 			custom_tooltip = {
 				fail_text = "requires_no_anomaly"
-				NOT = { has_anomaly = yes }
+				has_anomaly = no
 			}
 			
 			custom_tooltip = {

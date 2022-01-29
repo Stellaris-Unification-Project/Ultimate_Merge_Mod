@@ -46,13 +46,9 @@ technologist = {
 		is_enslaved = no
 		is_being_purged = no
 		NOT = { has_trait = trait_nerve_stapled }
-		NOR = {
-			has_ethic = ethic_spiritualist
-			has_ethic = ethic_fanatic_spiritualist
-		}
+		is_spiritualist = no
 		OR = {
-			has_ethic = ethic_materialist
-			has_ethic = ethic_fanatic_materialist
+			is_materialist = yes
 			is_robot_pop = yes
 		}
 	}
@@ -127,7 +123,7 @@ technologist = {
 		
 		trigger = {
 			owner = {
-				count_owned_pops = {
+				count_owned_pop = {
 					limit = { is_robot_pop = yes }
 					count > 5
 				}
@@ -332,10 +328,7 @@ technologist = {
 			potential = {
 				exists = owner
 				parameter:empire = { 
-					NOR = {
-						has_ethic = ethic_materialist
-						has_ethic = ethic_fanatic_materialist
-					}			
+					is_materialist = no			
 					NOR = { 
 						has_modifier = suppressed_materialist
 						has_modifier = promoted_materialist 

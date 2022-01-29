@@ -27,10 +27,7 @@ xenoist = {
 		is_enslaved = no
 		is_being_purged = no
 		NOT = { has_trait = trait_nerve_stapled }
-		OR = {
-			has_ethic = ethic_xenophile
-			has_ethic = ethic_fanatic_xenophile
-		}
+		is_xenophile = yes
 	}
 	
 	attraction = {
@@ -393,10 +390,7 @@ xenoist = {
 			potential = {
 				exists = owner
 				parameter:empire = { 
-					NOR = {
-						has_ethic = ethic_xenophile
-						has_ethic = ethic_fanatic_xenophile
-					}				
+					is_xenophile = no				
 					NOR = { 
 						has_modifier = suppressed_xenophile
 						has_modifier = promoted_xenophile
