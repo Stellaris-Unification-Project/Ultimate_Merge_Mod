@@ -1,0 +1,40 @@
+#Root = country
+#This = pop
+can_colonize_with_pop = {
+	has_colonization_control = no
+	if = {
+		limit = { 
+			#NOT = { AND = {
+			#OR = {
+			#	has_culture_shock = no
+		#		is_sentient = yes
+		#		NOT = { has_trait = trait_nocolon }
+		#	}
+		#	OR = {
+		#		NOT = { has_culture_shock = yes }
+		#		is_sentient = yes
+		#		owner = { has_technology = tech_gene_tailoring }
+		#	}
+		#	owner = { NOT = { has_technology = tech_gene_tailoring } }
+		#	}	}
+			#owner = { NOT = { has_technology = tech_gene_tailoring } }
+			has_trait = trait_nocolon
+			root = { NOT = { habitability = { who = prev value < 0.8 } } }
+			OR = {
+				has_culture_shock = yes
+				is_sentient = no
+				AND = {
+					owner = { NOT = { has_technology = tech_gene_tailoring } }
+					has_trait = trait_nocolon
+					root = { NOT = { habitability = { who = prev value > 0.99 } } }
+				}
+			}
+		}
+		custom_tooltip = {
+			always = no
+		}
+		else = {
+			always = yes
+		}
+	}
+}

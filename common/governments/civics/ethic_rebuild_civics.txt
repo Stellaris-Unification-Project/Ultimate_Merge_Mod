@@ -1,0 +1,1515 @@
+
+
+#Militarist
+
+
+
+#Private Military Corps
+civic_militia = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+			
+			NOR = {
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_socialism
+			}			
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+			   ship_upkeep_mult = -0.2	
+			   army_upkeep_mult = -0.2
+		       shipsize_military_station_small_upkeep_mult = -0.2
+		       shipsize_military_station_medium_upkeep_mult = -0.2
+		       shipsize_military_station_large_upkeep_mult = -0.2				
+                				
+	           
+	}
+}
+
+
+
+#Stratocracy -> authoritarian
+civic_stratocracy = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+					
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+	            navy_size_mult = 0.1
+                army_rank_increase = 1					
+				admiral_skill_levels = 1
+				general_skill_levels = 1			
+				category_military_theory_research_speed_mult = 0.33	
+				army_upkeep_mult = 0.15
+				ship_upkeep_mult = 0.15
+			
+	           
+	}
+}
+
+	
+
+
+
+#Military Isolationism -> xenophobe
+civic_military_iso = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}
+		}	
+			
+		civics = {
+		   NOR = { 
+		            value = civic_nationalistic_zeal
+					}				
+			
+		}
+	
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+	
+		       shipsize_military_station_small_upkeep_mult = -0.2
+		       shipsize_military_station_medium_upkeep_mult = -0.2
+		       shipsize_military_station_large_upkeep_mult = -0.2
+               shipclass_military_station_damage_mult = 0.2	
+			   shipclass_military_station_hit_points_mult = 0.2
+               pop_fortification_defense = 0.33		   
+
+	           
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+#Consumerism -> industrial, capitalism
+civic_consumerism = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_socialism
+				value = ethic_fanatic_green
+				value = ethic_fanatic_spiritualist
+			}
+													
+		}
+		
+		civics = {
+		   NOR = { 
+		            value = civic_keepers_harmony
+					value = civic_asceticism
+					}
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+				pop_happiness = 0.05
+				country_resource_energy_mult = 0.04
+				country_trade_attractiveness = 0.25
+				pop_consumer_goods_mult = 0.2
+                		
+	           
+	}
+}
+
+
+
+#Private Property -> capitalism, egalitarian
+civic_private_property = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_socialism
+			}
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+				planet_building_cost_mult = -0.25	
+                planet_building_upkeep_mult = -0.25
+				pop_government_ethic_attraction = -0.15
+				country_resource_influence_mult = -0.15
+				
+                		
+	           
+	}
+}
+
+
+
+
+
+
+#Collectivism
+
+
+#Socialism
+civic_socialistic = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+		
+		
+			OR = {
+				text = civic_tooltip_socialism
+				value = ethic_socialism
+				value = ethic_fanatic_socialism
+			}
+			
+			OR = {
+				text = civic_tooltip_pluralist
+				value = ethic_pluralist
+				value = ethic_fanatic_pluralist
+			}
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		pop_happiness = 0.05
+		pop_environment_tolerance = 0.05
+		country_society_tech_research_speed = 0.25
+		country_resource_energy_mult = -0.05
+		
+			
+                		
+	           
+	}
+}
+
+
+
+
+
+#Peacekeepers
+civic_peacekeepers = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+		
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+			
+			OR = {
+				text = civic_tooltip_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}				
+
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+					  diplomacy_influence_cost = -0.25
+					  country_trust_growth = 0.33
+					  country_trust_cap_add = 30					  
+					  country_trade_attractiveness = 0.5
+					  country_federation_member_resource_unity_mult = 0.25
+					  max_rivalries = -2
+	           
+	}
+}
+
+
+
+
+
+#Pacifist
+
+
+#Eudaimonia
+civic_eudaimonia = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}		
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {		   
+		       pop_happiness = 0.05
+	           country_resource_energy_mult = 0.05				   
+			   pop_growth_speed = 0.15
+			   army_damage_mult = -0.1
+		       army_morale = -0.1
+			   navy_size_mult = -0.05
+	}
+}
+
+
+
+#Pilgrims
+civic_pilgrims = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}			
+
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+			   shipsize_outpost_station_build_cost_mult = -0.33
+			   shipsize_outpost_station_upkeep_mult = -0.33
+			   country_colony_influence_cost_mult = -0.25
+			   country_distant_colony_influence_cost_mult = -0.25
+			   country_expansion_distance_mult = -0.25
+			   pop_migration_speed = 0.25
+	           
+	}
+}
+
+
+
+
+
+
+
+#Way of Empathy -> ecologist
+civic_empathy = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+		
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}
+			
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}				
+
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+					 pop_happiness = 0.07
+					 planet_unrest_add = -25
+					 country_trust_growth = 0.2
+					 country_trust_cap_add = 20
+					 rivalry_influence_gain = -0.5
+					 
+	           
+	}
+}
+
+
+
+#Xenophobe
+
+#Nationalism -> elitist, militarist
+civic_nationalism = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+			
+		
+					
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+				country_insult_efficiency = 0.2
+				country_border_mult = 0.05
+				country_resource_unity_mult = 0.15
+				army_morale = 0.1
+                mod_distance_to_capital_static_modifier_efficiency_mult	= -0.25                
+                planet_migration_xeno_pull = -0.75			
+	           
+	}
+}
+
+
+
+# Elitist
+
+
+#Noble Aristocracy -> pluralist, libertarian
+civic_noble_aristocracy = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_elitist
+				value = ethic_fanatic_elitist
+			}
+			
+			NOR = {
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}	
+
+					}
+								
+			
+		civics = {
+		NOT = { value = civic_tribals }
+		}
+		
+		
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		country_resource_unity_mult = 0.15
+		leader_influence_cost = -0.25
+		country_leader_cap = 1
+		country_leader_pool_size = 1
+		pop_government_ethic_attraction = -0.15
+		
+			
+                		
+	           
+	}
+}
+
+
+#Tribal Aristocracy ->authoritarian
+civic_tribals = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_elitist
+				value = ethic_fanatic_elitist
+			}
+			
+            OR = {
+				value = ethic_authoritarian
+			}			
+            
+	
+		}
+			
+		
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+        pop_government_ethic_attraction = 0.1
+        edict_influence_cost = -0.1		
+		country_unrest_unhappy_slave_effect_mult = -0.2
+		country_leader_cap = 2
+		country_leader_pool_size = -1
+		leader_influence_cost = 0.15
+
+                		
+	           
+	}
+}
+
+
+
+#Timocracy 
+civic_timocracy = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				value = ethic_elitist
+				value = ethic_fanatic_elitist
+			}
+			
+			NOR = {
+			    value = ethic_egalitarian
+				value = ethic_fanatic_egalitarian
+			}			
+            
+	
+		}
+		
+		authority = {
+			OR = {
+				value = auth_democratic
+			}
+		}		
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		slave_mineral_output = 0.15
+		tradition_cost_num_slaves_mult = -0.75
+		country_election_influence_cost_mult = -0.25 #elite influences elections
+		pop_eff_wo_slaves = -0.05
+		
+
+                		
+	           
+	}
+}
+
+
+#Labour Unions
+civic_drone_brotherhood = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	
+	description = "civic_tooltip_drone_brotherhood_effects"
+	
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_pluralist
+				value = ethic_pluralist
+				value = ethic_fanatic_pluralist
+			}
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+	
+		country_leader_cap = 3
+		country_unrest_unhappy_pop_effect_mult = -0.33
+		pop_ethic_pluralist_attraction_mult = 0.15
+			
+                		
+	           
+	}
+}
+
+
+
+#Authoritarian
+
+#Empire Bureaucracy
+civic_empire_bureau = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+                text = civic_tooltip_not_egalitarian
+				value = ethic_fanatic_egalitarian
+				value = ethic_egalitarian
+			}
+		}	
+			
+		civics = {
+		NOT = { value = civic_efficient_bureaucracy }
+		}
+		
+		
+	}
+	random_weight = { base = 1 }
+	modifier = {
+		country_resource_influence_mult = 0.15
+		subject_integration_influence_cost_mult = -0.1
+		max_influence = 200
+		country_leader_cap = 2
+		country_sector_cap_add = 2
+		country_resource_energy_mult = -0.07
+		
+	}
+}
+
+#Personality Cult
+civic_personality_cult = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_authoritarian
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+						
+			
+	
+		}
+				
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+	    ruler_skill_levels = 1
+		country_resource_influence_mult = 0.1
+		pop_ethic_authoritarian_attraction_mult = 0.15
+
+				
+		
+
+                		
+	           
+	}
+}
+
+
+
+# Parliamentary Monarchy
+civic_par_monarchy = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+			    text = civic_tooltip_not_authoritarian 
+				value = ethic_authoritarian
+				value = ethic_fanatic_authoritarian
+			}
+						
+
+	
+		}
+		
+		authority = { value = auth_imperial }	
+		
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+	    faction_influence_mult = 0.2
+		edict_length_mult = 0.15
+		country_resource_unity_mult = 0.1
+		country_resource_influence_mult = -0.15
+		
+				
+		
+
+                		
+	           
+	}
+}
+
+
+
+
+
+
+
+
+#Demos Cratos
+civic_demos_cratos = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		authority = {
+			value = auth_direct_democratic
+		}
+	}
+	random_weight = { base = 1 }
+	
+	modifier = {
+		
+		country_core_sector_system_cap = 6
+		pop_citizen_happiness = 0.05
+		faction_influence_add = 1
+		faction_influence_mult = 0.5
+		country_leader_pool_size = 1
+		country_resource_influence_mult = -0.4
+		max_influence = -500
+		country_election_influence_cost_mult = 1
+		country_unrest_unhappy_pop_effect_mult = 0.3
+		edict_influence_cost = 0.5
+		pop_government_ethic_attraction = -0.2
+		pop_ethics_shift_speed_mult = 0.15
+
+		
+	}
+}
+
+
+
+
+
+# Materialist
+
+#Research Private Funding -> egalitarian, capitalism
+civic_science_lobby = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+			
+			NOR = {
+				value = ethic_fanatic_authoritarian
+				value = ethic_fanatic_socialism
+			}			
+
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	            all_technology_research_speed = 0.05
+		        science_lab_build_cost_mult = -0.15  
+				science_lab_construction_speed_mult = 0.25 
+                shipsize_research_station_build_cost_mult = -0.15 	
+				shipsize_science_build_cost_mult = -0.15 
+
+	}
+}
+
+
+
+
+#Exploration Spirit
+civic_exploration = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+			
+			OR = {
+				text = civic_tooltip_pacifist
+				value = ethic_pacifist
+				value = ethic_fanatic_pacifist
+			}			
+
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+                ship_sensor_range_mult = 0.33
+		        science_ship_survey_speed = 0.25
+				ship_anomaly_research_speed_mult = 0.25
+		        ship_anomaly_fail_risk = -0.05
+		        ship_anomaly_generation_chance_mult = 0.05				
+				shipsize_science_build_cost_mult = -0.5
+				shipsize_science_construction_speed_mult = 0.5
+	}
+}
+
+
+
+
+
+
+
+#Biotechnologist
+civic_biotech = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+		civics = {
+			NOR = {
+				value = civic_genetic_expertise
+			}
+		}	
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+		        trait_points = 1
+				modify_species_cost_mult = -0.2
+				category_biology_research_speed_mult = 0.33
+
+	}
+}
+
+
+
+
+
+#Defenders of Faith
+civic_defenders_faith = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+			
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+			 pop_ethic_spiritualist_attraction_mult = 0.15
+			 pop_government_ethic_attraction = 0.05
+			 army_morale = 0.5
+			 army_health = 0.5
+			 army_damage_mult = 0.25
+			 army_morale_damage_mult = 0.33
+
+	}
+}
+
+
+# Spiritualist
+
+#Asceticism
+civic_asceticism = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	    leader_age = 10
+		pop_food_req_mult = -0.2
+		pop_consumer_goods_mult = -0.2
+	}
+}
+
+
+#Enlightened Commune -> pluralist, socialism
+civic_commonwealth = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+	
+		authority = {
+		 
+		 OR = {
+			value = auth_democratic
+			value = auth_direct_democratic
+			}
+		}
+		
+		
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+			
+			NOR = {
+				value = ethic_fanatic_capitalism
+			}			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+		tradition_cost_num_pops_mult = -0.33
+		pop_growth_speed = 0.2
+		country_unrest_unhappy_pop_effect_mult = -0.33
+		category_psionics_research_speed_mult = 0.33		
+	}
+}
+
+
+
+#Keepers of Traditions -> authoritarian
+civic_keepers_traditions = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+	
+		authority = {
+			value = auth_oligarchic
+		}
+			
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+			
+			OR = {
+			    text = civic_tooltip_elitist
+			    value = ethic_elitist
+				value = ethic_fanatic_elitist
+			}			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+		leader_age = 30			
+		tradition_cost_num_colonies_mult = -0.25
+		tradition_cost_num_pops_mult = -0.25
+		tradition_cost_num_slaves_mult = -0.25
+		autochthon_monument_build_cost_mult = -0.1
+		autochthon_monument_construction_speed_mult = 0.15			
+		pop_ethics_shift_speed_mult = -0.33	
+		species_leader_exp_gain = -0.5
+
+	}
+}
+
+
+
+
+#Chosen Ones
+civic_chosen = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophobe
+				value = ethic_xenophobe
+				value = ethic_fanatic_xenophobe
+			}
+	
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}	
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	            country_resource_unity_mult = 0.1
+				pop_citizen_happiness = 0.05		
+                pop_ethic_spiritualist_attraction_mult = 0.1 
+                pop_ethic_xenophobe_attraction_mult	= 0.1			
+                tradition_cost_num_xeno_slaves_mult = -0.5
+				diplomacy_influence_cost = 0.5
+			
+	           
+	}
+}
+
+
+#Keepers of Harmony -> pacifist
+civic_keepers_harmony = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+				value = ethic_fanatic_spiritualist
+			}
+			
+			OR = {
+				text = civic_tooltip_green
+				value = ethic_green
+				value = ethic_fanatic_green
+			}
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+		pop_food_req_mult = -0.15
+		pop_consumer_goods_mult = -0.15
+		pop_happiness = 0.05
+		category_biology_research_speed_mult = 0.33
+		terraforming_cost_mult = -0.15
+		country_engineering_tech_research_speed = -0.05
+		country_resource_minerals_mult = -0.05
+	}
+}
+
+
+
+
+#Ecologist
+
+
+#Industry: Agriculture
+civic_agrarian_idyll = {
+	
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_industrial
+			}
+		}
+	}
+	
+	random_weight = { base = 1 }
+	modifier = {
+	
+		 country_resource_food_mult = 0.2
+		 max_food = 500
+		 hydroponics_farm_build_cost_mult = -0.05
+		 hydroponics_farm_construction_speed_mult = 0.2
+		 category_biology_research_speed_mult = 0.2
+
+       
+	}
+}
+
+
+#Industry: Waste Recycling
+civic_waste_recycle = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_industrial
+			}
+			
+		
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		 		 pop_environment_tolerance = 0.03
+				 pop_consumer_goods_mult = -0.05
+				 planet_building_cost_mult = -0.05
+                 spaceport_ship_build_cost_mult = -0.05				 
+				 tile_resource_energy_mult = 0.02
+				 building_time_mult = 0.1
+		         spaceport_ship_build_time_mult = 0.1					 
+		
+			
+                		
+	           
+	}
+}
+
+
+
+
+
+#Industry: Terraforming
+civic_terraforming = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_industrial
+			}
+			
+		
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		        pop_environment_tolerance = 0.04
+				terraforming_cost_mult = -0.2
+				terraform_speed_mult = 0.2
+                planet_clear_blocker_time_mult = -0.25
+                planet_clear_blocker_cost_mult = -0.25	
+                category_new_worlds_research_speed_mult = 0.25	
+		
+			
+                		
+	           
+	}
+}
+
+
+
+#Industrialist
+
+#Industry: Mining
+civic_mining_guilds = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	random_weight = { base = 1 }
+	
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_green
+			}
+		}
+	}
+	
+	modifier = {
+                      country_resource_minerals_mult = 0.1
+					  max_minerals = 2000
+                      mining_network_build_cost_mult = -0.05	
+                      mining_network_construction_speed_mult = 0.15					  
+                      category_materials_research_speed_mult = 0.2
+	}
+}
+
+
+
+
+#Industry: Land Construction
+civic_land_construction = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_green
+			}
+			
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		planet_building_cost_mult = -0.1
+		building_time_mult = -0.15
+		planet_clear_blocker_time_mult = -0.2
+
+		
+			
+                		
+	           
+	}
+}
+
+
+#Industry: Space Engineering
+civic_space_engineering = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_green
+			}
+			
+		
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		spaceport_ship_build_cost_mult = -0.07
+		spaceport_ship_build_time_mult = -0.1
+		shipsize_orbital_station_build_cost_mult = -0.1
+        spaceport_module_cost_mult  = -0.1
+		category_voidcraft_research_speed_mult = 0.2
+		#planet_add_spaceport = 1
+			
+                		
+	           
+	}
+}
+
+
+
+
+#Military-Industrial Complex
+civic_military_industry = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_industrial
+				value = ethic_industrial
+				value = ethic_fanatic_industrial
+			}
+			
+			OR = {
+				text = civic_tooltip_militarist
+				value = ethic_militarist
+				value = ethic_fanatic_militarist
+			}			
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		        army_damage_mult = 0.02
+		        ship_weapon_damage = 0.02
+				ship_reparation_speed_mult = 0.2				
+				country_ship_upgrade_cost_mult = -0.2	
+				category_rocketry_research_speed_mult = 0.2	
+                category_materials_research_speed_mult = 0.2
+                country_trust_growth = -0.4				
+                		
+	           
+	}
+}
+
+
+
+#Industry: Industrial Robotics
+civic_industrial_robotics = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_materialist
+				value = ethic_materialist
+				value = ethic_fanatic_materialist
+			}
+			
+			OR = {
+				text = civic_tooltip_industrial
+				value = ethic_industrial
+				value = ethic_fanatic_industrial
+			}
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	    pop_robot_production_output = 0.05
+		building_time_mult = -0.07
+		spaceport_ship_build_time_mult = -0.07
+		country_engineering_tech_research_speed = 0.1
+
+	}
+}
+
+
+
+# Machine Cult
+#civic_machine_cult = {
+#	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+#	possible = {
+#		ethics = {
+#			OR = {
+#				text = civic_tooltip_spiritualist
+#				value = ethic_spiritualist
+#				value = ethic_fanatic_spiritualist
+#			}
+#			
+#			OR = {
+#				text = civic_tooltip_industrial
+#				value = ethic_industrial
+#				value = ethic_fanatic_industrial
+#			}
+#			
+#		}
+#	}
+#	random_weight = { base = 1 }
+#	modifier = {
+#	
+#	
+#
+#
+#	}
+#}
+
+
+#Other Industries
+
+
+#Industry: Public Medicine -> pluralist
+civic_public_medicine = { 
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_capitalism
+			}			
+		}
+	}
+	random_weight = { base = 1 }
+	
+	modifier = {
+		pop_growth_speed = 0.15
+		leader_age = 20
+		army_health = 0.33	
+        country_society_tech_research_speed = 0.05
+	}
+}
+
+
+
+#Industry: Public Education -> pluralist
+civic_public_education = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+		ethics = {
+			NOR = {
+				value = ethic_fanatic_capitalism
+			}
+			
+		
+					
+						
+			
+		}
+	}
+	random_weight = { base = 1 }
+	modifier = {
+	
+		species_leader_exp_gain = 0.15
+		country_leader_pool_size = 1
+		all_technology_research_speed = 0.03
+		country_resource_unity_mult = 0.05
+		pop_government_ethic_attraction = -0.15
+			
+                		
+	           
+	}
+}
+
+
+
+
+
+#Industry: Transportation & Logistics
+civic_transport = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+	#Trading Boost
+	
+	
+	modifier = {
+
+		pop_migration_speed = 1.25
+		planet_migration_all_pull = 0.2		
+		tradition_cost_num_colonies_mult = -0.15
+                		
+	           
+	}
+}
+
+
+
+#Industry: Telecommunications
+civic_comms = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+	#Allows special building "Interstellar Comms Hub"
+	
+	
+	modifier = {
+	
+	     country_core_sector_system_cap = 2
+		 navy_size_mult = 0.1
+		 planet_border_mult = 0.15
+		 country_physics_tech_research_speed = 0.03
+		 country_resource_energy_mult = -0.03
+			
+                		
+	           
+	}
+}
+
+
+
+#Industry: Tourism
+civic_hospitality = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+		#Allows special building "Luxury Resort"
+		
+		
+	modifier = {
+	
+		 pop_happiness = 0.04
+		 pop_environment_tolerance = 0.04
+		 tradition_cost_num_colonies_mult = -0.33
+		 planet_migration_all_pull = 0.5		 
+			
+                		
+	           
+	}
+}
+
+
+#Industry: Power Industry
+civic_power = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+		#Allows Ecological/Industrial energy policies choice
+		
+		
+	modifier = {
+	
+					  
+			
+                		
+	           
+	}
+}
+
+
+
+#Industry: Information Tech's
+civic_info_tech = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+		#Allows ...
+		
+		
+	modifier = {
+	
+	                  tile_resource_energy_mult = 0.04
+					  all_technology_research_speed = 0.04
+					  pop_robot_production_output = 0.07	
+				  
+			
+                		
+	           
+	}
+}
+
+
+
+#Industry: Mass Media
+civic_mass_media = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+			#Allows special policy branch - "Media": 
+	        #non-Authoritarians get "Free Media" (faction_influence_mult = 0.33, pop_happiness = 0.05, tradition_cost_num_colonies_mult = -0.15 ) 
+	        #non-Libertarians get "State-Owned Media" (pop_government_ethic_attraction = 0.1, influence_gain_mult = 0.15, tradition_cost_num_colonies_mult = -0.15 )
+	
+    description = "civic_tooltip_mass_media_effects"	
+		
+	modifier = {
+	           
+	}
+}
+
+
+#Industry: Colonization
+civic_colonization = {
+	potential = { ethics = { NOT = { value = ethic_hive_mind } } }
+	possible = {
+
+	}
+	random_weight = { base = 1 }
+	
+		
+		
+		
+	modifier = {
+	
+			   shipsize_colonizer_construction_speed_mult = 0.2
+		       shipsize_colonizer_build_cost_mult = -0.15
+		       planet_colony_development_speed_mult = 0.2
+			   shipsize_colonizer_upkeep_mult = -0.2
+			   colony_start_num_pops_add = 1
+			   category_new_worlds_research_speed_mult = 0.33
+			
+                		
+	           
+	}
+}
+
+
+
+

@@ -1,0 +1,748 @@
+﻿l_russian:
+
+ policy_mass_media:0 "СМИ" 
+ policy_mass_media_name:0 "СМИ"
+ policy_mass_media_desc:0 " " 
+ 
+ free_mass_media:0 "Оппозиционные СМИ"
+ free_mass_media_name:0 "Оппозиционные СМИ"
+ free_mass_media_desc:0 " "
+ 
+ state_mass_media:0 "Проправительственные СМИ"
+ state_mass_media_name:0 "Проправительственные СМИ"
+ state_mass_media_desc:0 " "  
+ 
+
+ gov_direct_democracy:0 "Технократическое Содружество" 
+ RT_FIRST_SPEAKER:0 "Супервайзер"
+ 
+ RT_DEMOS_CRATOS:0 "Первый оратор"
+ gov_demos_cratos:0 "Прямая демократия" 
+ 
+ power_plant_construction_speed_mult:0 "Скорость построения электростанции"
+ science_lab_construction_speed_mult:0 "Скорость построения научной лаборатории"
+ autochthon_monument_construction_speed_mult:0 "Скорость построения памятника аборигенам"
+ autochthon_monument_build_cost_mult:0 "Стоимость построения памятника аборигенам"
+ 
+ POP_ATTRACTION_SOCIOLOGIST_POS:0 "§G+ Социологические поселения в империи§!"
+ POP_ATTRACTION_CONSERVATIONAL_POS:0 "§G+ Консервативные поселения в империи§!"
+ POP_ATTRACTION_WASTEFUL_NEG:0 "§G- Расточительные поселения в империи§!"
+ POP_ATTRACTION_THRIFTY_POS:0 "§G+ Экономные поселения в империи§!"
+ POP_ATTRACTION_CONSERVATIONAL_NEG:0 "§G- Консервативные поселения в империи§!"
+ POP_ATTRACTION_WASTEFUL_POS:0 "§G+ Расточительные поселения в империи§!" 
+ POP_ATTRACTION_AGRARIAN_POS:0 "§G+ Аграрные поселения в империи§!" 
+ POP_ATTRACTION_ADAPTIVE_POS:0 "§G+ Адаптивные поселения в империи§!" 
+ POP_ATTRACTION_INDUSTRIOUS_NEG:0 "§G- Трудолюбивые поселения в империи§!"
+ POP_ATTRACTION_INDUSTRIOUS_POS:0 "§G+ Трудолюбивые поселения в империи§!"
+ POP_ATTRACTION_ENGINEERS_POS:0 "§G+ Инженерные поселения в империи§!"
+ POP_ATTRACTION_AGRARIAN_NEG:0 "§G- Аграрные поселения в империи§!" 
+ POP_ATTRACTION_PLANNED_ECONOMY_POS:0 "§G+ Плановая экономика реализована в империи§!"
+ POP_ATTRACTION_FREE_MARKET_NEG:0 "§G- Экономика свободного рынка реализована в империи§!"
+ POP_ATTRACTION_PLANNED_ECONOMY_NEG:0 "§G- Плановая экономика реализована в империи§!"
+ POP_ATTRACTION_FREE_MARKET_POS:0 "§G+ Экономика свободного рынка реализована в империи§!" 
+ POP_ATTRACTION_LEADER_ENHANCE_POS:0 "§G+ Совершенствование неестественного лидера допускается в империи§!"
+ POP_ATTRACTION_OLIGARCH_GOV_POS:0 "§G+ Олигархическое правительство§!"
+ POP_ATTRACTION_CONFORMISTS_POS:0 "§G+ Конформисткие поселения в империи§!"
+ POP_ATTRACTION_DEVIANTS_NEG:0 "§G- Ненормальные поселения в империи§!"
+ POP_ATTRACTION_EGALITARIAN_POS:0 "§G+ Либертарианская правительственная этика§!"
+ POP_ATTRACTION_EGALITARIAN_NEG:0 "§R- Либертарианская правительственная этика§!"
+ POP_ATTRACTION_TALENTED_POS:0 "§G+ Талантливые поселения в империи§!"
+ POP_ATTRACTION_SLOW_LEARN_NEG:0 "§G- Отстающие в развитии поселения в империи§!"
+ POP_ATTRACTION_SLOW_LEARN_POS:0 "§G+ Отстающие в развитии поселения в империи§!"
+ POP_ATTRACTION_QUICK_LEARN_POS:0 "§G+ Стремительно развивающиеся поселения в империи§!"
+ POP_ATTRACTION_TALENTED_NEG:0 "§G- Талантливые поселения в империи§!"
+ POP_ATTRACTION_SOCIALISM_POS:0 "§G+ Коллективистская правительственная этика§!"
+ POP_ATTRACTION_SOCIALISM_NEG:0 "§G- Коллективистская правительственная этика§!"
+ POP_ATTRACTION_CAPITALISM_POS:0 "§G+ Индивидуалистическая правительственная этика§!"
+ POP_ATTRACTION_CAPITALISM_NEG:0 "§G- Индивидуалистическая правительственная этика§!"
+ POP_ATTRACTION_GREEN_POS:0 "§G+ Экологическая правительственная этика§!"
+ POP_ATTRACTION_GREEN_NEG:0 "§G- Экологическая правительственная этика§!"
+ POP_ATTRACTION_INDUSTRIAL_POS:0 "§G+ Индустриальная правительственная этика§!"
+ POP_ATTRACTION_INDUSTRIAL_NEG:0 "§G- Индустриальная правительственная этика§!" 
+ 
+ civic_asceticism:0 "Аскетизм"
+ civic_commonwealth:0 "Просвещенная коммуна"
+ civic_keepers_traditions:0 "Хранители Традиций"
+ civic_chosen:0 "Избранные"
+ civic_keepers_harmony:0 "Хранители Гармонии"
+ civic_keepers_harmony_desc:0 "Здания §HРайский купол§! и §HИнопланетный зоопарк§! предоставляют дополнительное §HЕдинство§!."
+ civic_exalted_priesthood: "Фундаментализм"
+ civic_defenders_faith:0 "Защитники веры"
+ civic_science_lobby:0 "Исследование частного финансирования"
+ civic_exploration:0 "Звездные пионеры"
+ civic_biotech:0 "Биотехнолог"
+ civic_biotech_desc:0 "Начинает с технологией §HКлонирование§! и увеличивает шанс получения технологии §HАдаптация генома§!. Постройка §HФабрики клонов§! предоставляет дополнительное §HЕдинство§!."
+ civic_demos_cratos:0 "Demos Cratos"
+ civic_empire_bureau:0 "Имперская бюрократия"
+ civic_personality_cult:0 "Культ личности"
+ civic_personality_cult_desc:0 "Каждый Правитель может построить себе §HКоллосальный Монумент§!."
+ civic_labour_unions:0 "Профсоюзы"
+ civic_noble_aristocracy:0 "Благородная аристократия"
+ civic_tribals:0 "Племенная аристократия"
+ civic_tribals_desc:0 "Общество характеризуется внутренним влиянием местной знати, крепко укоренившийся за долгие годы" 
+ civic_nationalism:0 "Национализм"
+ civic_free_haven:0 "Культурное многообразие"
+ civic_peacekeepers:0 "Миротворцы"
+ civic_eudaimonia:0 "Эвдемония"
+ civic_pilgrims:0 "Звездные паломники"
+ civic_empathy:0 "Путь сопереживания"
+ civic_militia:0 "Частный военный корпус"
+ civic_stratocracy:0 "Военная диктатура"
+ civic_military_iso:0 "Военный изоляционизм"
+ civic_military_iso_desc:0 "Постройка §HПланетарного генератора щита§! предоставит дополнительное §HЕдинство§!."
+ civic_nationalistic_zeal:0 "Империализм"
+ civic_corporate_dominion:0 "Корпоратократия"
+ civic_consumerism:0 "Консьюмеризм"
+ civic_private_property:0 "Частная собственность"
+ civic_socialistic:0 "Социализм"
+ civic_aristocratic_elite:0 "Федеральные Штаты"
+ civic_agrarian_idyll:0 "Агрокультура"
+ civic_waste_recycle:0 "Утилизация отходов"
+ civic_terraforming:0 "Терраформирование"
+ civic_mining_guilds:0 "Горное дело"
+ civic_land_construction:0 "Земельное строительство"
+ civic_space_engineering:0 "Космическое машиностроение"
+ civic_military_industry:0 "Военно-индустриальный комплекс"
+ civic_industrial_robotics:0 "Промышленная робототехника"
+ civic_public_medicine:0 "Государственная медицина"
+ civic_public_medicine_desc:0 "Строения §HПограничная клиника§! и §HПограничная больница§! предоставят дополнительное §HЕдинство§!."
+ civic_public_education:0 "Государственное образование"
+ civic_transport:0 "Транспорт и логистика"
+ civic_transport_desc:0 "Дополнительная опция у §HТранспорт и логистика§! позволяет выбрать правительственную политику: §HАдминистративная§!, §HВоенная§! или §HТорговая§!."
+ civic_comms:0 "Телекоммуникации"
+ civic_hospitality:0 "Туризм"
+ civic_hospitality_desc:0 "Открывает секретную постройку §HЭлитного Курорта§!."
+ civic_power:0 "Энергетика"
+ civic_power_desc:0 "Дополнительная опция у §HВыработка энергии§! позволяет выбрать правительственную политику: (+7% §Hэнергии§!, +1500 §Hэнергоэмкости§!, +25% §Hиндустриальные исследования§!)."
+ civic_info_tech:0 "Информационные технологии"
+ civic_info_tech_desc:0 "§HСпиритуалисты§! имеют доступ к базовой технологии §HРабочие-роботы§!."
+ civic_mass_media:0 "СМИ"
+ civic_drone_brotherhood:0 "Братство дронов"
+ civic_colonization:0 "Колонизация"
+ civic_trade_league:0 "Торговая лига"
+ civic_anarchy:0 "Анархия"
+ civic_timocracy:0 "Тимократия"
+ civic_timocracy_desc:0 "Это правительство является элитарной формой республики, лишившее большую часть населения гражданских прав для наглядного превосходства избранных. Позволяет выбрать §HКастовую систему§! как общественную форму. Строение §HНеоколизей§! предоставляет дополнительное §HЕдинство§! £unity. §HДомашняя прислуга§! увеличивает §Hсчастье§!."
+ civic_par_monarchy:0 "Парламентская монархия"
+ civic_par_monarchy_desc:0 "Несмотря на то, что с парламентской системой власть монарха значительно снижается в целом, он по-прежнему сохраняет некоторые исключительные полномочия. Каждый §Hправитель§! может построить §HКоролевскую Библиотеку§!. Все фракции, кроме §HТоталитарного режима§!, получают §G+3§! §Hсчастья§!""
+ 
+ civic_citizen_service_desc:0 "А ты уже отдал свой долг родине? Полное гражданство и политические права доступны каждому, кто посвятит немного своего времени службе в войсках империи. Построение §HВоенной академии§! предоставляет дополнительное §HЕдинство§! £unity."
+ 
+ civic_free_haven_desc:0 "Это общество имеет заслуженную репутацию свободного убежища. Усталые, бедные, смущенные массы, жаждущие дышать бесплатно - здесь все приветствуются, независимо от их вида или происхождения. Построение §Hтуристического центра§! предоставляет дополнительное §HЕдинство§! £unity."
+ 
+ civic_slaver_guilds_desc:0 "Большая часть истинной политической власти в этом обществе опирается на множество могущественных и безжалостных работорговцев. Они знают, как извлечь максимальную выгоду из раба. Построение §HБлока подготовки рабов§! предоставляет дополнительное §HЕдинство§! £unity." 
+civic_technocracy_desc:0 "Ради максимизации эффективности любое действие в обществе происходит под призмой трезвого рационализма. Личные прихоти грязной и малообразованной политической элиты здесь мало кого волнуют. Построение §Hнаучной лаборатории§! предоставляет дополнительное §HЕдинство§! £unity." 
+ 
+ civic_nationalistic_zeal_desc:0 "Сильное чувство империалистической гордости пронизывает все слои этого общества."
+ 
+ civic_aristocratic_elite_desc:0 "Империя представляет собой союз частично самоуправляющихся государств или регионов при центральном правительстве."
+ 
+ civic_corporate_dominion_desc:0 "Экономическая и политическая система государства контролируется олигархами через огромный конгломерат богатых частных корпораций."
+ civic_trade_league_desc:0 "Вся экономическая жизнь общества строго регулируется комитетом могущественных директоров Лиги торговли через его массивную бюрократическую систему."
+ 
+ auth_direct_democratic:0 "Прямая Демократия"
+ auth_direct_democratic_desc:0 "В политической власти прямой демократии участвует весь народ лично, так как граждане для решения государственных вопросов сами отправляют свое мнение по зашифрованным каналам связи. Предполагается, что он сочетается с гражданской моделью §YDemos Cratos§!"
+ gov_demos_cratos:0 "Прямая Демократия"
+ gov_demos_cratos_desc:0 "Это правительство является формой демократии, где люди непосредственно принимают решения по политическим инициативам, либо путем голосования, либо консенсуса."
+ auth_democratic:0 "Представительная Демократия"
+ auth_democratic_desc:0 "В представительной демократии проводятся регулярные выборы, где все граждане могут голосовать за тех, кто должен будет представлять их интересы."
+ 
+ plutocratic_oligarchy:0 "Олигархия"
+ gov_plutocratic_oligarchy:0 "Олигархия"
+ gov_plutocratic_oligarchy_desc:0 "Это правительство - форма олигархии, где власть принадлежит комитету влиятельных лидеров, которые управляют большим бюрократическим двигателем, контролирующим все вопросы государства."
+ 
+ civic_tooltip_drone_brotherhood_effects:0 "£building Каждая §Yферма§!, §Yшахта§! и §Yэлектростанция§! вырабатывает по §Y0.2§! £unity  Единства.\n§Y$country_resource_energy_mult$§! увеличивается на §G+1%§!\n§Y$country_resource_minerals_mult$§! увеличивается на §G+2%§!\n§Y$country_resource_food_mult$§! увеличивается на §G+3%§!"
+ 
+ land_construction_focus:0 "Земельное строительство"
+ space_construction_focus:0 "Космическое машиностроение"
+
+ ethic_egalitarian_desc:1 "§LЛюбое общество, которое не принимает истинной свободы своих членов, - где человек может подняться до любой позиции с достаточно тяжелой работой, - не только глубоко несправедливо, но и в конечном итоге контрпродуктивно.§!\n"
+ ethic_fanatic_egalitarian_desc:1 "§LОстерегайтесь всегда тех, кто был бы деспотами, под ложной презумпцией, что их желания и планы как-то более настоятельны, чем их товарищей. Общество, которое не видит нужды и права всех его членов, не является обществом - это преступление.§!\n"
+ 
+ civic_tooltip_green:0 "ЕСТЬ §YЭкологизм§!"
+ civic_tooltip_not_green:0 "НЕ §YЭкологизм§!"
+ civic_tooltip_industrial:0 "ЕСТЬ §YИндустриализм§!"
+ civic_tooltip_not_industrial:0 "НЕ §YИндустриализм§!" 
+ civic_tooltip_socialism:0 "ЕСТЬ §YКоллективизм§!"
+ civic_tooltip_not_socialism:0 "НЕ §YКоллективизм§!"  
+ civic_tooltip_capitalism:0 "ЕСТЬ §YИндивидуализм§!"
+ civic_tooltip_not_capitalism:0 "НЕ §YИндивидуализм§!" 
+ civic_tooltip_elitist:0 "ЕСТЬ §YЭлитизм§!"
+ civic_tooltip_not_elitist:0 "НЕ §YЭлитизм§!" 
+ civic_tooltip_pluralist:0 "ЕСТЬ §YЭгалитаризм§!"
+ civic_tooltip_not_pluralist:0 "НЕ §YЭгалитаризм§!"  
+ 
+ ETHIC_ALLOWS_WELFARE_POLICY_1:0 "§EПозволяет настроить экономическую политику §HБлагосостояния§! (§G+20%§! §HРост популяции§!)§!" 
+ ETHIC_ALLOWS_WELFARE_POLICY_2:0 "§EПозволяет настроить экономическую политику §HБлагосостояния§! (§G+30%§! §HРост популяции§!, §G+5%§! §HСчастья граждан§!, §R-4%§! §HЭнергии§! £energy)§!" 
+ ETHIC_ALLOWS_MARKET_POLICY_1:0 "§EПозволяет настроить экономическую политику §HРынка§! (§G+5%§! §HЭнергии§! £energy)§!"
+ ETHIC_ALLOWS_MARKET_POLICY_2:0 "§EПозволяет настроить экономическую политику §HРынка§! (§G+8%§! §HЭнергии§! £energy, §G+4%§! §HМинералов§! £minerals, §R-15%§! §HЕдинство§! £unity)§!"
+ ETHIC_HAPPY_FACTIONS_2:0 "§EВсе фракции, за исключением §HТоталитарной§!, получают §G+5§! §HСчастья§!"
+ civic_tooltip_parliamentary_system_effects:0 "§EВсе фракции, за исключением §HТоталитарной§!, получают §G+3§! §HСчастья§!\n§Y$MOD_COUNTRY_FACTION_INFLUENCE_MULT$§! увеличивается на §G+33%§!\n§Y$MOD_COUNTRY_CORE_SECTOR_SYSTEM_CAP$§! увеличивается на §G+2§!\n§Y$MOD_COUNTRY_EDICT_INFLUENCE_COST$§! увеличивается на §R+20%§!"
+ 
+ temple_build_cost_mult:0 "Стоимость построения храма"
+ temple_construction_speed_mult:0 "Скорость построения храма"
+ 
+ economy_strategy_infrastructure_development:0 "Инфраструктурное развитие"
+ economy_strategy_infrastructure_development_name:0 "Инфраструктурное развитие"
+ economy_strategy_infrastructure_development_desc:0 " "  
+ 
+ economy_strategy_social_development:0 "Социальное развитие"
+ economy_strategy_social_development_name:0 "Социальное развитие"
+ economy_strategy_social_development_desc:0 " "   
+ 
+ economy_strategy_pop_growth:0 "Рост популяции"
+ economy_strategy_pop_growth_name:0 "Рост популяции"
+ economy_strategy_pop_growth_desc:0 " "  
+ 
+ economy_strategy_outsourcing:0 "Аутсорсинг обслуживания"
+ economy_strategy_outsourcing_name:0 "Аутсорсинг обслуживания"
+ economy_strategy_outsourcing_desc:0 " " 
+
+ economy_strategy_invesments:0 "Инфраструктурные инвестиции"
+ economy_strategy_invesments_name:0 "Инфраструктурные инвестиции"
+ economy_strategy_invesments_desc:0 " " 
+
+ economy_strategy_production:0 "Усиление производства"
+ economy_strategy_production_name:0 "Усиление производства"
+ economy_strategy_production_desc:0 " " 
+
+ none_economy_strategy:0 "Ничего"
+ none_economy_strategy_name:0 "Ничего"
+ none_economy_strategy_desc:0 " "
+ 
+ policy_economy_strategy:0 "Экономическая стратегия"
+ policy_economy_strategy_desc:0 " "
+ 
+ edict_voice_people:0 "Дух свободы"
+ edict_voice_people_desc:0 " "
+ 
+ civic_tooltip_mechanists_effects:2 "Вы начинаете игру с §Y4§! £pop  дополнительными роботами и доступом к технологиям их постройки.\n§Y$MOD_COUNTRY_ROBOT_MAINTENANCE_MULT$§! снижается на §G-10%§!\n§Y$MOD_COUNTRY_ROBOT_BUILD_SPEED_MULT$§! увеличивается на §G+15%§!\n§Y$MOD_POP_ROBOT_PRODUCTION_OUTPUT$§! увеличивается на §G+10%§!\n§Y$MOD_TRADITION_COST_NUM_SENTIENT_ROBOTS_MULT$§! снижается на §G-20%§!\n§Y$category_computing_research_speed_mult$§! увеличивается на §G+25%§!" 
+ 
+ civic_tooltip_fanatic_purifiers_effects:2 "Нельзя вести §Yдипломатию§! с иными видами!\n§YКсенопопуляции§! всегда будут очищены и не начнут влиять на стоимость традиций.\nВы получаете £unity  §YЕдинство§! от очищения £pop  ксенопопуляции.\nМожет использовать позицию бомбардировки §Y$GROUND_SUPPORT_STANCE_ARMAGEDDON$§!.\n§Y$MOD_COUNTRY_MAX_RIVALRIES$§! увеличивается на §G+1§!\n§Y$MOD_COUNTRY_RIVALRY_INFLUENCE_GAIN$§! увеличивается на §G+20%§!\n§Y$MOD_SHIP_FIRE_RATE_MULT$§! увеличивается на §G+33%§!\n§Y$MOD_ARMY_DAMAGE_MULT$§! увеличивается на §G+33%§!\n$MOD_TRADITION_COST_NUM_XENO_SLAVES_MULT$: §G-50%§"
+ 
+ civic_tooltip_syncretic_evolution_effects:1 "Вы начинаете игру с §Y4§! £pop  дополнительными иными, подчиненными видами.\n§Y$MOD_COUNTRY_SOCIETY_TECH_RESEARCH_SPEED$§! увеличивается на §G+15%§!£society \n§Y$country_resource_unity_mult$§! увеличивается на §G+15%§! £unity"
+ 
+ civic_tooltip_mass_media_effects:2 "Открывает специальную ветку политики - §YСМИ§!: не-авторитаристы получают опцию §YСвободные СМИ§!, не-либертарианцы получают опцию §YГосударственные СМИ§!."
+ 
+ pft_bankers:0 "Торговцы"
+ pft_bankers_desc:1 " "
+ pft_socialists:0 "Социалисты"
+ pft_socialists_desc:1 " "
+ pft_manufacturers:0 "Производственники"
+ pft_manufacturers_desc:1 " "
+ pft_labourites:0 "Социал-демократы"
+ pft_labourites_desc:1 "Лейбористы(СД) представляют интересы рабочего класса и добиваются сохранения прав пролетария в существующих социальных структурах.\n\n§LЭгалитарный этнос§!"
+ pft_environmentalists:0 "Зеленые"
+ pft_environmentalists_desc:1 " " 
+ pft_conservatives:0 "Аристократы"
+ pft_conservatives_desc:0 " " 
+ 
+ pft_progressive_desc:1 "Прогрессивисты поддерживают личные свободы и стараются избежать недемократических форм правления.\n\n§LЛибертарианский этнос§!" 
+ 
+ tech_new_economy:0 "Межзвездная экономика"
+ tech_new_economy_desc:0 "Позволяет принять политику "Экономическая стратегия"."
+ 
+ tech_bio_processing:0 "Промышленная биотехнология"
+ tech_bio_processing_desc:0 " "
+ tech_borehole:0 "Новые экологические стандарты регулирования"
+ tech_borehole:0 " "
+ 
+ policy_mass_media:0 "СМИ"
+ 
+ none_mass_media:0 "Ничего"
+ none_mass_media_desc:0 " "
+ 
+ terraforming_focus:0 "Терраформирование"
+terraforming_focus_name:0 "Терраформирование" 
+ terraforming_focus_desc:0 " "
+ 
+ none_energy:0 "Ничего"
+ none_energy_desc:0 " "
+ 
+ basic_energy:0 "Регулярная выработка"
+ basic_energy_desc:0 " "
+ 
+policy_transportation_logistics:0 "Транспорт и логистика"
+policy_transportation_logistics_desc:0 "Позволяет специализировать вашу транспортную инфраструктуру."
+
+none_transport:0 "Ничего"
+none_transport_desc:0 " "
+
+civilian_transport:0 "Гражданский"
+civilian_transport_name:0 "Гражданский"
+civilian_transport_desc:0 "Регулярные гражданские межколониальные переходы."
+
+civilian_transport_adv:0 "Гражданский (продвинутый)"
+civilian_transport_adv_name:0 "Гражданский (продвинутый)"
+civilian_transport_adv_desc:0 "Регулярные гражданские межколониальные переходы."
+
+administrative_transport:0 "Административный"
+administrative_transport_name:0 "Административный"
+administrative_transport_desc:0 "Увеличение колониального административного контроля."
+
+administrative_transport_adv:0 "Административный (продвинутый)"
+administrative_transport_adv_name:0 "Административный (продвинутый)"
+administrative_transport_adv_desc:0 "Увеличение колониального административного контроля."
+
+military_transport:0 "Военный"
+military_transport_name:0 "Военный"
+military_transport_desc:0 "Увеличивает поддержку военно-космического флота."
+
+military_transport_adv:0 "Военный (продвинутый)"
+military_transport_adv_name:0 "Военный (продвинутый)"
+military_transport_adv_desc:0 "Увеличивает поддержку военно-космического флота."
+
+trade_transport:0 "Торговый"
+trade_transport_name:0 "Торговый"
+trade_transport_desc:0 "Усовершенствует межколониальную торговлю"
+
+trade_transport_adv:0 "Торговый (продвинутый)"
+trade_transport_adv_name:0 "Торговый (продвинутый)"
+trade_transport_adv_desc:0 "Усовершенствует межколониальную торговлю"
+
+supply_transport:0 "Снабжение колонии"
+supply_transport_name:0 "Снабжение колонии"
+supply_transport_desc:0 "Расширение снабжения колонии"
+
+supply_transport_adv:0 "Снабжение колонии (продвинутый)" 
+supply_transport_adv_name:0 "Снабжение колонии (продвинутый)"
+supply_transport_adv_desc:0 "Расширение снабжения колонии"
+
+land_construction_focus_name:0 "Земельное строительство"
+space_construction_focus_name:0 "Космическое машиностроение"
+none_energy_name:0 "Ничего"
+none_mass_media_name:0 "Ничего"
+land_construction_focus_desc:0 " "
+space_construction_focus_desc:0 " "
+
+ ETHIC_REBUILD_TECH_UNLOCK_FREE_MARKET_TITLE:0 "§HОткрывает особенность:§! экономическая политика "Свободный рынок"."
+ ETHIC_REBUILD_TECH_UNLOCK_FREE_MARKET_DESC:0 " "
+ 
+ ETHIC_REBUILD_TECH_UNLOCK_PLANNED_ECONOMY_TITLE:0 "§HОткрывает особенность:§! экономическая политика "Плановая экономика"."
+ ETHIC_REBUILD_TECH_UNLOCK_PLANNED_ECONOMY_DESC:0 " "
+ 
+ ap_thought_control: "Тоталитарная утопия"
+ ap_thought_control_desc: "Правительство использует новейшие инновации в области нейрохимии, психотехники и нейролингвистики для умиротворения населения и обеспечения их лояльности и сопротивления внешним идеям. Но для поддержания такого уровня контроля требуются значительные ресурсы."
+ requires_technology_big_brother:1 "$TRIGGER_FAIL$Требует £society технологию §Y$tech_big_brother$§!."
+ 
+POP_ATTRACTION_SOCIALISM_POS:0 "§G+ Коллективистская правительственная этика§!"
+POP_ATTRACTION_RULER_TRAIT_FERTILITY_POS:0 "§G+ Черта правителя "Плодовитость"§!"
+POP_ATTRACTION_CIVIC_POS:0 "§G+ Гражданская модель империи§!"
+POP_ATTRACTION_SOCIOLOGIST_POS:0 "§G+ Натуралистические поселения в империи§!"
+POP_ATTRACTION_COMMUNAL_POS:0 "§G+ Коммунальные поселения в империи§!"
+POP_ATTRACTION_WASTEFUL_NEG:0 "§R- Расточительные поселения в империи§!"
+POP_ATTRACTION_RULER_TRAIT_INVESTOR_POS:0 "§G+ Черта правителя "Инвестор"§!"
+POP_ATTRACTION_THRIFTY_POS:0 "§G+ Экономные поселения в империи§!"
+POP_ATTRACTION_WASTEFUL_POS:0 "§G+ Расточительные поселения в империи§!"
+POP_ATTRACTION_CONSERVATIONAL_NEG:0 "§R- Консервативные поселения в империи§!"
+POP_ATTRACTION_RULER_TRAIT_WORLD_SHAPER_POS:0 "§G+ Черта правителя "Меняющий миры"§!"
+POP_ATTRACTION_AGRARIAN_POS:0 "§G+ Аграрные поселения в империи§!"
+POP_ATTRACTION_ADAPTIVE_POS:0 "§G+ Адаптивные поселения в империи§!"
+POP_ATTRACTION_INDUSTRIOUS_NEG:0 "§R- Трудолюбивые поселения в империи§!"
+POP_ATTRACTION_RULER_TRAIT_INDUSTRIALIST_POS:0 "§G+ Черта правителя "Промышленник"§!"
+POP_ATTRACTION_INDUSTRIOUS_POS:0 "§G+ Трудолюбивые поселения в империи§!"
+POP_ATTRACTION_WASTEFUL_POS:0 "§G+ Расточительные поселения в империи§!"
+POP_ATTRACTION_ENGINEERS_POS:0 "§G+ Природные инженерные поселения в империи§!"
+POP_ATTRACTION_AGRARIAN_NEG:0 "§R- Аграрные поселения в империи§!"
+POP_ATTRACTION_FREE_MARKET_POS:0 "§G+ Экономика свободного рынка реализована в империи§!"
+POP_ATTRACTION_OLIGARCH_GOV_POS:0 "§G+ Олигархическое правительство§!"
+POP_ATTRACTION_TALENTED_POS:0 "§G+ Талантливые поселения в империи§!"
+POP_ATTRACTION_DEVIANTS_NEG:0 "§R- Ненормальные поселения в империи§!"
+POP_ATTRACTION_CONFORMIST_POS:0 "§G+ Конформисткие поселения в империи§!"
+POP_ATTRACTION_SLOW_LEARN_NEG:0 "§R- Отстающие в развитии поселения в империи§!"
+POP_ATTRACTION_QUICK_LEARN_NEG:0 "§R- Стремительно развивающиеся поселения в империи§!"
+POP_ATTRACTION_SLOW_LEARN_POS:0 "§G+ Отстающие в развитии поселения в империи§!"
+POP_ATTRACTION_QUICK_LEARN_POS:0 "§G+ Стремительно развивающиеся поселения в империи§!"
+POP_ATTRACTION_TALENTED_NEG:0 "§R- Талантливые поселения в империи§!"
+
+POWER_INDUSTRY:0 "Развитая энергетика"
+NO_POWER_INDUSTRY:0 "Энергетика"
+POWER_INDUSTRY_DESC:0 "Активная гражданская модель §YЭнергетика§! понравится [Root.GetName]."
+
+PRIVATE_PROPERTY:0 "Частная собственность"
+NO_PRIVATE_PROPERTY:0 "Частная собственность"
+PRIVATE_PROPERTY_DESC:0 "Активная гражданская модель §YЧастная собственность§! понравится [Root.GetName]."
+
+CONSUMERISM:0 "Потребительская культура"
+NO_CONSUMERISM:0 "Консьюмеризм"
+CONSUMERISM_DESC:0 "Активная гражданская модель §YКонсьюмеризм§! понравится [Root.GetName]."
+
+WEALTH_ACCUMULATION_1:0 "Богатство"
+NO_WEALTH_ACCUMULATION_1:0 "Накопление богатства"
+WEALTH_ACCUMULATION_1_DESC:0 "Сохранение не менее £energy §Y3000§! за все время понравится [Root.GetName]."
+
+WEALTH_ACCUMULATION_2:0 "Богатство"
+NO_WEALTH_ACCUMULATION_2:0 "Накопление богатства"
+WEALTH_ACCUMULATION_2_DESC:0 "Сохранение не менее £energy §Y7000§! за все время понравится [Root.GetName]."
+
+WEALTH_ACCUMULATION_3:0 "Богатство"
+NO_WEALTH_ACCUMULATION_3:0 "Накопление богатства"
+WEALTH_ACCUMULATION_3_DESC:0 "Сохранение не менее £energy §Y12000§! за все время понравится [Root.GetName]."
+
+WEALTH_ACCUMULATION_4:0 "Богатство"
+NO_WEALTH_ACCUMULATION_4:0 "Накопление богатства"
+WEALTH_ACCUMULATION_4_DESC:0 "Сохранение не менее £energy §Y18000§! за все время понравится [Root.GetName]."
+
+MARKET_ECONOMY:0 "Развитый рынок"
+NO_MARKET_ECONOMY:0 "Рыночная экономика"
+MARKET_ECONOMY_DESC:0 "Активная экономическая политика §YРынок§! понравится [Root.GetName]."
+
+MARKET_ECONOMIC_STRATEGIES:0 "Фокусированная экономика"
+NO_MARKET_ECONOMIC_STRATEGIES:0 "Установить экономическую стратегию"
+MARKET_ECONOMIC_STRATEGIES_DESC:0 "Настройка определенной §YЭкономической стратегии рынка§! понравится [Root.GetName]."
+
+FREE_MARKET_ECONOMY:0 "Свободный рынок"
+NO_FREE_MARKET_ECONOMY:0 "Дерегулированный рынок"
+FREE_MARKET_ECONOMY_DESC:0 "Активная экономическая политика §YСвободный рынок§! понравится [Root.GetName]."
+
+WEALTH_TRADITION:0 "Традиционное богатство"
+NO_WEALTH_TRADITION:0 "$WEALTH_TRADITION$"
+WEALTH_TRADITION_DESC:0 "Принятие традиций $tr_prosperity_trans_stellar_corporations$ или $tr_prosperity_pursuit_of_profit$ понравится [Root.GetName]."
+
+WEALTH_INFRASTRUCTURE:0 "Галактическая фондовая биржа"
+NO_WEALTH_INFRASTRUCTURE:0 "Настройка галактической фондовой биржи"
+WEALTH_INFRASTRUCTURE_DESC:0 "Возведение §YГалактической фондовой биржи§! понравится [Root.GetName]."
+
+FANATIC_LIBERTARIAN_GOVERNMENT:0 "Ультра-либеральное общество"
+NO_FANATIC_LIBERTARIAN_GOVERNMENT:0 "Ультра-либеральное общество"
+FANATIC_LIBERTARIAN_GOVERNMENT_DESC:0 "Фракции более счастливы в §YФан. Либертарианских§! империях."
+
+PARLIAMENTARY_SYSTEM:0 "Парламентарная система"
+NO_PARLIAMENTARY_SYSTEM:0 "Парламентарная систем"
+PARLIAMENTARY_SYSTEM_DESC:0 "Фракции более счастливы в империях с §YПарламентарной системой§!."
+
+SOCIAL_SECURITY:0 "Социальное обеспечение"
+NO_SOCIAL_SECURITY:0 "Настроить социальное обеспечение"
+SOCIAL_SECURITY_DESC:0 "Настройка §YСоциальное обеспечение§! (или лучше) понравится [Root.GetName]."
+
+HUMANITARIAN_SCIENCE:0 "Фокус исследования общества"
+NO_HUMANITARIAN_SCIENCE:0 "Гранты на исследования общества"
+HUMANITARIAN_SCIENCE_DESC:0 "Вызов эдикта §YФокус исследования общества§! понравится [Root.GetName]."
+
+PUBLIC_MEDICINE:0 "Развитая государственная медицина"
+NO_PUBLIC_MEDICINE:0 "Государственная медицина"
+PUBLIC_MEDICINE_DESC:0 "Активная гражданская модель §YГосударственная медицина§! понравится [Root.GetName]."
+
+PUBLIC_EDUCATION:0 "Развитое государственное образование"
+NO_PUBLIC_EDUCATION:0 "Государственное образование"
+PUBLIC_EDUCATION_DESC:0 "Активная гражданская модель §YГосударственное образование§! понравится [Root.GetName]."
+
+WELFARE_ECONOMY:0 "Экономика благосостояния"
+NO_WELFARE_ECONOMY:0 "Экономика благосостояния"
+WELFARE_ECONOMY_DESC:0 "Активная экономическая политика §YБогатство§! понравится [Root.GetName]."
+
+SOCIAL_ECONOMIC_STRATEGIES:0 "Фокусированная экономика"
+NO_SOCIAL_ECONOMIC_STRATEGIES:0 "Установить экономическую стратегию"
+SOCIAL_ECONOMIC_STRATEGIES_DESC:0 "Настройка определенной §YСоциально-экономической стратегии§! понравится [Root.GetName]."
+
+PLANNED_ECONOMY: "Плановая экономика"
+NO_PLANNED_ECONOMY:0 "Упразднить рыночную экономику"
+PLANNED_ECONOMY_DESC:0 "Активная экономическая политика §YПлановая экономика§! понравится [Root.GetName]."
+
+COLLECTIVIST_TRADITION:0 "Традиционная гармония"
+NO_COLLECTIVIST_TRADITION:0 "Традиционная гармония"
+COLLECTIVIST_TRADITION_DESC:0 "Принятие традиции §YУтопическая мечта§! понравится [Root.GetName]."
+
+MINING_INDUSTRY:0 "Развитая горнодобывающая промышленность"
+NO_MINING_INDUSTRY:0 "Развить горнодобывающую промышленность"
+MINING_INDUSTRY_DESC:0 "Активная гражданская модель §YГорное дело§! понравится [Root.GetName]."
+
+LAND_CONSTRUCTION:0 "Развитое земельное строительство"
+NO_LAND_CONSTRUCTION:0 "Развить земельное строительство"
+LAND_CONSTRUCTION_DESC:0 "Активная гражданская модель §YЗемельное строительство§! понравится [Root.GetName]."
+
+SPACE_ENGINEERING:0 "Развитое космическое машиностроение"
+NO_SPACE_ENGINEERING:0 "Развить космическое машиностроение"
+SPACE_ENGINEERING_DESC:0 "Активная гражданская модель §YКосмическое машиностроение§! понравится [Root.GetName]."
+
+MINERALS_ACCUMULATION_1:0 "Богатый минералами"
+NO_MINERALS_ACCUMULATION_1:0 "Накопить минералы"
+MINERALS_ACCUMULATION_1_DESC:0 "Сохранение не менее £minerals §Y1500§! за все время понравится [Root.GetName]."
+
+MINERALS_ACCUMULATION_2:0 "Богатый минералами"
+NO_MINERALS_ACCUMULATION_2:0 "Накопить минералы"
+MINERALS_ACCUMULATION_2_DESC:0 "Сохранение не менее £minerals §Y3000§! за все время понравится [Root.GetName]."
+
+MINERALS_ACCUMULATION_3:0 "Богатый минералами"
+NO_MINERALS_ACCUMULATION_3:0 "Накопить минералы"
+MINERALS_ACCUMULATION_3_DESC:0 "Сохранение не менее £minerals §Y7000§! за все время понравится [Root.GetName]."
+
+OWN_RICH_WORLD:0 "Минерально богатый мир"
+NO_OWN_RICH_WORLD:0 "Минерально богатый мир"
+OWN_RICH_WORLD_DESC:0 "Обладание §YМинерально богатым§! миром понравится [Root.GetName]."
+
+OWN_ANCIENT_TECH:0 "Мир древних технологий"
+NO_OWN_ANCIENT_TECH:0 "Мир древних технологий"
+OWN_ANCIENT_TECH_DESC:0 "Обладание миром с какой-либо древней промышленной технологией понравится [Root.GetName]."
+
+INDUSTRY_ASCENSION_1:0 "Традиционная галактическая инженерия"
+NO_INDUSTRY_ASCENSION_1:0 "Традиционная галактическая инженерия"
+INDUSTRY_ASCENSION_1_DESC:0 "Принятие традиции §YГалактические чудеса§! или §YКруг жизни§! понравится [Root.GetName]."
+
+INDUSTRY_ASCENSION_2:0 "Славная галактическая инженерия"
+NO_INDUSTRY_ASCENSION_2:0 "Славная галактическая инженерия"
+INDUSTRY_ASCENSION_2_DESC:0 "Принятие традиции §YМастер-строители§! понравится [Root.GetName]."
+
+INDUSTRY_POLICY:0 "Промышленно-экономический фокус"
+NO_INDUSTRY_POLICY:0 "Настроить промышленно-экономический фокус"
+INDUSTRY_POLICY_DESC:0 "Настройка определенной §YПромышленно-экономической§! политики понравится [Root.GetName]."
+
+LABOURITE_NO_OLIGARCHY:0 "Анти-Олигархия"
+LABOURITE_OLIGARCHY:0 "Анти-Олигархия"
+LABOURITE_NO_OLIGARCHY_DESC:0 "Упразднение §YОлигархического§! правительства понравится [Root.GetName]."
+
+LABOUR_UNIONS: "Профсоюзы"
+NO_LABOUR_UNIONS:0 "Профсоюзы"
+LABOUR_UNIONS_DESC:0 "Активная гражданская модель §YПрофсоюзы§! понравится [Root.GetName]."
+
+WASTE_RECYCLING:0 "Утилизация отходов"
+NO_WASTE_RECYCLING:0 "Утилизация отходов"
+WASTE_RECYCLING_DESC:0 "Активная гражданская модель §YУтилизация отходов§! понравится [Root.GetName]."
+
+TERRAFORMING_INDUSTRY:0 "Индустрия терраформирования"
+NO_TERRAFORMING_INDUSTRY:0 "Индустрия терраформирования"
+TERRAFORMING_INDUSTRY_DESC:0 "Активная гражданская модель §YТерраформирование§! понравится [Root.GetName]."
+
+ECO_NO_TOMB_WORLDS:0 "Терраформированный могильный мир"
+ECO_TOMB_WORLDS:0 "Терраформированный могильный мир"
+ECO_NO_TOMB_WORLDS_DESC:0 "Терраформирование §Yмогильного мира§! в границах империи понравится [Root.GetName]."
+
+ECO_NO_TOXIC_WORLDS:0 "Терраформированный токсичный мир"
+ECO_TOXIC_WORLDS:0 "Терраформированный токсичный мир"
+ECO_NO_TOXIC_WORLDS_DESC:0 "Терраформирование §Yтоксичного мира§! в границах империи понравится [Root.GetName]."
+
+ECO_NO_BARREN_WORLDS:0 "Терраформированный бесплодный мир"
+ECO_BARREN_WORLDS:0 "Терраформированный бесплодный мир"
+ECO_NO_BARREN_WORLDS_DESC:0 "Терраформирование §Yбесплодного мира§! в границах империи понравится [Root.GetName]."
+
+PROTECTED_NATURE:0 "Защита природы"
+NO_PROTECTED_NATURE:0 "Защита природы"
+PROTECTED_NATURE_DESC:0 "Обладание §Yпышным§! миром понравится [Root.GetName]."
+
+PROTECTED_WILDLIFE:0 "Защита дикой природы"
+NO_PROTECTED_WILDLIFE:0 "Защитить родную дикую природу"
+PROTECTED_WILDLIFE_DESC:0 "Обладание миром с §YОпасной дикой природой§! понравится [Root.GetName]."
+
+PROTECTED_BEAUTY:0 "Защищенная натуральная красота"
+NO_PROTECTED_BEAUTY:0 "Защитить натуральную красоту"
+PROTECTED_BEAUTY_DESC:0 "Обладание миром с §Yнатуральной красотой§! понравится [Root.GetName]."
+
+UNIQUE_LIFERORMS:0 "Уникальные формы жизни защищены"
+NO_UNIQUE_LIFERORMS:0 "Защитить уникальные формы жизни"
+UNIQUE_LIFERORMS_DESC:0 "Обладание миром с §YТитаническими формами жизни§! или зданием §YКсенозаповедник§! понравится [Root.GetName]."
+
+ECO_POLICY:0 "Экологическая экономика"
+NO_ECO_POLICY:0 "Экологическая экономика"
+ECO_POLICY_DESC:0 "Настройка определенной §YЭкологической экономики§! понравится [Root.GetName]."
+
+ECO_MIN_WASTE:0 "Минимальная трата"
+NO_ECO_MIN_WASTE:0 "Минимальная трата"
+ECO_MIN_WASTE_DESC:0 "Сохранение §Yуровня жизни§! при соответствующем минимуме понравится [Root.GetName]."
+
+ ECO_ASCENSION_1:0 "Традиционная экологическая инженерия"
+ ECO_NO_ASCENSION_1:0 "Традиционная экологическая инженерия"
+ ECO_ASCENSION_1_DESC:0 "Принятие традиции §YМеняющий миры§! или §YМастерство природы§! понравится [Root.GetName]."
+
+FEW_RULERS:0 "Олигархическое правительство"
+NO_FEW_RULERS:0 "Олигархическое правительство"
+FEW_RULERS_DESC:0 "Становление §Yолигархического§! правительства понравится [Root.GetName]."
+
+ELITE_RULE:0 "Стратифицированное общество"
+NO_ELITE_RULE:0 "Стратифицированное общество"
+ELITE_RULE_DESC:0 "Обеспечение стратифицированного общества - кастовой системы или ограниченного гражданства для некоторых - понравится [Root.GetName]."
+
+ELITE_COMMAND:0 "Элитарные военные"
+NO_ELITE_COMMAND:0 "Элитарные военные"
+ELITE_COMMAND_DESC:0 "Обеспечение стратифицированной военной или ограниченной военной службы для некоторых - понравится [Root.GetName]."
+
+ARISTOCRATIC_ELITE:0 "Аристократическая элита"
+NO_ARISTOCRATIC_ELITE:0 "Аристократическая элита"
+ARISTOCRATIC_ELITE_DESC:0 "Активная гражданская модель §YПлеменная аристократия§! или §YБлагородная аристократия§! понравится [Root.GetName]."
+
+ARISTOCRATIC_TRADITION:0 "Традиционный аристократизм"
+NO_ARISTOCRATIC_TRADITION:0 "Традиционный аристократизм"
+ARISTOCRATIC_TRADITION_DESC:0 "Принятие традиции §YКолониальные наместники§! понравится [Root.GetName]."
+
+POP_GROWTH:0 "Рост популяции"
+NO_POP_GROWTH:0 "Рост популяции"
+POP_GROWTH_DESC:0 "§YНакопление запасов продовольствия§! как минимум, для обеспечения максимального прироста населения понравится [Root.GetName]."
+
+AGRICULTURE_INDUSTRY:0 "Развитое сельское хозяйство"
+NO_AGRICULTURE_INDUSTRY:0 "Развить сельское хозяйство"
+AGRICULTURE_INDUSTRY_DESC:0 "Активная гражданская модель §YАгрокультура§! понравится [Root.GetName]."
+
+TOURISM_INDUSTRY:0 "Развитый туризм"
+NO_TOURISM_INDUSTRY:0 "Развитый туризм"
+TOURISM_INDUSTRY_DESC:0 "Активная гражданская модель §YТуризм§! понравится [Root.GetName]."
+
+TRANSPORTATION_INDUSTRY:0 "Развитые перевозки"
+NO_TRANSPORTATION_INDUSTRY:0 "Развить перевозки"
+TRANSPORTATION_INDUSTRY_DESC:0 "Активная гражданская модель §YТранспорт и логистика§! понравится [Root.GetName]."
+
+FREE_PRESS:0 "Свободная пресса"
+NO_FREE_PRESS:0 "Свободная пресса"
+FREE_PRESS_DESC:0 "Принятие политики §Yсвободной прессы§! понравится [Root.GetName]."
+
+ENGINEERING_SCIENCE:0 "Фокус на инженерных исследованиях"
+NO_ENGINEERING_SCIENCE:0 "Фокус на инженерных исследованиях"
+ENGINEERING_SCIENCE_DESC:0 "Принятие эдикта §YФокус на инженерных исследованиях§! понравится [Root.GetName]."
+
+INDUSTRIAL_INFRASTRUCTURE:0 "Развитая промышленная инфраструктура"
+NO_INDUSTRIAL_INFRASTRUCTURE:0 "Развитт промышленную инфраструктуру"
+INDUSTRIAL_INFRASTRUCTURE_DESC:0 "Построение «Минеральной перерабатывающей установки II» на каждой большой (>15 клеток) планете понравится [Root.GetName]."
+
+INDUSTRIAL_ADV_INFRASTRUCTURE:0 "Продвинутая промышленная инфраструктура"
+NO_INDUSTRIAL_ADV_INFRASTRUCTURE:0 "Продвинутая промышленная инфраструктура"
+INDUSTRIAL_ADV_INFRASTRUCTURE_DESC:0 "Построение «термальной скважины» на каждой доступной планете, понравится [Root.GetName]."
+
+ENERGY_INFRASTRUCTURE:0 "Развитая энергетическая инфраструктура"
+NO_ENERGY_INFRASTRUCTURE:0 "Развитт энергетическую инфраструктуру"
+INDUSTRIAL_INFRASTRUCTURE_DESC:0 "Построение «Энергетического звена» на каждой большой (>15 клеток) планете понравится [Root.GetName]."
+
+XENO_ZOO:0 "Ксенозоопарк"
+NO_XENO_ZOO: "Построить Ксенозоопарк"
+XENO_ZOO_DESC:0 "Построение "Ксенозоопарка" на каждой доступной планете, понравится [Root.GetName]."
+NO_MARKET_ECONOMY:0 "Политика благосостояния"
+MARKET_ECONOMY:0 "Рыночная экономика"
+NO_MARKET_ECONOMY_DESC: "Отмена §Yрынка§! понравится [Root.GetName]."
+
+NO_WELFARE_ECONOMY:0 "Дерегулированный рынок"
+WELFARE_ECONOMY: "Регулированный рынок"
+NO_WELFARE_ECONOMY_DESC:0 "Отмена §Yблагосостояния§! понравится [Root.GetName]." 
+
+suppressed_egalitarian:0 "Либертарианство подавлено"
+ suppressed_egalitarian_desc:0 "§HЛибертарианство§! подавляет государство."
+ promoted_egalitarian:0 "Либертарианство продвигается"
+ promoted_egalitarian_desc:0 "Государство продвигает §HЛибертарианство§!."
+ 
+ suppressed_capitalism:0 "Индивидуализм подавлен"
+ suppressed_capitalism_desc:0 "Государство подавляет §HИндивидуализм§!."
+ promoted_capitalism:0 "Индивидуализм продвигается"
+ promoted_capitalism_desc:0 "Государство продвигает §HИндивидуализм§!." 
+ 
+ suppressed_socialism:0 "Коллективизм подавлен"
+ suppressed_socialism_desc:0 "Государство подавляет §HКоллективизм§!."
+ promoted_socialism:0 "Коллективизм продвигается"
+ promoted_socialism_desc:0 "Государство продвигает §HКоллективизм§!." 
+
+ suppressed_green:0 "Экологизм подавлен"
+ suppressed_green_desc:0 "Государство подавляет §HЭкологизм§!."
+ promoted_green:0 "Экологизм продвигается"
+ promoted_green_desc:0 "Государство продвигает §HЭкологизм§!."   
+ 
+ suppressed_industrial:0 "Индустриализм подавлен"
+ suppressed_industrial_desc:0 "Государство подавляет §HИндустриализм§!."
+ promoted_industrial:0 "Индустриализм продвигается"
+ promoted_industrial_desc:0 "Государство продвигает §HИндустриализм§!."  
+
+ suppressed_pluralist:0 "Эгалитаризм подавлен"
+ suppressed_pluralist_desc:0 "Государство подавляет §HЭгалитаризм§!."
+ promoted_pluralist:0 "Эгалитаризм продвигается"
+ promoted_pluralist_desc:0 "Государство продвигает §HЭгалитаризм§!."  
+ 
+ suppressed_elitist:0 "Элитизм подавлен"
+ suppressed_elitist_desc:0 "Государство подавляет §HЭлитизм§!."
+ promoted_elitist:0 "Элитизм продвигается"
+ promoted_elitist_desc:0 "Государство продвигает §HЭлитизм§!." 
+ 
+ pop_ethic_industrial_attraction_mult:0 "Привлечение индустриальной этики"
+ pop_ethic_green_attraction_mult:0 "Привлечение экологической этики"
+ pop_ethic_capitalism_attraction_mult:0 "Привлечение индивидуалистической этики"
+ pop_ethic_socialism_attraction_mult:0 "Привлечение коллективисткой этики"
+ pop_ethic_elitist_attraction_mult:0 "Привлечение элитарной этики"
+ pop_ethic_pluralist_attraction_mult:0 "Привлечение эгалитарной этики" 
+ 
+ 16_FRIENDLY_GREETING:1 "Ваше правительство эффективно справляется с худшими проявлениями либертарианства, [From.GetSpeciesNamePlural]."
+ 04_INSULT_PROPOSE_COL_IND:0 "Какими же эгоистами вы являетесь, ставя свою индивидуальность впереди всей галактики? Либертарианство ... абсурд! [Root.GetName] не продержится и года с такими мыслями."
+ uplift.7215.c.tooltip:1 "[From.From.From.GetName] получил §Yлибертарианство§!."
+ nomad.21.d.response:1 "Они - духовная и либертарианская толпа, как хорошо, что эти одноклеточные сильно различаются."
+ observation.2041.desc:0 "Туземцы на [From.GetName] не только влюбились в наши технологии, но и начинают подражать нашим путям.\n\nВдохновленные тем, что они видели в нашем искусстве и культуре, общество [From.Owner.GetSpeciesName], похоже, разработало новое чувство либертарианства. Их личные свободы значительно увеличились с момента нашего прибытия."
+ observation.2061.desc:0 "Анархия царит на поверхности [From.GetName], и наши советники испытывают трудности при обучении современной науки [From.Owner.GetSpeciesNamePlural]. Их так называемые ученые все тянут свои исследования по направлениям, которые на данный момент интересны им, не проявляя никакого отношения к общему благу.\n\nНаша миссия просвещения продолжается, несмотря на ошибочное либертарианство, проявляемое туземцами, и это займет больше времени, чем ожидалось."
+ COL_LABEL:1 "Авторитаризм <-> Либертарианство"
+ SOC_LABEL:1 "Коллективизм <-> Индивидуализм"
+ GRN_LABEL:1 "Экологизм <-> Индустриализм"
+ ELT_LABEL:1 "Элитизм <-> Эгалитаризм"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_POS:0 "§G+ Дипломатия с либертарианскими империями§!"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_POS:0 "§G+ Дипломатия с либертарианскими империями§!"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_NEG:0 "§R- Дипломатия с либертарианскими империями§!"
+ POP_ATTRACTION_EGALITARIAN_DIPLOMACY_NEG:0 "§R- Дипломатия с либертарианскими империями§!"
+ pop_ethic_egalitarian_attraction_mult:0 "Привлечение либертарианской этики"
+ pop_ethic_egalitarian_attraction_mult:0 "Привлечение либертарианской этики"
+ opinion_of_egalitarian_pos:0 "Свободные либертарианцы"
+ opinion_of_egalitarian:0 "Либертарианская чернь"
+ pft_progressive_desc:1 "Прогрессивные фракции стремятся к недискриминации в существующих социальных структурах и не любят нерепрезентативные формы правления.\n\n§Либертарианский этнос§!"
+ factions.2000.desc.progressive:0 "В результате приведения этой фракции в свое правительство они стали более §Hлибертарианцами§!.\n\n"
+ egalitarian_unrest:0 "Беспорядки (Привлечение либертарианцев)"
+ egalitarian_unrest:0 "Беспорядки (Привлечение либертарианцев)"
+ egalitarian_unrest_desc:0 "§HБеспорядки§! в этой колонии стали склонять жителей к §Yлибертарианству§!."
+ egalitarian_unrest_desc:0 "§HБеспорядки§! в этой колонии стали склонять жителей к §Yлибертарианству§!."
+ unrest.168.desc:0 "Приветствую [Root.GetSpeciesName]. Мы - борцы за свободу, бывшие рабы из [old_owner.GetName], где много страдали от притеснения [old_owner.GetRulerTitle] [old_owner.GetRulerName]. Мы давно восхищаемся вашими либертарианскими стандартами, способом "[new_owner.GetSpeciesAdj]", и часто ссылались на него дома. Мы отделились и очень мечтаем стать частью вашей нации, что вы считаете?" 
+
+ opinion_of_elitist_pos:0 "Благородные аристократы"
+ opinion_of_elitist:1 "Высокомерные крысы"
+ opinion_of_pluralist_pos:0 " "
+ opinion_of_pluralist:1 " "
+ 
+ tech_ancestor_call:0 "Зов Предков"
+ tech_ancestor_call_desc:0 " "
+
+ LABOURITE_NO_CASTE:0 "Анти-Кастовая система"
+ LABOURITE_CASTE:0 "Кастовая система" 
+ LABOURITE_NO_CASTE_DESC:0 "Если кто-либо в нашей Империи находится в §YКастовой Системе§!, это сильно расстраивает [Root.GetName]."
+ 
+ 
+ EQUAL_ARMY:0 "Равный Допуск к Военной Службе"
+ NO_EQUAL_ARMY:0 "Равный Допуск к Военной Службе"
+ EQUAL_ARMY_DESC:0 "Недопущение того, что кто-либо в нашей Империи имеет ограниченный доступ к Военной службе порадует [Root.GetName]."
+ 
+ POP_ATTRACTION_LIMITED_CITIZEN_POS:0 "§G+ Население с ограниченными правами в Империи§!"
+ POP_ATTRACTION_ELITIST_POS:0 "§G+ Одна из государственных этик - Элитизм§!"
+ POP_ATTRACTION_PLURALIST_POS:0 "§G+ Одна из государственных этик - Эгалитарианство§!"
+ POP_ATTRACTION_ENHANCED_LEADERS_POS:0 "§G+ Политика усовершенствования Лидеров в Империи§!"
+ 
+ policy_gun_rights:0 "Ношение Оружия"
+ policy_gun_rights_desc:0 ""
+ 
+ gun_rights_allowed:0 "Разрешено"
+ gun_rights_allowed_name:0 "Разрешено"
+ gun_rights_allowed_desc:0 "Жителям разрешено носить и применять оружие."
+ 
+ gun_rights_disallowed:0 "Запрещено"
+ gun_rights_disallowed_name:0 "Запрещено"
+ gun_rights_disallowed_desc:0 "Жителям запрещено носить и применять оружие." 
+ 
+ TOTALITARIAN_NO_GUN_RIGHTS:0 "Запрет на ношение оружия"
+ TOTALITARIAN_GUN_RIGHTS:0 "Запретить ношение оружия"
+ TOTALITARIAN_NO_GUN_RIGHTS_DESC:0 "Запрет на ношение оружия гражданским населением Империи порадует [Root.GetName]."
+ 
+ PROGRESSIVE_GUN_RIGHTS:0 "Ношение оружия разрешено"
+ PROGRESSIVE_NO_GUN_RIGHTS:0 "Разрешить ношение оружия"
+ PROGRESSIVE_GUN_RIGHTS_DESC:0 "Разрешение на ношение оружия гражданским населением Империи порадует [Root.GetName]."
+ 
+ civic_tooltip_egalitarian:0 "ЕСТЬ §YЛибертарианство§!"
+ civic_tooltip_not_egalitarian:0 "НЕТ §YЛибертарианства§!"
+
+ ethic_fanatic_pluralist_desc:0 "Каждый приходит в этот мир равным с остальными, даже на биологическом уровне. Давайте же сделаем так, чтобы этот потенциал оставался на протяжении всей жизни всякого гражданина в государстве!\n\n§YФан.Эгалитаристы§! могут случайным образом получать §YЛидеров§! в результате определенных успешных действий, например, развития колонии (§YГубернатор§!), победы в битве (§YАдмирал/Генерал§!), технологическое развитие или исследование планеты (§YУчёный§!)." 
+ 
+ #leader notification
+ ethic_rebuild_leaders_new:0 "Новый
+ ethic_rebuild_leaders_new.desc:0 "У нас в штате появился новый"
+ ethic_rebuild_leaders_block.tooltip:0 "Не показывать оповещения о новых лидерах."
+ ethic_rebuild_block:0 "Передайте эту информацию моему секретарю."
+
+ # lines without text
+ # events
+ ethic_rebuild_leaders.54.name:0 "$ethic_rebuild_leaders_new$ $governor$"
+ ethic_rebuild_leaders.54.desc:0 "$ethic_rebuild_leaders_new.desc$ §P$governor$.§!"
+ ethic_rebuild_leaders.55.name:0 "$ethic_rebuild_leaders_new$ $scientist$"
+ ethic_rebuild_leaders.55.desc:0 "$ethic_rebuild_leaders_new.desc$ §P$scientist$.§!"
+ ethic_rebuild_leaders.56.name:0 "$ethic_rebuild_leaders_new$ $admiral$"
+ ethic_rebuild_leaders.56.desc:0 "$ethic_rebuild_leaders_new.desc$ §P$admiral$.§!"
+ ethic_rebuild_leaders.57.name:0 "$ethic_rebuild_leaders_new$ $general$"
+ ethic_rebuild_leaders.57.desc:0 "$ethic_rebuild_leaders_new.desc$ §P$general$.§!" 
+ 
+ MOD_DISTANCE_TO_CAPITAL_STATIC_MODIFIER_EFFICIENCY_MULT:0 "Привлекательность гос.Этик от дистанции" 
+ 
+ building_robot_mon:0 "Колоссальный Монумент"
+ building_robot_mon_desc:0 " " 
+ 

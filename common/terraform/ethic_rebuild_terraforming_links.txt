@@ -1,0 +1,252 @@
+
+@energy_purifying = 10000
+@time_purifying = 7500
+
+@energy_inhabitable = 16000
+@time_inhabitable = 12000
+
+
+
+#Purifying Terraforming Links
+#############################
+
+
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_continental"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+
+
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_ocean"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+
+
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tropical"
+
+	duration = @time_purifying
+	energy = @energy_purifying
+
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_desert"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arid"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_savannah"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_arctic"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_tundra"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+terraform_link = {
+	from = "pc_toxic"
+	to = "pc_alpine"
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = "tech_atm_purifying"
+	}
+}
+
+#Uninhabitable Terraforming Links
+#################################
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_arctic"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_frozen"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_tundra"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_frozen"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_frozen"
+	to = "pc_alpine"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_frozen"
+	}
+}
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_desert"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_molten"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_arid"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+
+	condition = {
+		has_technology = "tech_terraform_molten"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_molten"
+	to = "pc_savannah"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+
+	condition = {
+		has_technology = "tech_terraform_molten"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_arctic"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+	
+
+	condition = {
+		has_technology = "tech_terraform_barren"
+	}
+}
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_tundra"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_barren"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_barren_cold"
+	to = "pc_alpine"
+
+	duration = @time_inhabitable
+	energy = @energy_inhabitable
+
+
+	condition = {
+		has_technology = "tech_terraform_barren"
+	}
+}

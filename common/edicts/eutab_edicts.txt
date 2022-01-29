@@ -1,0 +1,485 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+##############################
+##Gov Unique
+##############################
+country_edict = {
+	name = "e_eutab_buy_influence"
+	modifier = {
+		tile_resource_minerals_mult = -0.075
+		tile_resource_energy_mult = -0.075
+		country_resource_influence_add = 2
+	}
+	
+	influence_cost = 0
+	
+	allow = {
+		has_authority = auth_democratic
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+	
+	prerequisites = {
+		"tech_eutab_buy_influence"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_bastion_dem"
+	modifier = {
+		tile_resource_unity_mult = 0.05
+		planet_unrest_add = -15
+	}
+	
+	influence_cost = 0.66
+	
+	allow = {
+		has_authority = auth_democratic
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+	
+	prerequisites = {
+		"tech_eutab_bastion_dem"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_rally_support"
+	modifier = {
+		tile_resource_unity_mult = 0.10
+	}
+	
+	influence_cost = 1
+	
+	allow = {
+		OR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+		}
+	}
+	
+	ai_weight = {
+		weight = 0	
+	}
+	
+	prerequisites = {
+		"tech_eutab_rally_support"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_emergency_powers"
+	modifier = {
+		pop_consumer_goods_mult = -0.2
+		tile_resource_minerals_mult = 0.07
+		tile_resource_energy_mult = 0.12
+		spaceport_ship_build_time_mult = -0.25
+		pop_government_ethic_attraction = -0.25
+		pop_happiness = -0.125
+		planet_unrest_add = 20
+	}
+	
+	influence_cost = 2
+	
+	ai_weight = {
+		weight = 2	
+	}
+	
+	allow = {
+		OR = {
+			has_authority = auth_democratic
+			has_authority = auth_oligarchic
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_emergency_powers"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_coerce_corps"
+	modifier = {
+		tile_resource_minerals_mult = 0.05
+		tile_resource_energy_mult = 0.05
+		tile_resource_food_mult = 0.05
+		planet_unrest_add = 20
+	}
+	
+	influence_cost = 1.25
+	
+	ai_weight = {
+		weight = 0	
+	}
+	
+	allow = {
+		OR = {
+			has_authority = auth_oligarchic
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_coerce_corps"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_subsidise_corp"
+	modifier = {
+		tile_resource_energy_mult = -0.1
+		all_technology_research_speed = 0.075
+	}
+	
+	influence_cost = 0.75
+	
+	ai_weight = {
+		weight = 1	
+	}
+	
+	allow = {
+		has_authority = auth_oligarchic
+	}
+	
+	prerequisites = {
+		"tech_eutab_subsidise_corp"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_cult_person"
+	modifier = {
+		pop_happiness = 0.075
+		tile_resource_unity_mult = 0.05
+	}
+	
+	influence_cost = 1
+	
+	ai_weight = {
+		weight = 2	
+	}
+	
+	allow = {
+		has_authority = auth_dictatorial
+	}
+	
+	prerequisites = {
+		"tech_eutab_cult_person"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_graphic_propaganda"
+	modifier = {
+		tile_resource_minerals_mult = 0.1
+		spaceport_ship_build_time_mult = -0.2
+		pop_government_ethic_attraction = 0.15
+		pop_happiness = -0.05
+		planet_unrest_add = 10
+	}
+	
+	influence_cost = 1.25
+	
+	ai_weight = {
+		weight = 2	
+	}
+	
+	allow = {
+		OR = {
+			has_authority = auth_dictatorial
+			has_authority = auth_imperial
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_graphic_propaganda"
+	}
+}
+
+country_edict = {
+	name = "e_eutab_imp_pressure"
+	modifier = {
+		megastructure_build_speed_mult = 0.2
+	}
+	
+	influence_cost = 1.75
+	
+	ai_weight = {
+		weight = 1
+	}
+	
+	allow = {
+		has_authority = auth_imperial
+	}
+	
+	prerequisites = {
+		"tech_eutab_imp_pressure"
+	}
+}
+
+##############################
+##Hive Unique
+##############################
+
+country_edict = {
+	name = "e_eutab_h_mineral_focus"
+	modifier = {
+		tile_resource_minerals_mult = 0.1
+	}
+	
+	influence_cost = 1
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_energy_focus
+			has_country_edict = e_eutab_h_unity_focus
+			has_country_edict = e_eutab_h_pop_focus
+			has_country_edict = e_eutab_h_arm_focus
+			has_country_edict = e_eutab_h_tech_focus
+		}
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+country_edict = {
+	name = "e_eutab_h_energy_focus"
+	modifier = {
+		tile_resource_energy_mult = 0.1
+	}
+	
+	influence_cost = 1
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_mineral_focus
+			has_country_edict = e_eutab_h_unity_focus
+			has_country_edict = e_eutab_h_pop_focus
+			has_country_edict = e_eutab_h_arm_focus
+			has_country_edict = e_eutab_h_tech_focus
+		}
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+country_edict = {
+	name = "e_eutab_h_unity_focus"
+	modifier = {
+		tile_resource_unity_mult = 0.2
+	}
+	
+	influence_cost = 1.5
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_mineral_focus
+			has_country_edict = e_eutab_h_energy_focus
+			has_country_edict = e_eutab_h_pop_focus
+			has_country_edict = e_eutab_h_arm_focus
+			has_country_edict = e_eutab_h_tech_focus
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_hive_complex"
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+country_edict = {
+	name = "e_eutab_h_pop_focus"
+	modifier = {
+		pop_growth_speed = 0.2
+		planet_army_build_speed_mult = 0.3
+		tile_resource_food_mult = 0.1
+	}
+	
+	influence_cost = 1
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_mineral_focus
+			has_country_edict = e_eutab_h_energy_focus
+			has_country_edict = e_eutab_h_unity_focus
+			has_country_edict = e_eutab_h_arm_focus
+			has_country_edict = e_eutab_h_tech_focus
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_hivee_pop"
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+country_edict = {
+	name = "e_eutab_h_arm_focus"
+	modifier = {
+		planet_army_build_speed_mult = 0.15
+		spaceport_ship_build_time_mult = -0.2
+	}
+	
+	influence_cost = 1.5
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_mineral_focus
+			has_country_edict = e_eutab_h_energy_focus
+			has_country_edict = e_eutab_h_unity_focus
+			has_country_edict = e_eutab_h_pop_focus
+			has_country_edict = e_eutab_h_tech_focus
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_hivee_pop"
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+country_edict = {
+	name = "e_eutab_h_tech_focus"
+	modifier = {
+		all_technology_research_speed = 0.05
+		num_tech_alternatives_add = 1
+	}
+	
+	influence_cost = 1.5
+	
+	potential = {
+		has_authority = auth_hive_mind
+	}
+		
+	allow = {
+		NOT = {
+			has_country_edict = e_eutab_h_mineral_focus
+			has_country_edict = e_eutab_h_energy_focus
+			has_country_edict = e_eutab_h_unity_focus
+			has_country_edict = e_eutab_h_pop_focus
+			has_country_edict = e_eutab_h_arm_focus
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_hivee_research"
+	}
+	
+	ai_weight = {
+		weight = 1	
+	}	
+}
+
+##############################
+## Ethic Unique
+##############################
+
+country_edict = {
+	name = "eutab_prot_from_aggression"
+	modifier = {
+		tile_resource_unity_mult = 0.15
+	}
+	
+	influence_cost = 1.5
+	
+	ai_weight = {
+		weight = 5	
+	}
+	
+	allow = {
+		OR = {
+			has_ethic = ethic_authoritarian
+			has_ethic = ethic_fanatic_authoritarian
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_prot_from_aggression"
+	}
+}
+
+country_edict = {
+	name = "eutab_universal_basic_income"
+	modifier = {
+		pop_happiness = 0.1
+		building_time_mult = 0.25
+		spaceport_ship_build_time_mult = 0.25
+
+	}
+	
+	influence_cost = 1
+	
+	ai_weight = {
+		weight = 5	
+	}
+	
+	prerequisites = {
+		"tech_eutab_universal_b_income"
+	}
+}
+
+country_edict = {
+	name = "eutab_diplomat_spies"
+	modifier = {
+		num_tech_alternatives_add = 1
+		all_technology_research_speed = 0.03
+	}
+	
+	influence_cost = 2
+	
+	ai_weight = {
+		weight = 5	
+	}
+	
+	allow = {
+		OR = {
+			has_ethic = ethic_xenophobe
+			has_ethic = ethic_fanatic_xenophobe
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_diplomatic_spies"
+	}
+}

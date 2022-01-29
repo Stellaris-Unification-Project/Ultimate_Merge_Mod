@@ -1,0 +1,80 @@
+triggered_opinion_precursor_remnants = {
+	trigger = { 
+		OR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+		}
+		FROM = { 
+			has_civic = civic_precursor_remnants
+		}
+	}	
+
+	opinion = {
+		base = 30
+	}
+}
+
+triggered_opinion_philosopher_king = {
+	trigger = { 
+		OR = {
+			is_country_type = fallen_empire
+			is_country_type = awakened_fallen_empire
+			is_country_type = default
+		}
+		FROM = { 
+			has_civic = civic_philosopher_king
+		}
+	}	
+
+	opinion = {
+		base = 10
+	}
+}
+
+triggered_opinion_slave_master = {
+	trigger = { 
+		OR = {
+			is_country_type = default
+			has_civic = civic_emancipators
+		}
+		FROM = { 
+			has_civic = civic_slaver_guilds
+		}
+	}	
+
+	opinion = {
+		base = -50
+	}
+}
+
+triggered_opinion_chain_breaker = {
+	trigger = { 
+		OR = {
+			is_country_type = default
+			has_civic = civic_slaver_guilds
+		}
+		FROM = { 
+			has_civic = civic_emancipators
+		}
+	}	
+
+	opinion = {
+		base = -50
+	}
+}
+
+triggered_opinion_understands_atom = {
+	trigger = { 
+		OR = {
+			is_country_type = default
+			has_civic = civic_atom_cult
+		}
+		FROM = { 
+			has_civic = civic_atom_cult
+		}
+	}	
+
+	opinion = {
+		base = 50
+	}
+}

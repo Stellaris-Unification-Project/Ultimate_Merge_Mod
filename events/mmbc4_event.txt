@@ -1,0 +1,27 @@
+namespace = mmbc4_event
+
+country_event = {
+	id = mmbc4_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_precursor_remnants }
+			home_planet = { 
+				init_effect = {
+					random_tile = {
+						limit = {
+							has_blocker = no
+							has_building = no
+						}
+						random_list = {
+							33.33 = { set_building = "building_toy_factory" }
+							33.33 = { set_building = "building_odd_factory" }
+							33.33 = { set_building = "building_agri_processing_complex" }
+						}
+					}
+				}
+			}
+		}
+	}
+}

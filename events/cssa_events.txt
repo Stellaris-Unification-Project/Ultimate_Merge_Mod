@@ -1,0 +1,3496 @@
+namespace = cssa
+
+planet_event = {
+	id = cssa.1
+	title = "cssatitle"
+	desc = "cssaphenotypedesc"
+	picture = "cssaphenotypeimage"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "cssaph1"
+		planet_event = { id = cssa.101 }
+	}
+	option = {
+		name = "cssaph2"
+		planet_event = { id = cssa.201 }
+	}
+	option = {
+		name = "cssaph3"
+		planet_event = { id = cssa.301 }
+	}
+	option = {
+		name = "cssaph4"
+		planet_event = { id = cssa.401 }
+	}
+	option = {
+		name = "cssaph5"
+		planet_event = { id = cssa.501 }
+	}
+	option = {
+		name = "cssaph6"
+		planet_event = { id = cssa.601 }
+	}
+	option = {
+		name = "cssaph7"
+		planet_event = { id = cssa.701 }
+	}
+	option = {
+		name = "cssaph8"
+		planet_event = { id = cssa.801 }
+	}
+}
+
+planet_event = {
+	id = cssa.2
+	title = "cssatitle_2"
+	desc = "cssaphenotypedesc_2"
+	picture = "GFX_evt_genetic_modification"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "cssaph1_2"
+		custom_tooltip = "cssaph1desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.1012 }
+		}
+	}
+	option = {
+		name = "cssaph2_2"
+		custom_tooltip = "cssaph2desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.2012 }
+		}
+	}
+	option = {
+		name = "cssaph3_2"
+		custom_tooltip = "cssaph3desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.3012 }
+		}
+	}
+	option = {
+		name = "cssaph4_2"
+		custom_tooltip = "cssaph4desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.4012 }
+		}
+	}
+	option = {
+		name = "cssaph5_2"
+		custom_tooltip = "cssaph5desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.5012 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.3
+	title = "cssatitle_2"
+	desc = "cssaphenotypedesc_2"
+	
+	picture = "GFX_evt_genetic_modification"
+
+	is_triggered_only = yes
+	
+	option = {
+		name = "cssaph1_2"
+		custom_tooltip = "cssaph1desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.1013 }
+		}
+	}
+	option = {
+		name = "cssaph2_2"
+		custom_tooltip = "cssaph2desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.2013 }
+		}
+	}
+	option = {
+		name = "cssaph3_2"
+		custom_tooltip = "cssaph3desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.3013 }
+		}
+	}
+	option = {
+		name = "cssaph4_2"
+		custom_tooltip = "cssaph4desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.4013 }
+		}
+	}
+	option = {
+		name = "cssaph5_2"
+		custom_tooltip = "cssaph5desc_2"
+		hidden_effect = {
+		planet_event = { id = cssa.5013 }
+		}
+	}
+}
+
+######
+#tratto_1
+######
+planet_event = {
+	id = cssa.1012
+	title = "traittitle_2"
+	desc = "cssaph1desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_smart
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart 
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.22 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.2 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.2012
+	title = "traittitle_2"
+	desc = "cssaph2desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_territorial
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.22 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.2 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.3012
+	title = "traittitle_2"
+	desc = "cssaph3desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_naturalinstinct
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.22 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.2 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.4012
+	title = "traittitle_2"
+	picture = "GFX_evt_genetic_modification"
+	desc = "cssaph4desc_2"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_proles
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles 
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.22 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.2 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.5012
+	title = "traittitle_2"
+	desc = "cssaph5desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_starborn
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.22 }
+			}
+	}
+	option = {
+		name = "option_back"
+		planet_event = { id = cssa.2 }
+	}
+}
+
+######
+
+planet_event = {
+	id = cssa.1013
+	title = "traittitle_2"
+	desc = "cssaph1desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_smart
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_smart 
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.23 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.3 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.2013
+	title = "traittitle_2"
+	desc = "cssaph2desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_territorial
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_territorial
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.23 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.3 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.3013
+	title = "traittitle_2"
+	desc = "cssaph3desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_naturalinstinct
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_naturalinstinct
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.23 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.3 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.4013
+	title = "traittitle_2"
+	desc = "cssaph4desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_proles
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles 
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_proles 
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.23 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.3 }
+		}
+	}
+}
+
+planet_event = {
+	id = cssa.5013
+	title = "traittitle_2"
+	desc = "cssaph5desc_2"
+	picture = "GFX_evt_genetic_modification"
+	is_triggered_only = yes
+	option = {
+		name = "option_confirm"
+		hidden_effect = {
+		random_list = {
+				16 = {
+					create_species = {
+					traits = {
+						trait = trait_presentient_starborn
+						
+					}
+					sentient = no
+					class = "PRE_REP"
+					portrait = random
+					homeworld = this
+					}
+				}
+				16 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_MAM"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_ART"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_FUN"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_AVI"
+					portrait = random
+					homeworld = this
+					}
+				}
+				17 = {
+					create_species = {
+						traits = {
+							trait = trait_presentient_starborn
+							
+						}
+					sentient = no
+					class = "PRE_MOL"
+					portrait = random
+					homeworld = this
+					}
+				}
+			}
+			planet_event = { id = addpops.23 }
+			}
+	}
+	option = {
+		name = "option_back"
+		hidden_effect = {
+		planet_event = { id = cssa.3 }
+		}
+	}
+}
+
+
+
+##########################################################################################################################
+#HUMANOIDS
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.101
+	title = "cssatitle"
+	picture = "cssa_hum_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.102 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.105 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "HUM"
+			portrait = human
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.102
+	title = "cssatitle"
+	picture = "cssa_hum_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.103 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.101 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "HUM"
+			portrait = humanoid_02
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.103
+	title = "cssatitle"
+	picture = "cssa_hum_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.104 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.102 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "HUM"
+			portrait = humanoid_03
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.104
+	title = "cssatitle"
+	picture = "cssa_hum_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.105 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.103 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "HUM"
+			portrait = humanoid_04
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.105
+	title = "cssatitle"
+	picture = "cssa_hum_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.101 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.104 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "HUM"
+			portrait = humanoid_05
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+##########################################################################################################################
+#MAMMALS
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.201
+	title = "cssatitle"
+	picture = "cssa_mam_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.202 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.217 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam5
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.202
+	title = "cssatitle"
+	picture = "cssa_mam_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.203 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.201 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.203
+	title = "cssatitle"
+	picture = "cssa_mam_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.204 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.202 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam10
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.204
+	title = "cssatitle"
+	picture = "cssa_mam_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.205 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.203 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.205
+	title = "cssatitle"
+	picture = "cssa_mam_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.206 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.204 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.206
+	title = "cssatitle"
+	picture = "cssa_mam_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.207 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.205 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.207
+	title = "cssatitle"
+	picture = "cssa_mam_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.208 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.206 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.208
+	title = "cssatitle"
+	picture = "cssa_mam_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.209 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.207 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.209
+	title = "cssatitle"
+	picture = "cssa_mam_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.210 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.208 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.210
+	title = "cssatitle"
+	picture = "cssa_mam_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.211 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.209 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.211
+	title = "cssatitle"
+	picture = "cssa_mam_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.212 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.210 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.212
+	title = "cssatitle"
+	picture = "cssa_mam_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.213 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.211 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.213
+	title = "cssatitle"
+	picture = "cssa_mam_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.214 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.212 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam2
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.214
+	title = "cssatitle"
+	picture = "cssa_mam_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.215 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.213 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.215
+	title = "cssatitle"
+	picture = "cssa_mam_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.216 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.214 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.216
+	title = "cssatitle"
+	picture = "cssa_mam_16"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.217 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.215 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam16
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.217
+	title = "cssatitle"
+	picture = "cssa_mam_17"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.201 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.216 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MAM"
+			portrait = mam17
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+##########################################################################################################################
+#REPTILES
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.301
+	title = "cssatitle"
+	picture = "cssa_rep_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.302 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.316 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep2
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.302
+	title = "cssatitle"
+	picture = "cssa_rep_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.303 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.301 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep10
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.303
+	title = "cssatitle"
+	picture = "cssa_rep_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.304 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.302 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.304
+	title = "cssatitle"
+	picture = "cssa_rep_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.305 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.303 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.305
+	title = "cssatitle"
+	picture = "cssa_rep_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.306 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.304 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.306
+	title = "cssatitle"
+	picture = "cssa_rep_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.307 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.305 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.307
+	title = "cssatitle"
+	picture = "cssa_rep_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.308 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.306 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.308
+	title = "cssatitle"
+	picture = "cssa_rep_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.309 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.307 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.309
+	title = "cssatitle"
+	picture = "cssa_rep_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.310 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.308 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.310
+	title = "cssatitle"
+	picture = "cssa_rep_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.311 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.309 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.311
+	title = "cssatitle"
+	picture = "cssa_rep_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.312 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.310 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.312
+	title = "cssatitle"
+	picture = "cssa_rep_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.313 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.311 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.313
+	title = "cssatitle"
+	picture = "cssa_rep_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.314 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.312 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.314
+	title = "cssatitle"
+	picture = "cssa_rep_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.315 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.313 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.315
+	title = "cssatitle"
+	picture = "cssa_rep_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.316 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.314 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep5
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.316
+	title = "cssatitle"
+	picture = "cssa_rep_16"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.301 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.315 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "REP"
+			portrait = rep16
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+
+
+##########################################################################################################################
+#AVIAN
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.401
+	title = "cssatitle"
+	picture = "cssa_avi_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.402 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.417 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi1
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.402
+	title = "cssatitle"
+	picture = "cssa_avi_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.403 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.401 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.403
+	title = "cssatitle"
+	picture = "cssa_avi_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.404 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.402 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.404
+	title = "cssatitle"
+	picture = "cssa_avi_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.405 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.403 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi0
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.405
+	title = "cssatitle"
+	picture = "cssa_avi_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.406 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.404 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.406
+	title = "cssatitle"
+	picture = "cssa_avi_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.407 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.405 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.407
+	title = "cssatitle"
+	picture = "cssa_avi_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.408 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.406 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.408
+	title = "cssatitle"
+	picture = "cssa_avi_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.409 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.407 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi5
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.409
+	title = "cssatitle"
+	picture = "cssa_avi_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.410 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.408 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.410
+	title = "cssatitle"
+	picture = "cssa_avi_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.411 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.409 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.411
+	title = "cssatitle"
+	picture = "cssa_avi_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.412 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.410 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.412
+	title = "cssatitle"
+	picture = "cssa_avi_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.413 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.411 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.413
+	title = "cssatitle"
+	picture = "cssa_avi_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.414 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.412 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.414
+	title = "cssatitle"
+	picture = "cssa_avi_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.415 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.413 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi2
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.415
+	title = "cssatitle"
+	picture = "cssa_avi_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.416 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.414 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.416
+	title = "cssatitle"
+	picture = "cssa_avi_16"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.417 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.415 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi16
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.417
+	title = "cssatitle"
+	picture = "cssa_avi_17"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.401 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.416 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "AVI"
+			portrait = avi17
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+
+
+##########################################################################################################################
+#ARTHOPOID
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.501
+	title = "cssatitle"
+	picture = "cssa_art_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.502 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.515 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art14
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.502
+	title = "cssatitle"
+	picture = "cssa_art_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.503 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.501 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.503
+	title = "cssatitle"
+	picture = "cssa_art_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.504 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.502 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.504
+	title = "cssatitle"
+	picture = "cssa_art_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.505 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.503 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.505
+	title = "cssatitle"
+	picture = "cssa_art_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.506 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.504 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.506
+	title = "cssatitle"
+	picture = "cssa_art_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.507 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.505 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.507
+	title = "cssatitle"
+	picture = "cssa_art_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.508 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.506 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.508
+	title = "cssatitle"
+	picture = "cssa_art_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.509 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.507 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.509
+	title = "cssatitle"
+	picture = "cssa_art_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.510 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.508 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art5
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.510
+	title = "cssatitle"
+	picture = "cssa_art_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.511 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.509 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.511
+	title = "cssatitle"
+	picture = "cssa_art_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.512 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.510 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art10
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.512
+	title = "cssatitle"
+	picture = "cssa_art_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.513 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.511 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.513
+	title = "cssatitle"
+	picture = "cssa_art_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.514 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.512 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.514
+	title = "cssatitle"
+	picture = "cssa_art_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.515 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.513 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art17
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.515
+	title = "cssatitle"
+	picture = "cssa_art_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.501 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.514 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "ART"
+			portrait = art18
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+
+
+
+##########################################################################################################################
+#MOLLUSCOID
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.601
+	title = "cssatitle"
+	picture = "cssa_mol_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.602 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.616 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol3
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.602
+	title = "cssatitle"
+	picture = "cssa_mol_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.603 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.601 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.603
+	title = "cssatitle"
+	picture = "cssa_mol_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.604 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.602 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.604
+	title = "cssatitle"
+	picture = "cssa_mol_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.605 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.603 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol2
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.605
+	title = "cssatitle"
+	picture = "cssa_mol_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.606 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.604 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.606
+	title = "cssatitle"
+	picture = "cssa_mol_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.607 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.605 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.607
+	title = "cssatitle"
+	picture = "cssa_mol_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.608 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.606 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.608
+	title = "cssatitle"
+	picture = "cssa_mol_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.609 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.607 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.609
+	title = "cssatitle"
+	picture = "cssa_mol_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.610 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.608 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.610
+	title = "cssatitle"
+	picture = "cssa_mol_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.611 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.609 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.611
+	title = "cssatitle"
+	picture = "cssa_mol_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.612 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.610 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol5
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.612
+	title = "cssatitle"
+	picture = "cssa_mol_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.613 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.611 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.613
+	title = "cssatitle"
+	picture = "cssa_mol_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.614 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.612 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.614
+	title = "cssatitle"
+	picture = "cssa_mol_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.615 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.613 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol16
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.615
+	title = "cssatitle"
+	picture = "cssa_mol_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.616 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.614 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol17
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.616
+	title = "cssatitle"
+	picture = "cssa_mol_16"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.601 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.615 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "MOL"
+			portrait = mol18
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+
+
+
+##########################################################################################################################
+#FUNGOID
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.701
+	title = "cssatitle"
+	picture = "cssa_fun_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.702 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.716 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun2
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.702
+	title = "cssatitle"
+	picture = "cssa_fun_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.703 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.701 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.703
+	title = "cssatitle"
+	picture = "cssa_fun_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.704 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.702 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.704
+	title = "cssatitle"
+	picture = "cssa_fun_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.705 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.703 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.705
+	title = "cssatitle"
+	picture = "cssa_fun_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.706 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.704 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.706
+	title = "cssatitle"
+	picture = "cssa_fun_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.707 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.705 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.707
+	title = "cssatitle"
+	picture = "cssa_fun_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.708 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.706 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.708
+	title = "cssatitle"
+	picture = "cssa_fun_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.709 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.707 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.709
+	title = "cssatitle"
+	picture = "cssa_fun_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.710 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.708 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.710
+	title = "cssatitle"
+	picture = "cssa_fun_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.711 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.709 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.711
+	title = "cssatitle"
+	picture = "cssa_fun_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.712 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.710 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.712
+	title = "cssatitle"
+	picture = "cssa_fun_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.713 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.711 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.713
+	title = "cssatitle"
+	picture = "cssa_fun_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.714 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.712 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.714
+	title = "cssatitle"
+	picture = "cssa_fun_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.715 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.713 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun10
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.715
+	title = "cssatitle"
+	picture = "cssa_fun_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.716 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.714 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun16
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+planet_event = {
+	id = cssa.716
+	title = "cssatitle"
+	picture = "cssa_fun_16"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.701 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.715 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "FUN"
+			portrait = fun17
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+
+
+
+##########################################################################################################################
+#PLANTOID
+##########################################################################################################################
+
+planet_event = {
+	id = cssa.801
+	title = "cssatitle"
+	picture = "cssa_pla_1"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.802 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.815 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla2
+			traits = {
+				trait = trait_presentient_proles
+				trait = trait_strong
+			}
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.802
+	title = "cssatitle"
+	picture = "cssa_pla_2"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.803 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.801 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla6
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.803
+	title = "cssatitle"
+	picture = "cssa_pla_3"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.804 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.802 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla1
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.804
+	title = "cssatitle"
+	picture = "cssa_pla_4"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.805 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.803 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla11
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.805
+	title = "cssatitle"
+	picture = "cssa_pla_5"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.806 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.804 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla3
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.806
+	title = "cssatitle"
+	picture = "cssa_pla_6"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.807 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.805 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla13
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.807
+	title = "cssatitle"
+	picture = "cssa_pla_7"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.808 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.806 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla7
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.808
+	title = "cssatitle"
+	picture = "cssa_pla_8"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.809 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.807 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla15
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.809
+	title = "cssatitle"
+	picture = "cssa_pla_9"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.810 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.808 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla10
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.810
+	title = "cssatitle"
+	picture = "cssa_pla_10"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.811 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.809 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla5
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.811
+	title = "cssatitle"
+	picture = "cssa_pla_11"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.812 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.810 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla9
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.812
+	title = "cssatitle"
+	picture = "cssa_pla_12"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.813 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.811 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla14
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.813
+	title = "cssatitle"
+	picture = "cssa_pla_13"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.814 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.812 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla4
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.814
+	title = "cssatitle"
+	picture = "cssa_pla_14"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.815 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.813 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla8
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+
+planet_event = {
+	id = cssa.815
+	title = "cssatitle"
+	picture = "cssa_pla_15"
+	is_triggered_only = yes
+	option = { name = "cssanext" planet_event = { id = cssa.801 } }
+	option = { name = "cssaprev" planet_event = { id = cssa.814 } }
+	option = { name = "cssaback" planet_event = { id = cssa.1 } }
+	option = {
+		name = "cssasel"
+		create_species = {
+			class = "PLANT"
+			portrait = pla12
+			traits = { trait = trait_presentient_proles trait = trait_strong }
+			homeworld = this
+		}
+		planet_event = { id = addpops.2 }
+	}
+}
+

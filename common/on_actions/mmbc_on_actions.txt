@@ -1,0 +1,32 @@
+# Executed as new ruler has been set
+# This = Country
+on_ruler_set = {
+	events = {
+		mmbc_leader.1
+	}
+}
+
+# a new leader is generated for an empire, to be available for recruitment
+# scope: country, from: leader
+on_leader_spawned = {
+	events = {
+		mmbc_leader.1
+	}
+}
+
+# called during empire initialization when starting a new game
+# scope: country
+empire_init_add_technologies = {
+	events = {
+		mmbc1_event.1
+		mmbc2_event.1
+		mmbc3_event.1
+		mmbc4_event.1
+		mmbc5_event.1
+		mmbc6_event.1
+		mmbc7_event.1
+		mmbc8_event.1
+		mmbc9_event.1
+		mmbc10_event.1
+	}
+}

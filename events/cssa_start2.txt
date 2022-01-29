@@ -1,0 +1,131 @@
+namespace = addpops
+
+planet_event = {
+	id = addpops.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {	limit = { owner = { has_authority = auth_hive_mind } }
+			owner = {
+				modify_species = {
+					species = this
+					add_trait = trait_hive_mind
+					add_traits_at_start_of_list = yes
+				}
+				change_dominant_species = last_created_species
+			}
+		}
+
+		while = {
+			limit = { num_pops < 8 }
+			create_pop = {
+				species = owner_main_species
+				ethos = random
+			}
+		}
+	}
+}
+
+planet_event = {
+	id = addpops.2
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		owner = {
+			last_created_species = {
+				set_citizenship_type = {
+					country = prev
+					type = citizenship_slavery
+				}
+				rename_species = {
+					prompt_country = prev
+					name_list = cssa_names 
+				}
+			}
+		}
+		while = {
+			#count = 4
+			limit = { num_pops < 5 }
+			random_tile = {
+				#limit = {
+				#	OR = {
+				#		has_building = building_mining_network_1
+				#		has_building = building_hydroponics_farm_1
+				#	}
+				#	has_pop = no
+				#}
+				create_pop = {
+					species = last_created
+					ethos = random
+				}					
+			}
+		}
+
+		planet_event = { id = addpops.1 }
+	}
+}
+
+planet_event = {
+	id = addpops.22
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		
+		random_tile = {
+				limit = {
+					has_building = building_clinic
+				}
+				remove_building = yes
+				create_pop = {
+						species = last_created
+					}
+			}
+			random_tile = {
+				limit = {
+					has_building = building_power_plant_2
+				}
+				remove_building = yes
+				create_pop = {
+						species = last_created
+					}
+			}
+	}
+}
+
+planet_event = {
+	id = addpops.23
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		random_tile = {
+				limit = {
+					has_building = building_power_plant_3
+				}
+				remove_building = yes
+				create_pop = {
+						species = last_created
+					}
+			}
+			random_tile = {
+				limit = {
+					has_building = building_power_plant_4
+				}
+				remove_building = yes
+				create_pop = {
+						species = last_created
+					}
+			}
+	
+			random_tile = {
+					limit = {
+						has_blocker = yes
+					}
+					remove_blocker = yes
+				}	
+	
+	}
+}

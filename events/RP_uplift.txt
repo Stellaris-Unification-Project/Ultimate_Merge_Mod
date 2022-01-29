@@ -1,0 +1,692 @@
+########################
+#
+# Uplift Events
+# by Maximilian Olbers
+#
+########################
+
+namespace = uplift
+
+@tier1influencecontact = 7
+@tier1influencecontactxenophile = 8
+@tier1influencecontactmin = 20
+@tier1influencecontactmax = 80
+
+@tier2influencecontact = 10
+@tier2influencecontactxenophile = 12
+@tier2influencecontactmin = 40
+@tier2influencecontactmax = 100
+
+@tier1unityreward = 6
+@tier1unitymin = 100
+@tier1unitymax = 500
+@tier2unityreward = 12
+@tier2unitymin = 150
+@tier2unitymax = 1000
+@tier3unityreward = 18
+@tier3unitymin = 250
+@tier3unitymax = 1500
+@tier4unityreward = 24
+@tier4unitymin = 350
+@tier4unitymax = 2000
+@tier5unityreward = 48
+@tier5unitymin = 700
+@tier5unitymax = 4000
+
+@tier1materialreward = 6
+@tier1materialmin = 100
+@tier1materialmax = 500
+@tier2materialreward = 12
+@tier2materialmin = 150
+@tier2materialmax = 1000
+@tier3materialreward = 18
+@tier3materialmin = 250
+@tier3materialmax = 1500
+@tier4materialreward = 24
+@tier4materialmin = 350
+@tier4materialmax = 2000
+@tier5materialreward = 48
+@tier5materialmin = 700
+@tier5materialmax = 4000
+
+@tier1influencereward = 6
+@tier1influencemin = 40
+@tier1influencemax = 100
+@tier2influencereward = 12
+@tier2influencemin = 80
+@tier2influencemax = 175
+@tier3influencereward = 18
+@tier3influencemin = 125
+@tier3influencemax = 250
+@tier4influencereward = 24
+@tier4influencemin = 150
+@tier4influencemax = 300
+@tier5influencereward = 36
+@tier5influencemin = 250
+@tier5influencemax = 500
+@tier6influencereward = 48
+@tier6influencemin = 300
+@tier6influencemax = 600
+
+@tier1researchreward = 6
+@tier1researchmin = 60
+@tier1researchmax = 150
+@tier2researchreward = 12
+@tier2researchmin = 90
+@tier2researchmax = 250
+@tier3researchreward = 18
+@tier3researchmin = 120
+@tier3researchmax = 350
+@tier4researchreward = 24
+@tier4researchmin = 150
+@tier4researchmax = 500
+@tier5researchreward = 48
+@tier5researchmin = 300
+@tier5researchmax = 1000
+
+# Hidden event firing two random ethics events
+# FROMFROM = uplifted species
+# FROM = planet
+planet_event = {
+	id = uplift.7199
+	location = FROM
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { owner = { NOT = { has_technology = tech_gene_tailoring } } }
+		every_owned_pop = {
+					limit = {
+						is_robot_pop = no
+						is_sentient = yes
+						OR = {
+							has_trait = trait_presentient_starborn
+							has_trait = trait_presentient_smart
+							has_trait = trait_presentient_territorial
+							has_trait = trait_presentient_migrant
+							has_trait = trait_presentient_naturalinstinct
+							has_trait = trait_presentient_earthbound
+							has_trait = trait_presentient_natural_intellectuals
+							has_trait = trait_presentient_proles
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_nuked_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_nuked_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_desert_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_desert_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_arid_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_arid_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_savannah_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_savannah_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_tropical_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_tropical_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_ocean_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_ocean_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_arctic_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_arctic_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_tundra_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_tundra_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_alpine_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_alpine_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_continental_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_continental_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_ai_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_ai_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_gaia_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_gaia_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_ringworld_habitable_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_ringworld_habitable_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							has_trait = trait_pc_hadesert_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_hadesert_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_steppe_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_steppe_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_frozen_desert_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_frozen_desert_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_antarctic_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_antarctic_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_methane_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_methane_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_ammonia_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_ammonia_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_geothermal_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_geothermal_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_cascadian_preference 
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_cascadian_preference 
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_swamp_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_swamp_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_subarctic_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_subarctic_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_glacial_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_glacial_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							has_trait = trait_pc_sandsea_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_sandsea_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_mesa_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_mesa_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_oasis_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_oasis_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_desertislands_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_desertislands_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_hajungle_preference
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_hajungle_preference
+						}
+					}
+					if = {
+						limit = {
+							has_trait = trait_pc_mangrove_preference 
+						}
+						modify_species = {
+							species = this
+							remove_trait = trait_pc_mangrove_preference 
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_continental }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_continental_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_tropical }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_tropical_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_ocean }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_ocean_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_desert }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_desert_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_arid }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_arid_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_glacial }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_glacial_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_frozen_desert }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_frozen_desert_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_steppe }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_steppe_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_hadesert }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_hadesert_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_antarctic }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_antarctic_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_sandsea }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_sandsea_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_subarctic }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_subarctic_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_geothermal }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_geothermal_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_cascadian }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_cascadian_preference
+						}
+					}
+					
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_swamp }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_swamp_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_mangrove }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_mangrove_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_desertislands }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_desertislands_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_mesa }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_mesa_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_oasis }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_oasis_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_hajungle }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_hajungle_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = methane_planet }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_methane_planet_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = ammonia_planet }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_ammonia_planet_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_alpine }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_alpine_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_tundra }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_tundra_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_savanna }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_savanna_preference
+						}
+					}
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_artic }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_artic_preference
+						}
+					}
+					
+					
+					if = {
+						limit = {
+							root = { is_planet_class = pc_gaia }
+						}
+						modify_species = {
+							species = this
+							add_trait = trait_pc_gaia_preference
+						}
+					}
+				
+				}
+		}
+		random_list = {
+			30 = { planet_event = { id = uplift.7000 days = 30 } }
+			70 = { planet_event = { id = uplift.7010 days = 30 } }
+		}
+		random_list = {
+			15 = {
+				planet_event = { id = uplift.7200 days = 60 }
+				planet_event = { id = uplift.7205 days = 120 }
+			}
+			15 = {
+				planet_event = { id = uplift.7200 days = 120 }
+				planet_event = { id = uplift.7210 days = 60 }
+			}
+			15 = {
+				planet_event = { id = uplift.7200 days = 60 }
+				planet_event = { id = uplift.7215 days = 120 }
+			}
+			15 = {
+				planet_event = { id = uplift.7205 days = 60 }
+				planet_event = { id = uplift.7210 days = 120 }
+			}
+			15 = {
+				planet_event = { id = uplift.7205 days = 120 }
+				planet_event = { id = uplift.7215 days = 60 }
+			}
+			15 = {
+				planet_event = { id = uplift.7210 days = 60 }
+				planet_event = { id = uplift.7215 days = 120 }
+			}
+		}
+	}
+}

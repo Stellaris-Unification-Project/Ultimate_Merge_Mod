@@ -1,0 +1,82 @@
+demilitarize = {
+	execution_order = 1
+	
+	parameters = {
+		country = {
+			type = country
+		}
+	}
+	
+	warscore_cost = {
+		base = 10
+	}
+	
+	potential = {
+		OR = {
+			is_subject = no
+			NOT = {
+				overlord = {
+					is_same_value = from
+				}
+			}
+		}
+		
+		has_valid_civic = civic_peacekeeping_interventionists
+		
+		parameter:country = {
+			is_country = from
+			OR = {
+				has_policy_flag = unrestricted_wars
+				has_policy_flag = liberation_wars
+			}
+		}	
+	}
+	
+	possible = {
+		hidden:parameter:country = {
+			custom_tooltip = {
+				fail_text = "war_demand_already_demilitarized"
+				has_modifier = demilitarized
+			}
+			custom_tooltip = {
+				fail_text = "war_demand_policy_no_planets"
+				war_demand_counter = {
+					type = num_owned_planets
+					value > 0
+				}
+			}
+		}
+	}
+	
+	effect = {
+		fromfromfrom = {
+			add_influence = 100
+		}
+		parameter:country = {		
+			add_modifier = {
+				modifier = demilitarized
+				days = 3600
+			}
+			hidden_effect = {
+				set_policy = {
+					policy = war_philosophy
+					option = no_wars
+					cooldown = yes
+				}
+			}			
+		}	
+	}
+	
+	counters = {
+		num_country_wargoals = {
+			context = parameter:country
+			value = {
+				base = 1
+			}
+		}	
+	}		
+	
+	ai_weight = {
+		base = 10
+	}
+}

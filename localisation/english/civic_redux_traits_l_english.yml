@@ -1,0 +1,24 @@
+﻿l_english:
+ trait_ruler_psionic_hive:0 "Psionic Hive"
+ trait_ruler_psionic_hive_desc:0 "The Hive Mind's natural psionic powers are far stronger than normal. Together, they generate a powerful psychic energy."
+ 
+ trait_ruler_hive_ai:0 "Hive AI"
+ trait_ruler_hive_ai_desc:0 "The Hive Mind is linked by a supercomputer that automatically detects and responds to outside threats."
+ 
+ trait_presentient_smart:0 "Presentient Smart"
+ trait_presentient_smart_desc:0 "This presentient race shows evident signs of some kind of intelligence.\n§RIf you upfit this species, if you don't have gene tailoring the planet preference will not change!§!"
+ 
+ trait_presentient_territorial:0 "Presentient Territorial"
+ trait_presentient_territorial_desc:0 "This presentient race looks like bounded to the territory they live in. They are capable of everything to defend it.\n§RIf you upfit this species, if you don't have gene tailoring the planet preference will not change!§!"
+ 
+ trait_presentient_migrant:0 "Presentient Migrant"
+ trait_presentient_migrant_desc:0 "Not bounded to a specific place, this presentient race seasonally migrates.\n§RIf you upfit this species, if you don't have gene tailoring the planet preference will not change!§!"
+ 
+ trait_presentient_naturalinstinct:0 "Presentient Natural Instinct"
+ trait_presentient_naturalinstinct_desc:0 "This presentient race has a very sharpen natural instinct, they know things the moment they are born, however they tend to often quarrel each others.\n§RIf you upfit this species, if you don't have gene tailoring the planet preference will not change!§!"
+ 
+ trait_nocolon:0 "Don't Touch Planet Preference"
+ trait_nocolon_desc:0 "Don't change planet preference UNLESS you got gene tailoring already, or your uplifted pops will not be able to colonize (untill you get gene tailoring)"
+ 
+ trait_nocolon_2:0 "Do Not Remove"
+ trait_nocolon_2_desc:0 "Had to put this due to the shitty modding system to have one starting trait point"

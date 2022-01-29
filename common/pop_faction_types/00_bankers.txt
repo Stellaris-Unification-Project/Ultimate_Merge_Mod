@@ -1,0 +1,594 @@
+##############################
+# Individualists Bankers Faction
+##############################
+
+bankers = {
+	election_header = "GFX_faction_header_yellow"
+	guiding_ethic = ethic_capitalism
+	
+	unique = yes
+	support_multiplier = 1
+	
+	is_potential = {
+		has_encountered_other_species = yes
+		NOT = { has_authority = auth_hive_mind }
+		#always = yes
+	}
+	
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+
+	can_join_faction = {
+		is_enslaved = no
+		is_being_purged = no
+		NOT = { has_trait = trait_nerve_stapled }
+		has_ethic = ethic_capitalism
+	}
+	
+	attraction = {
+		base = 150
+		
+		modifier = {
+			factor = 1.25
+			exists = from
+			from = {
+				exists = leader
+				leader = { leader_class = ruler }
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			exists = from
+			from = {
+				NOT = { exists = leader }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			
+			OR = {
+				has_ethic = ethic_capitalism
+				has_ethic = ethic_fanatic_capitalism
+			}
+		}
+		
+
+	}
+	
+	leader = {
+		base = 100
+	}
+	
+	demand = {
+		title = "POWER_INDUSTRY"
+		unfulfilled_title = "NO_POWER_INDUSTRY"
+		desc = "POWER_INDUSTRY_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { has_civic = "civic_power" }
+		}
+	}		
+	
+	demand = {
+		title = "PRIVATE_PROPERTY"
+		unfulfilled_title = "NO_PRIVATE_PROPERTY"
+		desc = "PRIVATE_PROPERTY_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { has_civic = "civic_private_property" }
+		}
+	}	
+
+	demand = {
+		title = "CONSUMERISM"
+		unfulfilled_title = "NO_CONSUMERISM"
+		desc = "CONSUMERISM_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { has_civic = "civic_consumerism" }
+		}
+	}		
+
+	demand = {
+		title = "WEALTH_ACCUMULATION_1"
+		unfulfilled_title = "NO_WEALTH_ACCUMULATION_1"
+		desc = "WEALTH_ACCUMULATION_1_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			exists = owner
+
+		}
+
+		trigger = {
+			owner = { energy > 2999 }
+		}
+	}
+	
+	
+	
+	demand = {
+		title = "WEALTH_ACCUMULATION_2"
+		unfulfilled_title = "NO_WEALTH_ACCUMULATION_2"
+		desc = "WEALTH_ACCUMULATION_2_DESC"
+
+		fulfilled_effect = 3
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			exists = owner
+			owner = { energy > 2999 }
+
+		}
+
+		trigger = {
+			owner = { energy > 6999 }
+		}
+	}	
+	
+	demand = {
+		title = "WEALTH_ACCUMULATION_3"
+		unfulfilled_title = "NO_WEALTH_ACCUMULATION_3"
+		desc = "WEALTH_ACCUMULATION_3_DESC"
+
+		fulfilled_effect = 4
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			exists = owner
+			owner = { energy > 6999 }
+
+		}
+
+		trigger = {
+			owner = { energy > 11999 }
+		}
+	}		
+	
+	demand = {
+		title = "WEALTH_ACCUMULATION_4"
+		unfulfilled_title = "NO_WEALTH_ACCUMULATION_4"
+		desc = "WEALTH_ACCUMULATION_4_DESC"
+
+		fulfilled_effect = 5
+
+		potential = { # TODO get a reasonable trigger for counting colonies?
+			exists = owner
+			owner = { energy > 11999 }
+
+		}
+
+		trigger = {
+			owner = { energy > 17999 }
+		}
+	}
+
+
+	demand = {
+		title = "MARKET_ECONOMY"
+		unfulfilled_title = "NO_MARKET_ECONOMY"
+		desc = "MARKET_ECONOMY_DESC"
+		
+		fulfilled_effect = 2
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = capitalism_economy
+			has_policy_flag = fan_capitalism_economy
+			has_policy_flag = free_market_1_economy
+			has_policy_flag = free_market_2_economy			
+			}
+			}
+		}
+	}	
+	
+	demand = {
+		title = "NO_WELFARE_ECONOMY"
+		unfulfilled_title = "WELFARE_ECONOMY"
+		desc = "NO_WELFARE_ECONOMY_DESC"
+		
+		unfulfilled_effect = -10
+		
+		potential = {
+			exists = owner
+			owner = {
+		    OR = { 
+			has_policy_flag = socialism_economy
+			has_policy_flag = planned_1_economy	
+			}
+			}			
+		}
+		
+		trigger = {
+			owner = {
+		    NOR = { 
+			has_policy_flag = socialism_economy
+			has_policy_flag = planned_1_economy	
+			}
+			}
+		}
+	}	
+
+
+	demand = {
+		title = "MARKET_ECONOMIC_STRATEGIES"
+		unfulfilled_title = "NO_MARKET_ECONOMIC_STRATEGIES"
+		desc = "MARKET_ECONOMIC_STRATEGIES_DESC"
+		
+		fulfilled_effect = 4
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_new_economy }
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = economy_strategy_outsourcing
+			has_policy_flag = economy_strategy_invesments
+			has_policy_flag = economy_strategy_production			
+			}
+			}
+		}
+	}		
+	
+	
+	demand = {
+		title = "FREE_MARKET_ECONOMY"
+		unfulfilled_title = "NO_FREE_MARKET_ECONOMY"
+		desc = "FREE_MARKET_ECONOMY_DESC"
+		
+		fulfilled_effect = 3
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+			owner = {
+						
+				has_technology = tech_free_market
+			}			
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = free_market_1_economy
+			has_policy_flag = free_market_2_economy
+			}
+			}
+		}
+	}	
+
+	demand = {
+		title = "ENERGY_INFRASTRUCTURE"
+		unfulfilled_title = "NO_ENERGY_INFRASTRUCTURE"
+		desc = "INDUSTRIAL_INFRASTRUCTURE_DESC"
+		
+		fulfilled_effect = 5
+		
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = { 
+			    any_owned_planet = {
+				            
+							planet_size > 15
+				            has_building = "building_power_hub_2"
+					
+				}
+		}
+	}	
+ }	
+
+
+
+	demand = {
+		title = "WEALTH_TRADITION"
+		unfulfilled_title = "NO_WEALTH_TRADITION"
+		desc = "WEALTH_TRADITION_DESC"
+
+		fulfilled_effect = 5
+		unfulfilled_effect = -5
+
+		potential = {
+			exists = owner
+			owner = {
+				years_passed > 15
+			}
+		}
+
+		trigger = {
+			owner = {
+				OR = {
+
+					has_tradition = tr_prosperity_trans_stellar_corporations
+					has_tradition = tr_prosperity_pursuit_of_profit
+				}
+			}
+		}
+	}
+
+	demand = {
+		title = "WEALTH_INFRASTRUCTURE"
+		unfulfilled_title = "NO_WEALTH_INFRASTRUCTURE"
+		desc = "WEALTH_INFRASTRUCTURE_DESC"
+
+		fulfilled_effect = 3
+		unfulfilled_effect = -5
+
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = tech_galactic_markets
+			}
+		}
+
+		trigger = {
+			owner = {
+					any_owned_planet = {
+					has_building = building_galactic_stock_exchange
+				}
+			}
+		}
+	}
+	
+	
+	
+
+	demand = {
+		title = "FANATIC_LIBERTARIAN_GOVERNMENT"
+		unfulfilled_title = "NO_FANATIC_LIBERTARIAN_GOVERNMENT"
+		desc = "FANATIC_LIBERTARIAN_GOVERNMENT_DESC"
+
+		fulfilled_effect = 5
+
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+
+		trigger = {
+			owner = {
+					has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}		
+	
+	demand = {
+		title = "PARLIAMENTARY_SYSTEM"
+		unfulfilled_title = "NO_PARLIAMENTARY_SYSTEM"
+		desc = "PARLIAMENTARY_SYSTEM_DESC"
+
+		fulfilled_effect = 3
+
+		potential = {
+			exists = owner
+			owner = {
+			 OR = { has_civic = civic_parliamentary_system has_civic = civic_par_monarchy }
+			}
+		}
+
+		trigger = {
+			owner = {
+					OR = { has_civic = civic_parliamentary_system has_civic = civic_par_monarchy }
+			}
+		}
+	}
+
+
+	
+	
+	
+	
+	on_create = {
+		pop_faction_event = { id = factions.1 }
+	}
+
+	on_destroy = {
+		if = {
+			limit = {
+				has_modifier = promoted_capitalism
+			}
+			remove_modifier = promoted_capitalism
+		}
+		if = {
+			limit = {
+				has_modifier = suppressed_capitalism
+			}
+			remove_modifier = suppressed_capitalism
+		}
+	}
+	
+	actions = {
+		embrace_faction = {
+			title = "EMBRACE_FACTION"
+			description = "EMBRACE_FACTION_DESC"
+			
+			cost = {
+				influence = 250
+			}
+			
+			potential = {
+				exists = owner
+			}
+			
+			valid = {
+				custom_tooltip = {
+					fail_text = EMBRACE_FACTION_COOLDOWN
+					parameter:empire = {
+						NOT = { has_country_flag = embraced_faction }
+					}
+				}
+				support > 0.20
+				parameter:empire = {
+					NOT = { has_ethic = "ethic_fanatic_capitalism" }
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = embraced_faction days = 3600 }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_modifier = promoted_faction
+						}
+						remove_modifier = promoted_faction
+					}
+				}
+				parameter:empire = {
+					shift_ethic = ethic_capitalism
+					hidden_effect = { set_timed_country_flag = { flag = embraced_faction days = 7200 } }
+					hidden_effect = {
+						every_pop_faction = {
+							limit = { NOT = { is_same_value = root } }
+							add_modifier = { modifier = embraced_another_faction days = 3600 }
+						}
+					}
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		promote_faction = {
+			title = "PROMOTE_FACTION"
+			description = "PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_capitalism
+						has_modifier = promoted_capitalism
+					}
+					NOR = {
+						has_ethic = ethic_capitalism
+						has_ethic = ethic_fanatic_capitalism
+					}
+				}
+			}
+
+			effect = {
+				parameter:empire = {
+					add_modifier = { modifier = promoted_capitalism days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_promote_faction = {
+			title = "CANCEL_PROMOTE_FACTION"
+			description = "CANCEL_PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = promoted_capitalism
+				}
+			}
+
+			effect = {
+				if = {
+					limit = {
+						has_modifier = promoted_faction
+					}
+					remove_modifier = promoted_faction
+				}
+				parameter:empire = {
+					remove_modifier = promoted_capitalism
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		suppress_faction = {
+			title = "SUPPRESS_FACTION"
+			description = "SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_capitalism
+						has_modifier = promoted_capitalism
+					}
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = suppressed_faction days = -1 }
+				parameter:empire = {
+					add_modifier = { modifier = suppressed_capitalism days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_suppress_faction = {
+			title = "CANCEL_SUPPRESS_FACTION"
+			description = "CANCEL_SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = suppressed_capitalism
+				}
+			}
+
+			effect = {
+				remove_modifier = suppressed_faction
+				parameter:empire = {
+					remove_modifier = suppressed_capitalism
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+	}
+}

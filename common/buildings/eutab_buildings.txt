@@ -1,0 +1,1440 @@
+# Do not remove or rename this
+
+# Possible Variables for Buildings:
+# strategic_resource: strategic resource, deprecated, strategic resource used by the building.
+# allow: trigger to check for allowing construction of building.
+# prerequisites: Tech requirements for building.
+# empire_unique: boolean, can only build one if set to true.
+# cost: resource table, cost of building.
+# is_orbital: boolean, can only be built in orbital station.
+# modifier: modifier, deprecated, applies a modifier to planet; use planet_modifier instead.
+# planet_modifier, country_modifier, army_modifier: applies modifier to planet/country/armies
+# triggered_planet_modifier = { key (optional), potential, modifier }: applies conditional modifier to planet
+# base_buildtime: int, number of days for construction.
+# requires_pop, boolean, building will require a pop for production.
+# required_resources, resource table, required resources for production.
+# produced_resources, resource table, produced resources in production.
+# upgrades, buildings list, buildings this building can upgrade into.
+# is_listed, boolean, toggles if this building is shown in the non-upgrade buildable list.
+# planet_unique, toggles if one can build multiple of this type on a single planet.
+# ai_weight, weight for AI, default is set to one, weight set to 0 means that AI will never build it
+
+#
+# BALANCE
+# can change the time and cost of all common buildings with these variables below
+
+@b0time = 120
+@b0cost = 30
+@b0effect = 1
+@b0upkeep = 0.5
+
+@b1time = 210
+@b1cost = 60
+@b1effect = 2
+@b1upkeep = 1
+
+@b2time = 180
+@b2cost = 90
+@b2effect = 3
+@b2upkeep = 1.5
+
+@b3time = 180
+@b3cost = 120
+@b3effect = 4
+@b3upkeep = 2
+
+@b4time = 180
+@b4cost = 150
+@b4effect = 5
+@b4upkeep = 2.5
+
+@b5time = 180
+@b5cost = 180
+@b5effect = 8
+@b5upkeep = 3
+
+@science1 = 1
+@science2 = 2
+@science3 = 3
+@science4 = 4
+@science5 = 6
+
+	############################################	
+		## ALL
+	############################################	
+
+#Development District
+building_eutab_dev_district = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 100
+	}
+	
+	produced_resources = {
+		unity = 2
+	}
+	
+	planet_modifier = {
+		planet_building_build_speed_mult = 0.3
+	}
+	
+	potential = {
+		planet = {
+			NOR = { 
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			}
+		}
+	}
+	
+	upgrades = {
+		building_eutab_governors_district
+		building_eutab_planetary_parliament
+		building_eutab_wargame
+		building_eutab_eco_preserve
+		building_eutab_arcology
+		building_eutab_monument_unity
+		building_eutab_hive_commune
+	}
+	
+	prerequisites = {
+		"tech_eutab_dev_district"
+	}
+	
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 30
+	}
+}
+
+#Symbol of Unity
+building_eutab_symbol_unity = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+	}
+	
+	produced_resources = {
+		unity = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.04
+	}
+	
+	potential = {
+		planet = {
+			OR = {
+			is_planet_class = pc_habitat
+			is_planet_class = pc_ringworld_habitable
+			}
+		}
+	}
+	
+	upgrades = {
+		building_eutab_governors_district
+		building_eutab_planetary_parliament
+		building_eutab_wargame
+		building_eutab_eco_preserve
+		building_eutab_arcology
+		building_eutab_monument_unity
+		building_eutab_hive_commune
+	}
+	
+	prerequisites = {
+		"tech_eutab_dev_district"
+	}
+	
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 10
+	}
+}	
+	
+#################################
+#Project Support Lab (B)
+building_eutab_support_lab = {
+	base_buildtime = 360
+	planet_unique = yes
+	
+	cost = {
+		minerals = 250
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 3
+		unity = 1
+	}
+	
+	required_resources = {
+		energy = 7
+	}
+	
+	country_modifier = {
+		megastructure_build_speed_mult = 0.01
+		mod_megastructure_build_cost_mult = -0.005
+	}
+	
+	prerequisites = {
+		"tech_eutab_support_lab"
+	}
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#Megastructure Support Nexus (BU)
+building_eutab_support_nexus = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 100
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	produced_resources = {
+		engineering_research = 8
+	}
+	
+	required_resources = {
+		energy = 30
+	}
+	
+	country_modifier = {
+		megastructure_build_speed_mult = 0.15
+		mod_megastructure_build_cost_mult = -0.05
+		category_materials_research_speed_mult = 0.1
+	}
+	
+	prerequisites = {
+		"tech_eutab_support_nexus"
+	}
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 30
+	}
+}
+
+
+#################################	
+#Battle Praxeum
+building_eutab_battle_praxeum = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		energy = 7
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_army_build_speed_mult = 0.35
+		planet_unrest_add = -15
+	}
+	
+	army_modifier = {
+		army_damage_mult = 0.25
+		
+	}
+	
+	produced_resources = {		
+		society_research = 4
+		engineering_research = 4
+	}
+	
+	produced_resource_trigger = {
+		modifier = {
+			has_valid_civic = civic_citizen_service
+			resources = {
+				unity = 4
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_battle_praxeum"
+	}
+	
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			factor = 0
+			from = {
+				owner = {
+					NOR = {
+						has_ethic = ethic_militarist
+						has_ethic = ethic_fanatic_militarist
+					}
+				}
+				NOT = { has_building = building_eutab_battle_praxeum }
+			}
+		}
+	}
+}
+
+
+
+#################################	
+#Gaia District (B)
+building_eutab_gaia_district = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	produced_resources = {
+		food = 6
+		unity = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.08
+		pop_environment_tolerance = 0.05
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_gaia_district"
+	}
+	
+	ai_special_building = yes
+	
+	ai_weight = {
+		weight = 1000
+		modifier = {
+			weight = 0
+			from = {
+				happiness_planet > 0.90
+				NOT = { has_building = building_eutab_gaia_district }
+			}
+		}	
+	}
+}
+
+#################################
+#Foundation Institute (B) (U)
+building_eutab_foundation_institute = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	required_resources = {
+		energy = 7
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_3"
+			planet = {
+				OR = {
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		num_tech_alternatives_add = 1
+	}
+	
+	prerequisites = {
+		"tech_eutab_foundation_institute"
+	}
+}
+##############################
+#Office of Naval Intelligence (EU)
+building_eutab_off_naval_intel = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		physics_research = 6
+		engineering_research = 6
+	}
+	
+	required_resources = {
+		energy = 15
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		 category_field_manipulation_research_speed_mult = 0.1
+		 category_materials_research_speed_mult = 0.1
+	}
+	
+	prerequisites = {
+		"tech_eutab_off_naval_intel"
+	}
+}
+
+	############################################	
+		## AUTHORITARIAN
+	############################################	
+
+#Governors District
+	
+building_eutab_governors_district = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.04
+		tile_resource_energy_mult = 0.1
+		tile_resource_minerals_mult = 0.1
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_authoritarian
+				has_ethic = ethic_fanatic_authoritarian
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_governors_district"
+	}
+	
+	ai_weight = {
+		weight = 400
+	}
+}
+
+#Bureau of Moral Codes (EU)
+building_eutab_moral_codes = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		society_research = 8
+	}
+	
+	required_resources = {
+		energy = 14
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		 pop_government_ethic_attraction = 0.1
+		 category_statecraft_research_speed_mult = 0.1
+	}
+	
+	prerequisites = {
+		"tech_eutab_moral_codes"
+	}
+	ai_weight = {
+		weight = 400
+	}
+}
+	
+	
+	############################################	
+		## EGALITARIAN
+	############################################	
+
+#Planetary Parliament
+	
+building_eutab_planetary_parliament = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 4
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.04
+		tile_resource_unity_mult = 0.15
+	}
+	
+	required_resources = {
+		energy = 5
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_egalitarian
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_planetary_parliament"
+	}
+	
+	ai_weight = {
+		weight = 400
+	}
+}	
+	
+	############################################	
+		## XENOPHOBE
+	############################################	
+
+#Frontier Adaptation Office Xeno- Visitor Replacement
+	
+building_eutab_frontier_adaptation = {
+	base_buildtime = 270
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+	}
+	
+	potential = {
+		owner = {
+			has_tradition = tr_diplomacy_alien_tourism
+		}
+		owner = {
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+		planet = {
+			NOR = {
+				is_planet_class = pc_gaia
+				is_planet_class = pc_habitat
+				is_planet_class = pc_ringworld_habitable
+			}		
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requirement_not_homeworld"
+			planet = {
+				NOT = { has_modifier = "capital" }
+			}
+		}		
+	}
+	
+	produced_resources = {
+		unity = 2
+		society_research = 2
+	}
+	
+	planet_modifier = {
+		pop_growth_speed = 0.1
+		pop_environment_tolerance = 0.05
+	}
+	
+	required_resources = {
+		energy = 4
+	}
+	
+	upgrades = {
+		building_eutab_xeno_adaptation
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+}	
+	
+	
+#Xeno Adaptation Facility
+	
+building_eutab_xeno_adaptation = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 4
+		society_research = 4
+	}
+	
+	planet_modifier = {
+		pop_growth_speed = 0.2
+		pop_environment_tolerance = 0.075
+	}
+	
+	required_resources = {
+		energy = 6
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_xenophobe
+				has_ethic = ethic_fanatic_xenophobe
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_xeno_adaptation"
+	}
+	
+	ai_weight = {
+		weight = 400
+	}
+}
+
+##############################
+#Xeno Submission Institute
+building_eutab_xeno_sub_ins = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		society_research = 8
+	}
+	
+	required_resources = {
+		energy = 14
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		category_biology_research_speed_mult = 0.1
+		slave_mineral_output = 0.05
+		slave_food_output = 0.05
+	}
+	
+	prerequisites = {
+		"tech_eutab_xeno_sub_ins"
+	}
+	ai_weight = {
+		weight = 400
+	}
+}	
+	
+	############################################	
+		## XENOPHILE
+	############################################	
+
+#Xeno District
+	
+building_eutab_xeno_district = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		energy = 4
+		unity = 4
+	}
+	
+	produced_resource_trigger = {
+		modifier = {
+			has_technology = tech_eutab_species_harmony
+			resources = {
+				society_research = 3
+			}
+		}
+	}
+	
+	planet_modifier = {
+		planet_migration_xeno_pull = 0.75
+		pop_environment_tolerance = 0.075
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_xenophile
+				has_ethic = ethic_fanatic_xenophile
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_xeno_district"
+	}
+	
+	ai_weight = {
+		weight = 400	
+	}
+}
+
+##############################
+#Institute of Exo Design (EU)
+building_eutab_ins_exo_design = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		engineering_research = 10
+	}
+	
+	required_resources = {
+		energy = 14
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		category_industry_research_speed_mult = 0.1
+		planet_building_build_speed_mult = 0.2
+	}
+	
+	prerequisites = {
+		"tech_eutab_ins_exo_design"
+	}
+	ai_weight = {
+		weight = 400
+	}
+}	
+	
+	############################################	
+		## MILITARIST
+	############################################	
+
+#Wargame Complex
+	
+building_eutab_wargame = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.08
+		planet_unrest_add = -20
+	}
+	
+	required_resources = {
+		energy = 4
+		
+	}
+	
+	potential = {
+		owner = {
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_wargame"
+	}
+	
+	ai_weight = {
+		weight = 400
+	}
+}			
+	
+	############################################	
+		## PACIFIST
+	############################################	
+
+#Ecology Preserve
+	
+building_eutab_eco_preserve = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 4
+		society_research = 4
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.06
+	}
+	
+	required_resources = {
+		energy = 2
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_pacifist
+				has_ethic = ethic_fanatic_pacifist
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_eco_preserve"
+	}
+	
+	ai_weight = {
+		weight = 300
+	}
+}
+
+##############################
+#Centre for Disease Control (EU)
+building_eutab_disease_control = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		society_research = 8
+	}
+	
+	required_resources = {
+		energy = 14
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		category_biology_research_speed_mult = 0.1
+		pop_happiness = 0.02
+		pop_environment_tolerance = 0.02
+	}
+	
+	prerequisites = {
+		"tech_eutab_disease_control"
+	}
+	ai_weight = {
+		weight = 400
+	}
+}	
+	
+	############################################	
+		## MATERIALIST
+	############################################	
+
+#Arcology
+	
+building_eutab_arcology = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		food = 5
+		energy = 4
+		unity = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.04
+		pop_environment_tolerance = 0.05
+	}
+	
+	potential = { 	
+		owner = {
+			OR = {
+				has_ethic = ethic_materialist
+				has_ethic = ethic_fanatic_materialist
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_arcology"
+	}
+	
+	ai_weight = {
+		weight = 400	
+	}
+}
+
+##############################
+#Planetary Science Building (EU)
+building_eutab_planet_sci = {
+	base_buildtime = 720
+	empire_unique = yes
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	produced_resources = {
+		physics_research = 10
+	}
+	
+	required_resources = {
+		energy = 14
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_2"
+			planet = {
+				OR = {
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		planet = {
+			NOT = { is_planet_class = pc_habitat }	
+		}
+	}	
+	
+	country_modifier = {
+		category_new_worlds_research_speed_mult = 0.15
+		pop_environment_tolerance = 0.05
+	}
+	
+	prerequisites = {
+		"tech_eutab_planet_sci"
+	}
+}		
+	
+	############################################	
+		## SPIRITUALIST
+	############################################	
+
+#Monument to Unity
+building_eutab_monument_unity = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 6
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+	
+	planet_modifier = {
+		pop_happiness = 0.08
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		owner = {
+			OR = {
+				has_ethic = ethic_spiritualist		
+				has_ethic = ethic_fanatic_spiritualist
+			}
+		}
+	}
+	
+	prerequisites = {
+		"tech_eutab_monument_unity"
+	}
+	
+	ai_weight = {
+		weight = 400	
+	}
+}
+
+	############################################	
+		## HIVE
+	############################################	
+
+#Hatchery
+building_eutab_hive_hatchery = {
+	base_buildtime = 270
+	planet_unique = yes
+	
+	cost = {
+		minerals = 150
+	}
+	
+	produced_resources = {
+		society_research = 3
+		minerals = 2
+	}
+	
+	required_resources = {
+		energy = 2
+		food = 1
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = 0.05
+		pop_growth_speed = 0.1
+	}
+	
+	potential = {
+		owner = {
+			AND = {
+				has_tradition = tr_diplomacy_alien_tourism
+				has_ethic = ethic_hive_mind
+			}
+		}
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	upgrades = {
+		building_eutab_hive_grand_hatchery
+	}
+	
+	ai_weight = {
+		weight = 10	
+	}
+}	
+
+#Grand Hatchery
+building_eutab_hive_grand_hatchery = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		society_research = 5
+		minerals = 4
+	}
+	
+	required_resources = {
+		energy = 4
+		food = 3
+	}
+	
+	planet_modifier = {
+		pop_environment_tolerance = 0.1
+		pop_growth_speed = 0.2
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_ethic = ethic_hive_mind }
+	}
+	
+	prerequisites = {
+		"tech_eutab_hive_grand_hatchery"
+	}
+	
+	ai_weight = {
+		weight = 10	
+	}
+}
+
+#Communial Interface
+building_eutab_hive_commune = {
+	base_buildtime = 360
+	planet_unique = yes
+	is_listed = no
+	
+	cost = {
+		minerals = 300
+	}
+	
+	produced_resources = {
+		unity = 5
+		physics_research = 5
+	}
+	
+	required_resources = {
+		energy = 5
+	}
+	
+	planet_modifier = {
+		tile_resource_unity_mult = 0.1
+	}
+	
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_1"
+			planet = {
+				OR = {
+					has_building = "building_hab_capital"
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+			}
+		}
+	}
+	
+	potential = {
+		owner = { has_ethic = ethic_hive_mind }
+	}
+	
+	prerequisites = {
+		"tech_eutab_hive_commune"
+	}
+	
+	ai_weight = {
+		weight = 10	
+	}
+}

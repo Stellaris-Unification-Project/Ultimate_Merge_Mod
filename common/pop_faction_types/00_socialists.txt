@@ -1,0 +1,502 @@
+##############################
+# Collectivist Socialists Faction
+##############################
+
+socialists = {
+	election_header = "GFX_faction_header_yellow"
+	guiding_ethic = ethic_socialism
+	
+	unique = yes
+	support_multiplier = 1
+	
+	is_potential = {
+		has_encountered_other_species = yes
+		NOT = { has_authority = auth_hive_mind }
+		#always = yes
+	}
+	
+	parameters = {
+		empire = {
+			type = country
+			valid_objects = {
+				is_same_value = root
+			}
+		}
+	}
+
+	can_join_faction = {
+		is_enslaved = no
+		is_being_purged = no
+		NOT = { has_trait = trait_nerve_stapled }
+		has_ethic = ethic_socialism
+	}
+	
+	attraction = {
+		base = 150
+		
+		modifier = {
+			factor = 1.25
+			exists = from
+			from = {
+				exists = leader
+				leader = { leader_class = ruler }
+			}
+		}
+		
+		modifier = {
+			factor = 0.75
+			exists = from
+			from = {
+				NOT = { exists = leader }
+			}
+		}
+		
+		modifier = {
+			factor = 1.5
+			
+			OR = {
+				has_ethic = ethic_socialism
+				has_ethic = ethic_fanatic_socialism
+			}
+		}
+		
+	}
+	
+	leader = {
+		base = 100
+	}
+
+	demand = {
+		title = "SOCIAL_SECURITY"
+		unfulfilled_title = "NO_SOCIAL_SECURITY"
+		desc = "SOCIAL_SECURITY_DESC"
+
+		fulfilled_effect = 5
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { 
+			any_owned_planet = {
+				any_owned_pop = {				
+				    OR = {
+					      has_living_standard = { type = living_standard_good }
+						  has_living_standard = { type = living_standard_utopian }
+						  has_living_standard = { type = living_standard_chemical_bliss }
+						  }
+						
+				}
+			}
+			}
+		}
+	}
+
+	demand = {
+		title = "HUMANITARIAN_SCIENCE"
+		unfulfilled_title = "NO_HUMANITARIAN_SCIENCE"
+		desc = "HUMANITARIAN_SCIENCE_DESC"
+		
+		fulfilled_effect = 5
+		
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = {
+				has_country_edict = society_research_focus 
+			}
+		}
+	}
+	
+
+
+	
+	
+	
+	
+	demand = {
+		title = "WELFARE_ECONOMY"
+		unfulfilled_title = "NO_WELFARE_ECONOMY"
+		desc = "WELFARE_ECONOMY_DESC"
+		
+		fulfilled_effect = 2
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = socialism_economy
+			has_policy_flag = fan_socialism_economy
+			has_policy_flag = planned_1_economy
+			has_policy_flag = planned_2_economy			
+			}
+			}
+		}
+	}	
+
+
+	demand = {
+		title = "NO_MARKET_ECONOMY"
+		unfulfilled_title = "MARKET_ECONOMY"
+		desc = "NO_MARKET_ECONOMY_DESC"
+		
+		unfulfilled_effect = -10
+		
+		potential = {
+			exists = owner
+			owner = {
+		    OR = { 
+			has_policy_flag = capitalism_economy
+			has_policy_flag = free_market_1_economy	
+			}
+			}			
+		}
+		
+		trigger = {
+			owner = {
+		    NOR = { 
+			has_policy_flag = capitalism_economy
+			has_policy_flag = free_market_1_economy	
+			}
+			}
+		}
+	}		
+	
+	demand = {
+		title = "SOCIAL_ECONOMIC_STRATEGIES"
+		unfulfilled_title = "NO_SOCIAL_ECONOMIC_STRATEGIES"
+		desc = "SOCIAL_ECONOMIC_STRATEGIES_DESC"
+		
+		fulfilled_effect = 4
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+			owner = { has_technology = tech_new_economy }
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = economy_strategy_pop_growth
+			has_policy_flag = economy_strategy_social_development
+			has_policy_flag = economy_strategy_infrastructure_development			
+			}
+			}
+		}
+	}	
+	
+	demand = {
+		title = "PLANNED_ECONOMY"
+		unfulfilled_title = "NO_PLANNED_ECONOMY"
+		desc = "PLANNED_ECONOMY_DESC"
+		
+		fulfilled_effect = 3
+		unfulfilled_effect = -5
+		
+		potential = {
+			exists = owner
+			owner = {
+			
+			  has_technology = tech_planned_economy
+			}
+		}
+		
+		trigger = {
+			owner = {
+		    OR = { 
+			has_policy_flag = planned_1_economy
+			has_policy_flag = planned_2_economy
+			}
+			}
+		}
+	}		
+
+	demand = {
+		title = "COLLECTIVIST_TRADITION"
+		unfulfilled_title = "NO_COLLECTIVIST_TRADITION"
+		desc = "COLLECTIVIST_TRADITION_DESC"
+
+		fulfilled_effect = 5
+        unfulfilled_effect = -5		
+
+		potential = {
+			exists = owner
+			owner = {
+				years_passed > 15
+			}
+		}
+
+		trigger = {
+			owner = {
+				OR = {
+					has_tradition = tr_harmony_utopian_dream
+
+				}
+			}
+		}
+	}
+	
+	demand = {
+		title = "PUBLIC_MEDICINE"
+		unfulfilled_title = "NO_PUBLIC_MEDICINE"
+		desc = "PUBLIC_MEDICINE_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { has_civic = "civic_public_medicine" }
+		}
+	}	
+
+	demand = {
+		title = "PUBLIC_EDUCATION"
+		unfulfilled_title = "NO_PUBLIC_EDUCATION"
+		desc = "PUBLIC_EDUCATION_DESC"
+
+		fulfilled_effect = 2
+
+		potential = { 
+			exists = owner
+		}
+
+		trigger = {
+			owner = { has_civic = "civic_public_education" }
+		}
+	}		
+
+	
+	
+
+	demand = {
+		title = "FANATIC_LIBERTARIAN_GOVERNMENT"
+		unfulfilled_title = "NO_FANATIC_LIBERTARIAN_GOVERNMENT"
+		desc = "FANATIC_LIBERTARIAN_GOVERNMENT_DESC"
+
+		fulfilled_effect = 5
+
+		potential = {
+			exists = owner
+			owner = {
+				has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+
+		trigger = {
+			owner = {
+					has_ethic = ethic_fanatic_egalitarian
+			}
+		}
+	}		
+	
+	demand = {
+		title = "PARLIAMENTARY_SYSTEM"
+		unfulfilled_title = "NO_PARLIAMENTARY_SYSTEM"
+		desc = "PARLIAMENTARY_SYSTEM_DESC"
+
+		fulfilled_effect = 3
+
+		potential = {
+			exists = owner
+			owner = {
+				OR = { has_civic = civic_parliamentary_system has_civic = civic_par_monarchy }
+			}
+		}
+
+		trigger = {
+			owner = {
+					OR = { has_civic = civic_parliamentary_system has_civic = civic_par_monarchy }
+			}
+		}
+	}	
+	
+		
+	
+	
+	on_create = {
+		pop_faction_event = { id = factions.1 }
+	}
+	
+	on_destroy = {
+		if = {
+			limit = {
+				has_modifier = promoted_socialism
+			}
+			remove_modifier = promoted_socialism
+		}
+		if = {
+			limit = {
+				has_modifier = suppressed_socialism
+			}
+			remove_modifier = suppressed_socialism
+		}
+	}	
+
+
+	actions = {
+		embrace_faction = {
+			title = "EMBRACE_FACTION"
+			description = "EMBRACE_FACTION_DESC"
+			
+			cost = {
+				influence = 250
+			}
+			
+			potential = {
+				exists = owner
+			}
+			
+			valid = {
+				custom_tooltip = {
+					fail_text = EMBRACE_FACTION_COOLDOWN
+					parameter:empire = {
+						NOT = { has_country_flag = embraced_faction }
+					}
+				}
+				support > 0.20
+				parameter:empire = {
+					NOT = { has_ethic = "ethic_fanatic_socialism" }
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = embraced_faction days = 3600 }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_modifier = promoted_faction
+						}
+						remove_modifier = promoted_faction
+					}
+				}
+				parameter:empire = {
+					shift_ethic = ethic_socialism
+					hidden_effect = { set_timed_country_flag = { flag = embraced_faction days = 7200 } }
+					hidden_effect = {
+						every_pop_faction = {
+							limit = { NOT = { is_same_value = root } }
+							add_modifier = { modifier = embraced_another_faction days = 3600 }
+						}
+					}
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		promote_faction = {
+			title = "PROMOTE_FACTION"
+			description = "PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_socialism
+						has_modifier = promoted_socialism
+					}
+					NOR = {
+						has_ethic = ethic_socialism
+						has_ethic = ethic_fanatic_socialism
+					}
+				}
+			}
+
+			effect = {
+				parameter:empire = {
+					add_modifier = { modifier = promoted_socialism days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_promote_faction = {
+			title = "CANCEL_PROMOTE_FACTION"
+			description = "CANCEL_PROMOTE_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = promoted_socialism
+				}
+			}
+
+			effect = {
+				if = {
+					limit = {
+						has_modifier = promoted_faction
+					}
+					remove_modifier = promoted_faction
+				}
+				parameter:empire = {
+					remove_modifier = promoted_socialism
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		suppress_faction = {
+			title = "SUPPRESS_FACTION"
+			description = "SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					NOR = {
+						has_modifier = suppressed_socialism
+						has_modifier = promoted_socialism
+					}
+				}
+			}
+
+			effect = {
+				add_modifier = { modifier = suppressed_faction days = -1 }
+				parameter:empire = {
+					add_modifier = { modifier = suppressed_socialism days = -1 }
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+		cancel_suppress_faction = {
+			title = "CANCEL_SUPPRESS_FACTION"
+			description = "CANCEL_SUPPRESS_FACTION_DESC"
+			
+			potential = {
+				exists = owner
+				parameter:empire = {
+					has_modifier = suppressed_socialism
+				}
+			}
+
+			effect = {
+				remove_modifier = suppressed_faction
+				parameter:empire = {
+					remove_modifier = suppressed_socialism
+				}
+			}
+			
+			ai_weight = {
+				base = 0
+			}
+		}
+	}
+}

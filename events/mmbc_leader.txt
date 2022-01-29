@@ -1,0 +1,60 @@
+namespace = mmbc_leader
+
+country_event = {
+	id = mmbc_leader.1
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_civic = civic_philosopher_king
+	}
+	
+
+	immediate = {
+		ruler = {
+			add_trait = trait_ruler_philosopher_king
+		}
+	}
+}
+
+#work in progress
+#country_event = {
+#	id = mmbc_leader.2
+#	hide_window = yes
+#	
+#	is_triggered_only = yes
+#	
+#	trigger = {
+#		has_civic = civic_meritocracy
+#	}
+#	
+#	immediate = {
+#		every_leader = {
+#			limit = {
+#				leader_class = scientist
+#			}
+#			add_random_leader_trait = yes
+#		}
+#		every_leader = {
+#			limit = {
+#				leader_class = general
+#			}
+#			add_random_leader_trait = yes
+#		}
+#		every_leader = {
+#			limit = {
+#				leader_class = admiral
+#			}
+#			add_random_leader_trait = yes
+#		}
+#		every_leader = {
+#			limit = {
+#				leader_class = governor
+#			}
+#			add_random_leader_trait = yes
+#		}
+#	}
+#}       ##### Example
+#       hidden_effect = {
+#          give_technology = { message = no tech = tech_terrestrial_sculpting }

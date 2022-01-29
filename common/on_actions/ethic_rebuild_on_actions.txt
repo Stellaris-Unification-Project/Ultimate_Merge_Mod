@@ -1,0 +1,18 @@
+# Triggers when the game starts
+on_game_start = {
+	events = {	
+		starter_tech.1
+		
+		
+	}
+}
+
+#on_the_start_button_press = {
+#	events = {	
+#		starter_event.1
+#		
+#	}
+#}
+
+
+

@@ -1,0 +1,133 @@
+
+named_lists = {
+	cssa_names = {
+		Species_1 = {
+			name = Tumbator
+			plural = Tumbatorians
+		}
+		species_2 = {
+			name = Onotach
+			plural = Onotachi
+		}
+		species_3 = {
+			name = Yapathi
+			plural = Yapathi
+		}
+		species_4 = {
+			name = Rek'Thalar
+			plural = Rek'Thalari
+		}
+		species_5 = {
+			name = Zum
+			plural = Zumi
+		}
+		species_6 = {
+			name = Ugarlak
+			plural = Ugarlaki
+		}
+		species_7 = {
+			name = Glost-Werheni
+			plural = Glost-Werheni
+		}
+		species_8 = {
+			name = Meko'Nass
+			plural = Meko'Nassi
+		}
+		species_9 = {
+			name = Oklarr
+			plural = Oklarri
+		}
+		species_10 = {
+			name = Drull'Perfen
+			plural = Drull'Perfeni
+		}
+		species_11 = {
+			name = Photecian
+			plural = Photecians
+		}
+		species_12 = {
+			name = Wessari
+			plural = Wessari
+		}
+		species_13 = {
+			name = Lahtrepian
+			plural = Lahtrepians
+		}
+		species_14 = {
+			name = Ekwynian
+			plural = Ekwynians
+		}
+		species_15 = {
+			name = Ragerian
+			plural = Ragerians
+		}
+		species_16 = {
+			name = Pouz-Jok
+			plural = Pouz-Jokans
+		}
+		species_17 = {
+			name = Jusstkan
+			plural = Jusstkans
+		}
+		species_18 = {
+			name = Klaggian
+			plural = Klaggians
+		}
+		species_19 = {
+			name = Uqo'Praknar
+			plural = Uqo'Praknarians
+		}
+		species_20 = {
+			name = Oned'Qarak
+			plural = Oned'Qaraki
+		}
+		species_21 = {
+			name = Ruphaari
+			plural = Ruphaari
+		}
+		species_22 = {
+			name = Qwe'Pulci
+			plural = Qwe'Pulcians
+		}
+		species_23 = {
+			name = Groknaploran
+			plural = Groknaplorans
+		}
+		species_24 = {
+			name = K'Taknor
+			plural = K'Taknorians
+		}
+		species_25 = {
+			name = Gagassi
+			plural = Gagassi
+		}
+		species_26 = {
+			name = Hadadeshi
+			plural = Hadadeshi
+		}
+		species_27 = {
+			name = Obevni
+			plural = Obevni
+		}
+		species_28 = {
+			name = Finu
+			plural = Finuans
+		}
+		species_29 = {
+			name = Obbha
+			plural = Obbhani
+		}
+		species_30 = {
+			name = Ganlarev
+			plural = Ganlarevans
+		}
+		species_31 = {
+			name = Buhavilaa
+			plural = Buhavilaans
+		}
+		species_32 = {
+			name = Ogi-Nollox
+			plural = Ogi-Nolloxi
+		}
+	}
+}

@@ -1,0 +1,219 @@
+civic_presentient_fauna = { #Constitutional Monarchy - This society recognises both a democratically elected parliament and an autocratic leader as the heads of their government.
+	modification = no
+	playable = {
+   }
+	potential = {
+       ethics = {
+			NOT = {
+				value = ethic_hive_mind
+			}
+		}
+   }
+	possible = {
+		civics = {
+			NOR = {
+				value = civic_mechanists
+				value = civic_fanatic_purifiers
+				value = civic_syncretic_evolution
+			}
+		}
+	}
+	
+	description = "civic_tooltip_constitutional_monarchy_effects" #No Diplomatic Malus when negotiating with your opposite Ethos. +5% Citizen Pop Happiness, +5% Slave Production
+	modifier = {
+		has_global_flag = game_started
+		country_resource_unity_mult = 0.15
+		category_biology_research_speed_mult = 0.15
+	}
+}
+
+civic_alluring_diplomats = { #Alluring Diplomats - Diplomacy has never been a challenge for this society. Envoys often say they have tongues of silver, and find it difficult to refuse their suggestions.
+	modification = yes
+	
+	playable = {
+	
+	}
+	
+	potential = {
+        ethics = {
+			NOT = {
+				value = ethic_hive_mind
+			}
+		}
+    }
+	
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	modifier = {
+		country_trade_attractiveness = 0.2
+		country_subject_acceptance_add = 20
+	}
+}
+
+civic_peacekeeping_interventionists = { #Peacekeeping Interventionists - This vehemently pacifistic society aims to bring about an end to all armed conflicts, by any means necessary.
+	modification = yes
+	
+	playable = {
+	
+	}
+	
+	potential = {
+        ethics = {
+			NOT = {
+				value = ethic_hive_mind
+			}
+		}
+    }
+	
+	possible = {
+		ethics = {
+			value = ethic_fanatic_pacifist
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	description = civic_tooltip_peacekeeping_interventionists_effects #Unique War Demand - Demilitarize - Force the loser to demilitarize, weakening their fleet power + preventing them from declaring war for 10 Years. Gain 100 Influence. Can declare Wars, despite not normally being able to.
+	
+	modifier = {
+	}
+}
+
+civic_young_space_brothers = { #young space brothers, spawn primitives
+	modification = no
+	
+	playable = {
+	
+	}
+	
+	potential = {
+		ethics = {
+			NOT = {
+				value = ethic_hive_mind #maybe in future?
+			}
+		}
+		civics = {
+			NOR = {
+				value = civic_one_small_step #maybe in future?
+				value = civic_fanatic_purifiers
+			}
+		}
+	}
+	
+	possible = {
+	
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	description = civic_tooltip_keepers_of_tradition_effects #Begin the game with enough Unity to unlock a Tradition. (Be sure to adjust for OSS/Syncretic)
+	
+	modifier = {
+		tradition_cost_num_xenos_mult = -0.20
+		tradition_cost_num_slaves_mult = -0.20
+	}
+}
+
+civic_dependable_allies = { #Dependable Allies - This society can be counted on to honour their agreements to friends and enemies alike.
+	modification = yes
+	
+	playable = {
+	
+	}
+	
+	potential = {
+        ethics = {
+			NOT = {
+				value = ethic_hive_mind
+			}
+		}
+    }
+	
+	possible = {
+		ethics = {
+			OR = {
+				text = civic_tooltip_xenophile
+				value = ethic_xenophile
+				value = ethic_fanatic_xenophile
+			}
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	modifier = {
+		country_trust_cap_add = 50
+		country_federation_member_resource_unity_mult = 0.05
+	}
+}
+
+#HIVE MINDS
+
+civic_starborn_swarm = { #Starborn Swarm - The Hive Mind is deeply connected to the cosmic powers of the Universe.
+	modification = no
+	
+	potential = {
+		ethics = {
+			value = ethic_hive_mind
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	description = civic_tooltip_starborn_swarm_effects #Begin the game under a Star Sign. Every Year the Star Sign changes in a cyclical style.
+}
+
+civic_behavioural_mimicry = { #Behavioural Mimicry - The Hive Mind's interest in other species' behaviour and customs have led to it attempting to copy them.
+	modification = yes
+	
+	potential = {
+		ethics = {
+			value = ethic_hive_mind
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	description = civic_tooltip_behavioural_mimicry_effects #The Diplomatic Malus against Hive Minds is removed.
+}
+
+civic_instinctive_intuition = { #Instinctive Intuition - Using the sensory input from its drones the Hive Mind expands its knowledge and learning patterns.
+	modification = yes
+	
+	potential = {
+		ethics = {
+			value = ethic_hive_mind
+		}
+	}
+	
+	random_weight = {
+		base = 1
+	}
+	
+	modifier = {
+		species_leader_exp_gain = 0.15
+		all_technology_research_speed = 0.05
+	}
+}

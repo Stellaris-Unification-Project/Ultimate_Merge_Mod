@@ -1,0 +1,20 @@
+﻿l_english:
+ edict_sacrifice:0 "Dark Tribute"
+ edict_sacrifice_desc:0 "They would fear the truth behind the Executor's purpose more than the Executors themselves, if they knew the truth."
+ edict_sacrifice_effect.tooltip:0 "Sacrifice a £pop  Pop to the §YDark Ones§! to sate Their hunger."
+ 
+ edict_sacrifice_pure:0 "Dark Tribute"
+ edict_sacrifice_pure_desc:0 "They would fear the truth behind the Executor's purpose more than the Executors themselves, if they knew the truth."
+ 
+ edict_purify:0 "From Darkness Comes Light"
+ edict_purify_desc:0 "[This.GetName] has been corrupted by dark forces. This Edict purges these forces and restores order to the world."
+ edict_purify_effect.tooltip:0 "Remove all traces of the §YDark Ones'§! presence on [Root.GetName], earning bonus £unity Unity."
+ 
+ edict_panem:0 "Bread and Circuses"
+ edict_panem_desc:0 "A feast, some games, and suddenly, the population's worries seem like nothing."
+ 
+ edict_space_bait:0 "Space Baits"
+ edict_space_bait_desc:0 "Due to new understandings and innovations in Voidborne creatures sensory mechanics, we are now able to create a ruse by creating an artificial signal that in theory should work as bait for these spaceborne creatures."
+ 
+ edict_advanced_space_bait:0 "Advanced Space Baits"
+ edict_advanced_space_bait_desc:0 "Owing to the failure and success of our baiting, we have discovered that space bourne creatures use extended periods of feeding to conserve energy to travel. This knowledge has allowed us to tailor baits to the wide variety of creatures, and placing them to make it more attractive to investigate."

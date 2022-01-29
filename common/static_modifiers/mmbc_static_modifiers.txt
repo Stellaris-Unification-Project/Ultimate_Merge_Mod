@@ -1,0 +1,39 @@
+mmbc_suppressed_xenophobe = {
+	pop_ethic_xenophobe_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_xenophile = {
+	pop_ethic_xenophile_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_spiritualist = {
+	pop_ethic_spiritualist_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_materialist = {
+	pop_ethic_materialist_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_pacifist = {
+	pop_ethic_pacifist_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_militarist = {
+	pop_ethic_militarist_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_egalitarian = {
+	pop_ethic_egalitarian_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}
+
+mmbc_suppressed_authoritarian = {
+	pop_ethic_authoritarian_attraction_mult = -0.75
+	country_resource_influence_add = -0.5
+}

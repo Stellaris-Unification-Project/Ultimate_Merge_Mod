@@ -1,0 +1,749 @@
+# Ethos Unique Techs and Buildings
+# Created by Dumuzii
+
+##################
+### TECH COSTS ###
+##################
+#If you change any of these, use replace in files so the values are the same across all files
+
+@tier1cost1 = 360
+@tier1cost2 = 480
+@tier1cost3 = 600
+@tier1cost4 = 720
+
+@tier2cost1 = 1000
+@tier2cost2 = 1400
+@tier2cost3 = 1800
+@tier2cost4 = 2200
+
+@tier3cost1 = 3000
+@tier3cost2 = 4000
+@tier3cost3 = 5000
+@tier3cost4 = 6000
+
+@tier4cost1 = 10000
+
+####################
+### TECH WEIGHTS ###
+####################
+
+@tier1weight1 = 100
+@tier1weight2 = 95
+@tier1weight3 = 90
+@tier1weight4 = 85
+
+@tier2weight1 = 75
+@tier2weight2 = 70
+@tier2weight3 = 65
+@tier2weight4 = 60
+
+@tier3weight1 = 50
+@tier3weight2 = 45
+@tier3weight3 = 40
+@tier3weight4 = 35
+
+@tier4weight1 = 30
+
+	#####################################################
+		## BUILDINGS - ALL
+	#####################################################
+
+#Colonial Development District
+tech_eutab_dev_district = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { new_worlds }
+	prerequisites = { "tech_colonial_centralization" }
+	weight = @tier1weight2
+	
+	# unlocks Colonial Development District planetary wonder
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+	
+	ai_weight = {
+		factor = 2
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_new_worlds"
+			}
+		}
+	}
+}	
+	
+	
+	##SUPPORT LAB TECH
+tech_eutab_support_lab = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_mega_engineering" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	# unlocks Project Support Lab
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ascension_perk = ap_master_builders
+					has_ascension_perk = ap_galactic_wonders
+				}
+				OR = {
+					has_ascension_perk = ap_master_builders
+					has_ascension_perk = ap_voidborn
+				}
+				OR = {
+					has_ascension_perk = ap_master_builders
+					has_ascension_perk = ap_the_circle_of_life
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			OR = {
+				has_ascension_perk = ap_master_builders
+				has_ascension_perk = ap_galactic_wonders
+				has_ascension_perk = ap_the_circle_of_life
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = industry
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}	
+
+
+	##SUPPORT NEXUS TECH
+tech_eutab_support_nexus = {
+	cost = @tier3cost4
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_eutab_support_lab" }
+	weight = @tier3weight4
+	is_rare = yes
+	
+	#Megastructure Support Nexus (BU)
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ascension_perk = ap_voidborn
+					has_ascension_perk = ap_galactic_wonders
+				}
+				OR = {
+					has_ascension_perk = ap_the_circle_of_life
+					has_ascension_perk = ap_voidborn
+				}
+				OR = {
+					has_ascension_perk = ap_the_circle_of_life
+					has_ascension_perk = ap_galactic_wonders
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = industry
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}	
+
+	##BATTLE PRAXEUM
+tech_eutab_battle_praxeum = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { military_theory }	
+	prerequisites = { "tech_centralized_command" }
+	weight = @tier2weight3
+	is_rare = yes
+
+	##Unlocks Battle Praxeum
+	
+	weight_modifier = {
+	modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ascension_perk = ap_galactic_force_projection
+					has_ascension_perk = ap_defender_of_the_galaxy
+					has_ascension_perk = ap_galactic_contender
+				}
+			}
+		}
+	modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				has_ethic = ethic_militarist
+				has_ethic = ethic_fanatic_militarist
+			}
+		}
+	}
+}
+
+	#GAIA DISTRICT (B)
+tech_eutab_gaia_district = {
+	cost = @tier2cost3
+	area = society
+	tier = 2
+	category = { statecraft }
+	is_rare = yes
+	prerequisites = { "tech_biolab_3" }
+	weight = @tier2weight3
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				AND ={
+					has_tradition = tr_harmony_utopian_dream
+					OR = {
+						has_ascension_perk = ap_world_shaper
+						has_ascension_perk = ap_mastery_of_nature
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_pacifist
+		}
+		modifier = {
+			factor = 3
+			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 5
+			has_surveyed_class = pc_gaia
+		}
+	}	
+	
+	ai_weight = {
+		modifier = {
+			factor = 3
+			has_ethic = ethic_spiritualist
+			has_ethic = ethic_pacifist
+			has_ethic = ethic_fanatic_spiritualist
+			has_ethic = ethic_fanatic_pacifist
+		}
+		modifier = {
+			factor = 5
+			has_surveyed_class = pc_gaia
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}	
+	}
+}
+
+	##FOUNDATION INSTITUTE (B) (U)
+tech_eutab_foundation_institute = {
+	area = physics
+	tier = 3
+	cost = @tier3cost1
+	category = { statecraft }
+	prerequisites = { "tech_global_research_initiative"}
+	weight = @tier3weight1
+	is_rare = yes
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0.75
+			NOT = {
+				research_leader = {
+					area = society
+					has_trait = "leader_trait_expertise_statecraft"
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					has_ascension_perk = ap_technological_ascendancy
+					has_tradition = tr_discovery_finish
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+					has_ethic = ethic_materialist
+		}
+		modifier = {
+			factor = 3
+					has_ethic = ethic_fanatic_materialist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+
+
+	#####################################################
+		## BUILDINGS - AUTHORITARIAN
+	#####################################################
+
+	#Governors District (B)
+	
+tech_eutab_governors_district = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_authoritarian
+					has_ethic = ethic_fanatic_authoritarian
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}	
+	
+	
+	#####################################################
+		## BUILDINGS - EGALITARIAN
+	#####################################################
+
+	#Planetary Parliament (B)
+	
+tech_eutab_planetary_parliament = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_egalitarian
+					has_ethic = ethic_fanatic_egalitarian
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}	
+
+	#####################################################
+		## BUILDINGS - XENOPHOBE
+	#####################################################
+
+	#Xeno Adaptation Facility (B)
+	
+tech_eutab_xeno_adaptation = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { biology }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_xenophobe
+					has_ethic = ethic_fanatic_xenophobe
+				}
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				has_tradition = tr_diplomacy_alien_tourism
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+	#####################################################
+		## BUILDINGS - XENOPHILE
+	#####################################################
+
+	#Xeno District (B)
+	
+tech_eutab_xeno_district = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { statecraft }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				AND = {
+					OR = {
+						has_ethic = ethic_xenophile
+						has_ethic = ethic_fanatic_xenophile
+					}	
+					has_tradition = tr_diplomacy_alien_tourism
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+	#####################################################
+		## BUILDINGS - MILITARIST
+	#####################################################
+
+#Wargame Complex(B)
+tech_eutab_wargame = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { military_theory }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_militarist
+					has_ethic = ethic_fanatic_militarist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_military_theory"
+			}
+		}
+	}
+}
+
+	#####################################################
+		## BUILDINGS - PACIFIST
+	#####################################################
+
+#Ecology Preserve (B)	
+tech_eutab_eco_preserve = {
+	cost = @tier3cost1
+	area = society
+	tier = 3
+	category = { biology }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_pacifist
+					has_ethic = ethic_fanatic_pacifist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}
+
+	#####################################################
+		## BUILDINGS - MATERIALIST
+	#####################################################
+
+#Arcology
+tech_eutab_arcology = {
+	cost = @tier3cost1
+	area = engineering
+	tier = 3
+	category = { industry }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_materialist
+					has_ethic = ethic_fanatic_materialist
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+	#####################################################
+		## BUILDINGS - SPIRITUAL
+	#####################################################
+	
+#Monument to Unity	
+tech_eutab_monument_unity = {
+	cost = @tier3cost1
+	area = society
+	tier = 2
+	category = { statecraft }
+	prerequisites = { "tech_eutab_dev_district" }
+	weight = @tier3weight1
+	is_rare = yes
+	
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_spiritualist		
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}

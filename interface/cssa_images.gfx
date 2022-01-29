@@ -1,0 +1,273 @@
+spriteTypes = {	spriteType = {
+		name = "cssaphenotypeimage"
+		texturefile = "gfx/cssa/phenotypes.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes		
+	}
+}
+
+
+#HUMANOID
+spriteTypes = {	spriteType = {
+	name = "cssa_hum_1" texturefile = "gfx/cssa/hum/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_hum_2" texturefile = "gfx/cssa/hum/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_hum_3" texturefile = "gfx/cssa/hum/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_hum_4" texturefile = "gfx/cssa/hum/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_hum_5" texturefile = "gfx/cssa/hum/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} }
+
+
+#MAMMAL
+spriteTypes = {	spriteType = {
+	name = "cssa_mam_1" texturefile = "gfx/cssa/mam/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_2" texturefile = "gfx/cssa/mam/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_3" texturefile = "gfx/cssa/mam/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_4" texturefile = "gfx/cssa/mam/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_5" texturefile = "gfx/cssa/mam/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_6" texturefile = "gfx/cssa/mam/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_7" texturefile = "gfx/cssa/mam/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_8" texturefile = "gfx/cssa/mam/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_9" texturefile = "gfx/cssa/mam/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_10" texturefile = "gfx/cssa/mam/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_11" texturefile = "gfx/cssa/mam/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_12" texturefile = "gfx/cssa/mam/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_13" texturefile = "gfx/cssa/mam/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_14" texturefile = "gfx/cssa/mam/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_15" texturefile = "gfx/cssa/mam/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_16" texturefile = "gfx/cssa/mam/16.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mam_17" texturefile = "gfx/cssa/mam/17.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} }
+
+
+#REPTILE
+spriteTypes = {	spriteType = {
+	name = "cssa_rep_1" texturefile = "gfx/cssa/rep/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_2" texturefile = "gfx/cssa/rep/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_3" texturefile = "gfx/cssa/rep/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_4" texturefile = "gfx/cssa/rep/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_5" texturefile = "gfx/cssa/rep/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_6" texturefile = "gfx/cssa/rep/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_7" texturefile = "gfx/cssa/rep/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_8" texturefile = "gfx/cssa/rep/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_9" texturefile = "gfx/cssa/rep/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_10" texturefile = "gfx/cssa/rep/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_11" texturefile = "gfx/cssa/rep/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_12" texturefile = "gfx/cssa/rep/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_13" texturefile = "gfx/cssa/rep/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_14" texturefile = "gfx/cssa/rep/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_15" texturefile = "gfx/cssa/rep/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_rep_16" texturefile = "gfx/cssa/rep/16.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} }
+
+
+#AVIAN
+spriteTypes = {	spriteType = {
+	name = "cssa_avi_1" texturefile = "gfx/cssa/avi/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_2" texturefile = "gfx/cssa/avi/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_3" texturefile = "gfx/cssa/avi/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_4" texturefile = "gfx/cssa/avi/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_5" texturefile = "gfx/cssa/avi/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_6" texturefile = "gfx/cssa/avi/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_7" texturefile = "gfx/cssa/avi/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_8" texturefile = "gfx/cssa/avi/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_9" texturefile = "gfx/cssa/avi/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_10" texturefile = "gfx/cssa/avi/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_11" texturefile = "gfx/cssa/avi/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_12" texturefile = "gfx/cssa/avi/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_13" texturefile = "gfx/cssa/avi/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_14" texturefile = "gfx/cssa/avi/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_15" texturefile = "gfx/cssa/avi/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_16" texturefile = "gfx/cssa/avi/16.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_avi_17" texturefile = "gfx/cssa/avi/17.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} }
+
+
+#ARTHOPOID
+spriteTypes = {	spriteType = {
+	name = "cssa_art_1" texturefile = "gfx/cssa/art/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_2" texturefile = "gfx/cssa/art/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_3" texturefile = "gfx/cssa/art/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_4" texturefile = "gfx/cssa/art/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_5" texturefile = "gfx/cssa/art/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_6" texturefile = "gfx/cssa/art/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_7" texturefile = "gfx/cssa/art/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_8" texturefile = "gfx/cssa/art/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_9" texturefile = "gfx/cssa/art/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_10" texturefile = "gfx/cssa/art/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_11" texturefile = "gfx/cssa/art/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_12" texturefile = "gfx/cssa/art/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_13" texturefile = "gfx/cssa/art/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_14" texturefile = "gfx/cssa/art/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_art_15" texturefile = "gfx/cssa/art/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} }
+
+
+#MOLLUSCOID
+spriteTypes = {	spriteType = {
+	name = "cssa_mol_1" texturefile = "gfx/cssa/mol/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_2" texturefile = "gfx/cssa/mol/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_3" texturefile = "gfx/cssa/mol/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_4" texturefile = "gfx/cssa/mol/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_5" texturefile = "gfx/cssa/mol/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_6" texturefile = "gfx/cssa/mol/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_7" texturefile = "gfx/cssa/mol/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_8" texturefile = "gfx/cssa/mol/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_9" texturefile = "gfx/cssa/mol/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_10" texturefile = "gfx/cssa/mol/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_11" texturefile = "gfx/cssa/mol/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_12" texturefile = "gfx/cssa/mol/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_13" texturefile = "gfx/cssa/mol/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_14" texturefile = "gfx/cssa/mol/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_15" texturefile = "gfx/cssa/mol/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_mol_16" texturefile = "gfx/cssa/mol/16.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } 
+
+
+#FUNGOID
+spriteTypes = {	spriteType = {
+	name = "cssa_fun_1" texturefile = "gfx/cssa/fun/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_2" texturefile = "gfx/cssa/fun/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_3" texturefile = "gfx/cssa/fun/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_4" texturefile = "gfx/cssa/fun/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_5" texturefile = "gfx/cssa/fun/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_6" texturefile = "gfx/cssa/fun/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_7" texturefile = "gfx/cssa/fun/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_8" texturefile = "gfx/cssa/fun/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_9" texturefile = "gfx/cssa/fun/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_10" texturefile = "gfx/cssa/fun/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_11" texturefile = "gfx/cssa/fun/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_12" texturefile = "gfx/cssa/fun/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_13" texturefile = "gfx/cssa/fun/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_14" texturefile = "gfx/cssa/fun/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_15" texturefile = "gfx/cssa/fun/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_fun_16" texturefile = "gfx/cssa/fun/16.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } 
+
+
+#PLANTOID
+spriteTypes = {	spriteType = {
+	name = "cssa_pla_1" texturefile = "gfx/cssa/pla/1.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_2" texturefile = "gfx/cssa/pla/2.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_3" texturefile = "gfx/cssa/pla/3.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_4" texturefile = "gfx/cssa/pla/4.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_5" texturefile = "gfx/cssa/pla/5.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_6" texturefile = "gfx/cssa/pla/6.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes		
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_7" texturefile = "gfx/cssa/pla/7.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_8" texturefile = "gfx/cssa/pla/8.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_9" texturefile = "gfx/cssa/pla/9.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_10" texturefile = "gfx/cssa/pla/10.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_11" texturefile = "gfx/cssa/pla/11.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_12" texturefile = "gfx/cssa/pla/12.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_13" texturefile = "gfx/cssa/pla/13.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_14" texturefile = "gfx/cssa/pla/14.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} } spriteTypes = {	spriteType = {
+	name = "cssa_pla_15" texturefile = "gfx/cssa/pla/15.dds" masking_texture = "gfx/interface/situation_log/event_mask.dds" alwaystransparent = yes
+} }

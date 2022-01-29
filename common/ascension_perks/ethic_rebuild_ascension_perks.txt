@@ -1,0 +1,41 @@
+# See traditions/README.txt for format
+
+ap_thought_control = {
+	on_enabled = {
+		give_technology = { message = no tech = tech_will_to_power }
+	}
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_technology_big_brother"
+			has_technology = tech_big_brother
+		}
+	}
+
+	modifier = {
+		pop_government_ethic_attraction = 0.2
+		mod_distance_to_capital_static_modifier_efficiency_mult	= -0.2
+		country_unrest_unhappy_pop_effect_mult = -0.3
+		country_unrest_unhappy_slave_effect_mult = -0.3		
+		army_morale = 0.15
+        country_resource_energy_mult = -0.2
+        all_technology_research_speed = -0.1
+	}
+	
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_thought_control
+		}
+	}
+	
+	ai_weight = {
+		factor = 10
+		modifier = {
+			factor = 3
+			has_technology = tech_big_brother
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_technology = tech_big_brother }
+		}
+	}
+}

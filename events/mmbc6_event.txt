@@ -1,0 +1,25 @@
+namespace = mmbc6_event
+
+country_event = {
+	id = mmbc6_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_citizen_service }
+			give_technology = { message = no tech = tech_centralized_command }
+			home_planet = { 
+				init_effect = {
+					random_tile = {
+						limit = {
+							has_blocker = no
+							has_building = no
+						}
+						set_building = "building_military_academy"
+					}
+
+				}
+			}
+		}
+	}
+}

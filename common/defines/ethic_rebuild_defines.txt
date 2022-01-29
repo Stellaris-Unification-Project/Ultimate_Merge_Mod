@@ -1,0 +1,18 @@
+NGameplay = {
+ETHOS_MAX_POINTS	= 5
+LEADER_SKILL_CAP	= 10
+LEADER_SKILL_MIN = 0
+LEADER_SKILL_LEVEL_START = 0
+GOVERNMENT_CIVIC_POINTS_BASE		= 3
+}
+
+NSpecies = {
+
+		MAX_TRAITS 							= 7		# Max racial traits (1 is always used for homeworld type trait)
+
+	}
+	
+NSpecies = {
+		UPLIFT_COST_BASE					= 100
+		}
+		

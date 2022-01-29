@@ -1,0 +1,88 @@
+#ai_weight - checks that required resources are available by AI will be made in code for performance reasons
+
+#modifiers that can be added from modules
+#"modifier", category: MODIFIER_CATEGORY_SPACEPORT. things that affect the builder part of the spaceport. like construction costs and speeds
+#"orbit_modifier", category: MODIFIER_CATEGORY_FLEET | MODIFIER_CATEGORY_SHIP. applied on all orbiting fleets and ships
+#"planet_modifier", category: MODIFIER_CATEGORY_PLANET | MODIFIER_CATEGORY_POP | MODIFIER_CATEGORY_TILE. affects the planet
+#"station_modifier", category: MODIFIER_CATEGORY_FLEET | MODIFIER_CATEGORY_SHIP. affects the ship part of the spaceport. like health and armor
+#"ship_modifier", category: MODIFIER_CATEGORY_SHIP. affects all ships that are built by this space port
+	
+
+################################
+#Intelligence Bureau Office
+eutab_intel_office = {
+	icon = "GFX_spaceport_module_teldar_refinery" ###Replace old tex
+	section = "SCIENCE_SPACEPORT_SECTION"
+	construction_days = 360
+	prerequisites = { "tech_eutab_intel_office" }	
+	spaceport_level = 4
+	
+	cost = {
+		minerals = 300
+		influence = 25
+	}
+	
+	required_resources = {
+		energy = 3
+	}
+	
+	ship_modifier = {
+		ship_tracking_add = 5
+	}
+	
+	planet_modifier = {
+		planet_sensor_range_mult = 0.2
+		pop_government_ethic_attraction = 0.05
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			from = { sector_controlled = yes }
+		}
+		modifier = {
+			factor = 0
+			from = { NOT = { has_spaceport_module = solar_panel_network } }
+		}
+	}
+}
+
+eutab_parts_replicator = {
+	icon = "GFX_spaceport_module_satramene_refinery" ###Replace old tex
+	section = "SCIENCE_SPACEPORT_SECTION"
+	construction_days = 360
+	prerequisites = { "tech_eutab_starship_parts" }	
+	spaceport_level = 6
+	
+	cost = {
+		minerals = 500
+		influence = 50
+	}
+	
+	required_resources = {
+		energy = 8
+	}
+	
+	orbit_modifier = {
+		ship_reparation_speed_mult = 0.35
+	}
+	
+	modifier = {
+		shipsize_battleship_construction_speed_mult = 0.15
+		shipsize_cruiser_construction_speed_mult = 0.15
+		shipsize_destroyer_construction_speed_mult = 0.15
+		shipsize_corvette_construction_speed_mult = 0.15
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 0
+			from = { sector_controlled = yes }
+		}
+		modifier = {
+			factor = 0
+			from = { NOT = { has_spaceport_module = solar_panel_network } }
+		}
+	}
+}
+

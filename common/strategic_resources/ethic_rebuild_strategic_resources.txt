@@ -1,0 +1,14 @@
+
+
+
+
+sr_sights = {
+	AI_category = strategic_resource
+	prerequisites = { "tech_resort" }
+	tradable = no
+	collect_if_wrong_building = no
+	is_planet_local = yes
+	is_rare = yes
+}
+
+

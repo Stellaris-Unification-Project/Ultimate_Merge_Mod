@@ -1,0 +1,105 @@
+namespace = mmbc_factions
+
+country_event = {
+	id = mmbc_factions.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_egalitarian days = -1 }
+			remove_modifier = suppressed_egalitarian
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.2
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_xenophobe days = -1 }
+			remove_modifier = suppressed_xenophobe
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.3
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_xenophile days = -1 }
+			remove_modifier = suppressed_xenophile
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.4
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_spiritualist days = -1 }
+			remove_modifier = suppressed_spiritualist
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.5
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_materialist days = -1 }
+			remove_modifier = suppressed_materialist
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.6
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_authoritarian days = -1 }
+			remove_modifier = suppressed_authoritarian
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.7
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_militarist days = -1 }
+			remove_modifier = suppressed_militarist
+		}
+	}
+}
+
+country_event = {
+	id = mmbc_factions.8
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_police_state } 
+			add_modifier = { modifier = mmbc_suppressed_pacifist days = -1 }
+			remove_modifier = suppressed_pacifist
+		}
+	}
+}

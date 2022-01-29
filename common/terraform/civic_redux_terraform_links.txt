@@ -1,0 +1,882 @@
+#Special Terraforming Links for Planet Forgers
+
+#Barren To Habitable
+terraform_link = {
+	from = pc_barren
+	to = pc_barren_unstable
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+		from = {
+			NOT = {
+				has_modifier = terraforming_candidate #It's just easier to directly terraform it to a habitable world
+			}
+		}
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_unstable
+	to = pc_barren_stable
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_arid
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_desert
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_savannah
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_arctic
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_tundra
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_alpine
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_ocean
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_tropical
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_stable
+	to = pc_continental
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+#Cold Barren To Habitable
+terraform_link = {
+	from = pc_barren_cold
+	to = pc_barren_cold_unstable
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_unstable
+	to = pc_barren_cold_stable
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_arid
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_desert
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_savannah
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_arctic
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_tundra
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_alpine
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_ocean
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_tropical
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+terraform_link = {
+	from = pc_barren_cold_stable
+	to = pc_continental
+	
+	energy = 7500
+	duration = 5475
+	
+	condition = {
+		has_technology = tech_atmospheric_creation
+	}
+	
+}
+
+#Toxic Worlds to Habitable
+
+terraform_link = {
+	from = pc_toxic
+	to = pc_toxic_detox1
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+	
+}
+
+terraform_link = {
+	from = pc_toxic_detox1
+	to = pc_toxic_detox2
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+}
+
+terraform_link = {
+	from = pc_toxic_detox2
+	to = pc_toxic_detox3
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+	
+}
+
+terraform_link = {
+	from = pc_toxic_detox3
+	to = pc_toxic_detox4
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+}
+
+terraform_link = {
+	from = pc_toxic_detox4
+	to = pc_toxic_detox5
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+}
+
+terraform_link = {
+	from = pc_toxic_detox5
+	to = pc_ocean
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+	
+}
+
+terraform_link = {
+	from = pc_toxic_detox5
+	to = pc_tropical
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+	
+}
+
+terraform_link = {
+	from = pc_toxic_detox5
+	to = pc_continental
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_planetary_denitrification
+	}
+	
+}
+
+#Molten Worlds to Habitable
+
+terraform_link = {
+	from = pc_molten
+	to = pc_molten_cold1
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+	
+}
+
+terraform_link = {
+	from = pc_molten_cold1
+	to = pc_molten_cold2
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+}
+
+terraform_link = {
+	from = pc_molten_cold2
+	to = pc_molten_cold3
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+	
+}
+
+terraform_link = {
+	from = pc_molten_cold3
+	to = pc_molten_cold4
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+}
+
+terraform_link = {
+	from = pc_molten_cold4
+	to = pc_molten_cold5
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+}
+
+terraform_link = {
+	from = pc_molten_cold5
+	to = pc_savannah
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+	
+}
+
+terraform_link = {
+	from = pc_molten_cold5
+	to = pc_desert
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+	
+	
+}
+
+terraform_link = {
+	from = pc_molten_cold5
+	to = pc_arid
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_macro_cryogenics
+	}
+}
+
+#Frozen Worlds to Habitable
+
+terraform_link = {
+	from = pc_frozen
+	to = pc_frozen_heat1
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+}
+
+terraform_link = {
+	from = pc_frozen_heat1
+	to = pc_frozen_heat2
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+}
+
+terraform_link = {
+	from = pc_frozen_heat2
+	to = pc_frozen_heat3
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+	
+}
+
+terraform_link = {
+	from = pc_frozen_heat3
+	to = pc_frozen_heat4
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+}
+
+terraform_link = {
+	from = pc_frozen_heat4
+	to = pc_frozen_heat5
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+}
+
+terraform_link = {
+	from = pc_frozen_heat5
+	to = pc_alpine
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+	
+}
+
+terraform_link = {
+	from = pc_frozen_heat5
+	to = pc_arctic
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+	
+}
+
+terraform_link = {
+	from = pc_frozen_heat5
+	to = pc_tundra
+	
+	energy = 10000
+	duration = 7300
+	
+	condition = {
+		has_technology = tech_global_heat_induction
+	}
+	
+}
+
+##############
+
+## Desert ##
+
+terraform_link = {
+	from = "pc_continental"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tropical"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_ocean"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_mangrove"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_alpine"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_tundra"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_savannah"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+		
+terraform_link = {
+	from = "pc_mesa"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_nukedislands"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_oasis"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_hajungle"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_cascadian"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_swamp"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_geothermal"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_subarctic"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_frozen_desert"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_steppe"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_hadesert"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_antarctic"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_glacial"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}
+
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_nuked"
+	
+	energy = 5000
+	duration = 3600
+	
+	condition = {
+		has_technology = "tech_atmospheric_manipulation"
+	}
+}

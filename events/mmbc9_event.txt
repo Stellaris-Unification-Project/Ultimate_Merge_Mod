@@ -1,0 +1,25 @@
+namespace = mmbc9_event
+
+country_event = {
+	id = mmbc9_event.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		if = { limit = { has_civic = civic_nationalistic_zeal }
+			give_technology = { message = no tech = tech_symbol_unity }
+			home_planet = { 
+				init_effect = {
+					random_tile = {
+						limit = {
+							has_blocker = no
+							has_building = no
+						}
+						set_building = "building_symbol_unity"
+					}
+
+				}
+			}
+		}
+	}
+}

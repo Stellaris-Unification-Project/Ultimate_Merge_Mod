@@ -1,0 +1,67 @@
+##########################################################################
+# Planet edicts
+##########################################################################
+
+@standardEdictCost = 150
+
+planet_edict = {
+	name = "e_eutab_war_rhetoric"
+	influence_cost = 100
+	modifier = {
+		spaceport_ship_build_speed_mult = 0.20
+		pop_consumer_goods_mult = -0.20
+		tile_resource_unity_mult = 0.1
+	}
+	
+	potential = {
+		owner = {
+			OR ={
+				has_authority = auth_oligarchic
+				has_authority = auth_dictatorial
+				has_authority = auth_imperial
+			}
+		}
+	}
+	
+	length = 3600
+	
+	prerequisites = {
+		"tech_eutab_war_rhetoric"
+	}
+	
+	allow = {
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops < 10
+		}
+	}	
+}
+
+planet_edict = {
+	name = "e_eutab_h_reproduction"
+	influence_cost = 120
+	modifier = {
+		pop_growth_speed = 0.4
+	}
+	
+	length = 5400
+	
+	prerequisites = {
+		"tech_eutab_h_reproduction_focus"
+	}
+	
+	allow = {
+	}
+	
+	ai_weight = {
+		weight = 1
+		modifier = {
+			factor = 0
+			num_pops > 10
+		}
+	}	
+}

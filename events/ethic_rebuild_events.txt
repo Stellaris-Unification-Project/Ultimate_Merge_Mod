@@ -1,0 +1,61 @@
+
+
+
+namespace = increase_planetsize
+
+planet_event = {
+	id = increase_planetsize.1
+	hide_window = yes
+	is_triggered_only = yes
+	location = ROOT 
+
+	immediate = { 
+	
+	change_planet_size = 1
+    set_planet_flag = planet_size_increased	
+	
+	}
+	
+}
+
+
+namespace = starter_tech
+
+event = {
+	id = starter_tech.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		every_country = {
+			limit = {
+					NOT = { has_country_flag = flag_startertech_set }
+					is_country_type = default
+			}
+			
+			if = {
+				limit = {
+					has_civic = civic_biotech
+				}
+				give_technology = { tech = tech_cloning }
+				#add_tradtion = tr_discovery_adopt
+				#give_tradition = tr_discovery_adopt
+			}	
+			
+			if = {
+				limit = {
+					has_civic = civic_public_medicine
+				}
+				give_technology = { tech = tech_frontier_health }
+			}			
+			
+				
+			        set_country_flag = flag_startertech_set
+		}	
+	}
+}
+
+
+
+
+
