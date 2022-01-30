@@ -8,4 +8,4 @@ tags={
 }
 picture="Salt-Bae.jpg"
 remote_file_id="969559995"
-supported_version="1.6.2"
+supported_version="3.2.2"

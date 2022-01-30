@@ -87,8 +87,8 @@ artificial_intelligence_policy = {
 			NOR = {
 				is_country_type = ai_empire
 				has_country_flag = synthetic_empire
+				is_subject_type = satellite
 			}
-			NOT = { is_subject_type = satellite }
 			custom_tooltip = {
 				text = ai_accord_servitude_disallowed
 				NOT = { has_country_flag = ai_accord }

@@ -112,15 +112,13 @@ country_event = {
 		text = primitive_1.1.descl
 		trigger = {
 			from = {
-				NOT = {
-					has_country_flag = ms_advance_denied
-				}
 				NOR = {
-						has_country_flag = ms_obelisk
+					has_country_flag = ms_advance_denied
+					has_country_flag = ms_obelisk
 						has_country_flag = ms_ethics_indoctrination
 						has_country_flag = ms_genetic_randomisation
 						has_country_flag = ms_advance_accelerated
-}
+				}
 			}
 		}
 	}
